@@ -1,0 +1,241 @@
+{
+    "os": "Linux-5.10.201-191.748.amzn2.x86_64-x86_64-with-glibc2.26",
+    "python": "3.11.4",
+    "heartbeatAt": "2024-01-17T09:33:10.497326",
+    "startedAt": "2024-01-17T09:33:09.960108",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--stage",
+        "sft",
+        "--do_train",
+        "--model_name_or_path",
+        "jan-hq/Vistral-7B-Chat-DPO",
+        "--dataset",
+        "alpaca_gpt4_en",
+        "--template",
+        "llama2",
+        "--finetuning_type",
+        "lora",
+        "--lora_target",
+        "q_proj,v_proj",
+        "--output_dir",
+        "./models/Vistral-7B-Chat-DPO",
+        "--overwrite_cache",
+        "--per_device_train_batch_size",
+        "1",
+        "--gradient_accumulation_steps",
+        "1",
+        "--lr_scheduler_type",
+        "cosine",
+        "--logging_steps",
+        "10",
+        "--save_steps",
+        "1000",
+        "--learning_rate",
+        "5e-5",
+        "--num_train_epochs",
+        "3.0",
+        "--plot_loss",
+        "--fp16"
+    ],
+    "state": "running",
+    "program": "/home/ec2-user/SFT/src/train_bash.py",
+    "codePathLocal": "src/train_bash.py",
+    "codePath": "src/train_bash.py",
+    "git": {
+        "remote": "git@github.com:hiyouga/LLaMA-Factory.git",
+        "commit": "379c0ae750713f0ad9294228e26b983f4c54104a"
+    },
+    "email": null,
+    "root": "/home/ec2-user/SFT",
+    "host": "ip-172-31-15-89.ap-northeast-1.compute.internal",
+    "username": "ec2-user",
+    "executable": "/home/ec2-user/miniconda3/envs/phucpx/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 3280.4201562499998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3292.866,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3282.094,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3307.039,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3315.688,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3277.859,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3284.978,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3290.682,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3300.133,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3293.771,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3300.427,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3321.096,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3321.321,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3332.78,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3305.37,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3298.102,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3291.073,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3315.432,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3299.647,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3307.046,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3305.849,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2989.5,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3165.633,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3217.947,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3288.095,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3306.064,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3300.154,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3302.145,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3309.238,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3310.968,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3308.088,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3137.422,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3294.938,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 299.9882621765137,
+            "used": 214.73018646240234
+        }
+    },
+    "gpu": "NVIDIA A10G",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A10G",
+            "memory_total": 24146608128
+        }
+    ],
+    "memory": {
+        "total": 124.45665740966797
+    }
+}
