@@ -21,14 +21,14 @@ require_version("gradio>=3.38.0,<4.0.0", "To fix: pip install \"gradio>=3.38.0,<
 def create_ui(demo_mode: Optional[bool] = False) -> gr.Blocks:
     engine = Engine(demo_mode=demo_mode, pure_chat=False)
 
-    with gr.Blocks(title="LLaMA Board", css=CSS) as demo:
+    with gr.Blocks(title="MISA LLMs Board", css=CSS) as demo:
         if demo_mode:
             gr.HTML(
-                "<h1><center>LLaMA Board: A One-stop Web UI for Getting Started with LLaMA Factory</center></h1>"
+                "<h1><center>MISA LLMs Board: A One-stop Web UI for Getting Started</center></h1>"
             )
             gr.HTML(
-                "<h3><center>Visit <a href=\"https://github.com/hiyouga/LLaMA-Factory\" target=\"_blank\">"
-                "LLaMA Factory</a> for details.</center></h3>"
+                "<h3><center>Visit <a href=\"\" target=\"_blank\">"
+                "MISA LLMs</a> for details.</center></h3>"
             )
             gr.DuplicateButton(value="Duplicate Space for private use", elem_classes="duplicate-button")
 
@@ -59,7 +59,7 @@ def create_web_demo() -> gr.Blocks:
     engine = Engine(pure_chat=True)
 
     with gr.Blocks(title="Web Demo", css=CSS) as demo:
-        lang = gr.Dropdown(choices=["en", "zh"])
+        lang = gr.Dropdown(choices=["vi", "en"])
         engine.manager.all_elems["top"] = dict(lang=lang)
 
         chat_box, _, _, chat_elems = create_chat_box(engine, visible=True)

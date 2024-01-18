@@ -49,12 +49,14 @@ class Template:
         query: str,
         resp: str,
         history: Optional[List[Tuple[str, str]]] = None,
-        system: Optional[str] = None
+        system: Optional[str] = None,
+        context: Optional[str] = None
+
     ) -> List[Tuple[List[int], List[int]]]:
         r"""
         Returns multiple pairs of token ids representing prompts and responses respectively.
         """
-        system, history = self._format(query, resp, history, system)
+        system, history = self._format(query, resp, history, system, context)
         encoded_pairs = self._encode(tokenizer, system, history)
         return encoded_pairs
 
@@ -63,14 +65,18 @@ class Template:
         query: str,
         resp: str,
         history: Optional[List[Tuple[str, str]]] = None,
-        system: Optional[str] = None
+        system: Optional[str] = None,
+        context: Optional[str] = None
     ) -> Tuple[str, List[Tuple[str, str]]]:
         r"""
         Aligns inputs to the standard format.
         """
-        system = system or self.system # use system if provided
+        if not system:
+            system = self.system.format(context=context)
+        # system = system or self.system
         history = history if (history and self.use_history) else []
         history = history + [(query, resp)]
+
         return system, history
 
     def _get_special_ids(
@@ -243,237 +249,6 @@ def get_template_and_fix_tokenizer(
 
 
 register_template(
-    name="alpaca",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        "### Instruction:\n{{query}}\n\n### Response:\n"
-    ],
-    system=(
-        "Below is an instruction that describes a task. "
-        "Write a response that appropriately completes the request."
-    ),
-    sep=[
-        "\n\n"
-    ]
-)
-
-
-register_template(
-    name="aquila",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        "Human: {{query}}###Assistant:"
-    ],
-    system=(
-        "A chat between a curious human and an artificial intelligence assistant. "
-        "The assistant gives helpful, detailed, and polite answers to the human's questions."
-    ),
-    sep=[
-        "###"
-    ],
-    stop_words=[
-        "</s>"
-    ],
-    efficient_eos=True
-)
-
-
-register_template(
-    name="baichuan",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        {"token": "<reserved_102>"}, # user token
-        "{{query}}",
-        {"token": "<reserved_103>"}  # assistant token
-    ],
-    system="",
-    sep=[],
-    efficient_eos=True
-)
-
-
-register_template(
-    name="baichuan2",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        {"token": "<reserved_106>"}, # user token
-        "{{query}}",
-        {"token": "<reserved_107>"}  # assistant token
-    ],
-    system="",
-    sep=[],
-    efficient_eos=True
-)
-
-
-register_template(
-    name="belle",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        "Human: {{query}}\n\nBelle: "
-    ],
-    system="",
-    sep=[
-        "\n\n"
-    ]
-)
-
-
-register_template(
-    name="bluelm",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        {"token": "[|Human|]:"},
-        "{{query}}",
-        {"token": "[|AI|]:"}
-    ],
-    system="",
-    sep=[]
-)
-
-
-register_template(
-    name="chatglm2",
-    prefix=[
-        {"token": "[gMASK]"},
-        {"token": "sop"},
-        "{{system}}"
-    ],
-    prompt=[
-        "[Round {{idx}}]\n\n问：{{query}}\n\n答："
-    ],
-    system="",
-    sep=[
-        "\n\n"
-    ],
-    efficient_eos=True
-)
-
-
-register_template(
-    name="chatglm3",
-    prefix=[
-        {"token": "[gMASK]"},
-        {"token": "sop"},
-        {"token": "<|system|>"},
-        "\n",
-        "{{system}}"
-    ],
-    prompt=[
-        {"token": "<|user|>"},
-        "\n",
-        "{{query}}",
-        {"token": "<|assistant|>"},
-        "\n" # add an extra newline to avoid error in ChatGLM's process_response method
-    ],
-    system=(
-        "You are ChatGLM3, a large language model trained by Zhipu.AI. "
-        "Follow the user's instructions carefully. Respond using markdown."
-    ),
-    sep=[],
-    stop_words=[
-        "<|user|>",
-        "<|observation|>"
-    ],
-    efficient_eos=True
-)
-
-
-register_template(
-    name="chatglm3_raw", # the raw template for tool tuning
-    prefix=[
-        {"token": "[gMASK]"},
-        {"token": "sop"},
-        {"token": "<|system|>"},
-        "\n",
-        "{{system}}"
-    ],
-    prompt=[
-        {"token": "<|user|>"},
-        "\n",
-        "{{query}}",
-        {"token": "<|assistant|>"}
-    ],
-    system=(
-        "You are ChatGLM3, a large language model trained by Zhipu.AI. "
-        "Follow the user's instructions carefully. Respond using markdown."
-    ),
-    sep=[],
-    stop_words=[
-        "<|user|>",
-        "<|observation|>"
-    ],
-    efficient_eos=True
-)
-
-
-register_template(
-    name="codegeex2",
-    prefix=[
-        {"token": "[gMASK]"},
-        {"token": "sop"},
-        "{{system}}"
-    ],
-    prompt=[
-        "{{query}}"
-    ],
-    system="",
-    sep=[]
-)
-
-
-register_template(
-    name="deepseek",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        "User: {{query}}\n\nAssistant:"
-    ],
-    system="",
-    sep=[]
-)
-
-
-register_template(
-    name="deepseekcoder",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        "### Instruction:\n{{query}}\n### Response:\n"
-    ],
-    system=(
-        "You are an AI programming assistant, utilizing the Deepseek Coder model, "
-        "developed by Deepseek Company, and you only answer questions related to computer science. "
-        "For politically sensitive questions, security and privacy issues, "
-        "and other non-computer science questions, you will refuse to answer\n"
-    ),
-    sep=[
-        "\n",
-        {"token": "<|EOT|>"},
-        "\n"
-    ],
-    stop_words=[
-        "<|EOT|>"
-    ],
-    efficient_eos=True
-)
-
-
-register_template(
     name="default",
     prefix=[
         "{{system}}"
@@ -491,43 +266,16 @@ register_template(
 )
 
 
-register_template(
-    name="falcon",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        "User: {{query}}\nFalcon:"
-    ],
-    system="",
-    sep=[
-        "\n"
-    ],
-    efficient_eos=True
-)
-
-
-register_template(
-    name="intern",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        "<|User|>:{{query}}",
-        {"token": "<eoh>"},
-        "\n<|Bot|>:"
-    ],
-    system="",
-    sep=[
-        {"token": "<eoa>"},
-        "\n"
-    ],
-    stop_words=[
-        "<eoa>"
-    ],
-    efficient_eos=True
-)
-
+LLAMA2_SYSTEM_TEMPLATE = """
+hiểu biết của Em:
+{context}
+=================
+Hãy đưa ra phản hồi theo nguyên tắc sau:
+1. Nếu trong CÓ thông tin liên quan trong `hiểu biết của Em`, hãy trả lời ngắn gọn trong khoảng 3-5 câu theo kiểu hướng dẫn step by step. Mỗi câu 1 dòng.
+2. Không được phép trả lời quá dài, vì người dùng sẽ không đọc hết.
+3. Xưng hô với người dùng là 'Quý khách'. KHÔNG ĐƯỢC PHÉP gọi người dùng là 'bạn'. KHÔNG ĐƯỢC PHÉP tự xưng là 'tôi'.
+4. Nếu trong KHÔNG CÓ thông tin cho câu trả lời, hãy giải thích cho người dùng biết rằng chưa hiểu câu hỏi và bảo người dùng đặt lại câu hỏi.
+"""
 
 register_template(
     name="llama2",
@@ -537,29 +285,7 @@ register_template(
     prompt=[
         "[INST] {{query}} [/INST]"
     ],
-    system=(
-        "You are a helpful, respectful and honest assistant. "
-        "Always answer as helpfully as possible, while being safe. "
-        "Your answers should not include any harmful, unethical, "
-        "racist, sexist, toxic, dangerous, or illegal content. "
-        "Please ensure that your responses are socially unbiased and positive in nature.\n\n"
-        "If a question does not make any sense, or is not factually coherent, "
-        "explain why instead of answering something not correct. "
-        "If you don't know the answer to a question, please don't share false information."
-    ),
-    sep=[]
-)
-
-
-register_template(
-    name="llama2_zh",
-    prefix=[
-        "<<SYS>>\n{{system}}\n<</SYS>>\n\n"
-    ],
-    prompt=[
-        "[INST] {{query}} [/INST]"
-    ],
-    system="You are a helpful assistant. 你是一个乐于助人的助手。",
+    system=LLAMA2_SYSTEM_TEMPLATE,
     sep=[]
 )
 
@@ -578,200 +304,6 @@ register_template(
 
 
 register_template(
-    name="openchat",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        "GPT4 Correct User: {{query}}",
-        {"token": "<|end_of_turn|>"},
-        "GPT4 Correct Assistant:"
-    ],
-    system="",
-    sep=[
-        {"token": "<|end_of_turn|>"}
-    ],
-    stop_words=[
-        "<|end_of_turn|>"
-    ],
-    efficient_eos=True
-)
-
-
-register_template(
-    name="qwen",
-    prefix=[
-        "<|im_start|>system\n{{system}}<|im_end|>"
-    ],
-    prompt=[
-        "<|im_start|>user\n{{query}}<|im_end|>\n<|im_start|>assistant\n"
-    ],
-    system="You are a helpful assistant.",
-    sep=[
-        "\n"
-    ],
-    stop_words=[
-        "<|im_end|>"
-    ],
-    replace_eos=True
-)
-
-
-register_template(
-    name="starchat",
-    prefix=[
-        {"token": "<|system|>"},
-        "\n{{system}}",
-    ],
-    prompt=[
-        {"token": "<|user|>"},
-        "\n{{query}}",
-        {"token": "<|end|>"},
-        "\n",
-        {"token": "<|assistant|>"}
-    ],
-    system="",
-    sep=[
-        {"token": "<|end|>"},
-        "\n"
-    ],
-    stop_words=[
-        "<|end|>"
-    ],
-    efficient_eos=True
-)
-
-
-register_template(
-    name="vanilla",
-    prefix=[],
-    prompt=[
-        "{{query}}"
-    ],
-    system="",
-    sep=[],
-    use_history=False
-)
-
-
-register_template(
-    name="vicuna",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        "USER: {{query}} ASSISTANT:"
-    ],
-    system=(
-        "A chat between a curious user and an artificial intelligence assistant. "
-        "The assistant gives helpful, detailed, and polite answers to the user's questions."
-    ),
-    sep=[]
-)
-
-
-register_template(
-    name="xuanyuan",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        "Human: {{query}} Assistant:"
-    ],
-    system=(
-        "以下是用户和人工智能助手之间的对话。用户以Human开头，人工智能助手以Assistant开头，"
-        "会对人类提出的问题给出有帮助、高质量、详细和礼貌的回答，并且总是拒绝参与与不道德、"
-        "不安全、有争议、政治敏感等相关的话题、问题和指示。\n"
-    ),
-    sep=[]
-)
-
-
-register_template(
-    name="xverse",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        "Human: {{query}}\n\nAssistant: "
-    ],
-    system="",
-    sep=[]
-)
-
-
-register_template(
-    name="yayi",
-    prefix=[
-        {"token": "<|System|>"},
-        ":\n{{system}}"
-    ],
-    prompt=[
-        {"token": "<|Human|>"},
-        ":\n{{query}}\n\n",
-        {"token": "<|YaYi|>"},
-        ":"
-    ],
-    system=(
-        "You are a helpful, respectful and honest assistant named YaYi "
-        "developed by Beijing Wenge Technology Co.,Ltd. "
-        "Always answer as helpfully as possible, while being safe.  "
-        "Your answers should not include any harmful, unethical, "
-        "racist, sexist, toxic, dangerous, or illegal content. "
-        "Please ensure that your responses are socially unbiased and positive in nature.\n\n"
-        "If a question does not make any sense, or is not factually coherent, "
-        "explain why instead of answering something not correct. "
-        "If you don't know the answer to a question, please don't share false information."
-    ),
-    sep=[
-        "\n\n"
-    ],
-    stop_words=[
-        "<|End|>"
-    ]
-)
-
-
-register_template(
-    name="yi",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        "<|im_start|>user\n{{query}}<|im_end|>\n<|im_start|>assistant\n"
-    ],
-    system="",
-    sep=[
-        "\n"
-    ],
-    stop_words=[
-        "<|im_end|>"
-    ],
-    replace_eos=True
-)
-
-
-register_template(
-    name="yuan",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        "{{query}}",
-        {"token": "<sep>"}
-    ],
-    system="",
-    sep=[
-        "\n"
-    ],
-    stop_words=[
-        "<eod>"
-    ],
-    replace_eos=True
-)
-
-
-register_template(
     name="zephyr",
     prefix=[
         {"token": "<|system|>"},
@@ -786,22 +318,4 @@ register_template(
     ],
     system="You are a friendly chatbot who always responds in the style of a pirate",
     sep=[]
-)
-
-
-register_template(
-    name="ziya",
-    prefix=[
-        "{{system}}"
-    ],
-    prompt=[
-        {"token": "<human>"},
-        ":{{query}}\n",
-        {"token": "<bot>"},
-        ":"
-    ],
-    system="",
-    sep=[
-        "\n"
-    ]
 )

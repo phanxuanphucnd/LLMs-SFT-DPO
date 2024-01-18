@@ -12,25 +12,25 @@ from llmtuner.train.sft.metric import ComputeMetrics
 from llmtuner.train.sft.trainer import CustomSeq2SeqTrainer
 from llmtuner.train.utils import create_modelcard_and_push
 
-import wandb
+# import wandb
 
 
-wandb.login(
-    anonymous = 'allow',
-    relogin = False,
-    key = 'c9e67ba67fe653ff136cca2b9ffc0f12f252418e'
-)
+# wandb.login(
+#     anonymous = 'allow',
+#     relogin = False,
+#     key = 'c9e67ba67fe653ff136cca2b9ffc0f12f252418e'
+# )
 
-wandb.init(
-    project = 'SFT-MISA-LLMs',
+# wandb.init(
+#     project = 'SFT-MISA-LLMs',
 
-    config = {
-        'learning_rate': 2e-5,
-        'architecture': 'Vistral-7b-Chat-DPO',
-        'dataset': 'MISA-WEB-CRAWL',
-        'epochs': 1,
-    }
-)
+#     config = {
+#         'learning_rate': 2e-5,
+#         'architecture': 'Vistral-7b-Chat-DPO',
+#         'dataset': 'MISA-WEB-CRAWL',
+#         'epochs': 1,
+#     }
+# )
 
 
 if TYPE_CHECKING:
@@ -71,7 +71,7 @@ def run_sft(
     training_args_dict.update(dict(
         generation_max_length=training_args.generation_max_length or data_args.cutoff_len,
         generation_num_beams=data_args.eval_num_beams or training_args.generation_num_beams,
-        report_to="wandb"
+        # report_to="wandb"
     ))
 
     print("------------------ training_args_dict ------------------")

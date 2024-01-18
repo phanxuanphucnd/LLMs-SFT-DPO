@@ -23,7 +23,8 @@ def construct_example(examples: Dict[str, List[Any]]) -> Generator[Any, None, No
         query = query + "\n" + examples["query"][i] if "query" in examples and examples["query"][i] else query
         history = examples["history"][i] if "history" in examples else None
         system = examples["system"][i] if "system" in examples else None
-        yield query, response, history, system
+        context = examples["context"][i] if "context" in examples else None
+        yield query, response, history, system, context
 
 
 def infer_max_len(source_len: int, target_len: int, data_args: "DataArguments") -> Tuple[int, int]:
@@ -40,9 +41,10 @@ def preprocess_dataset(
     training_args: "Seq2SeqTrainingArguments",
     stage: Literal["pt", "sft", "rm", "ppo"]
 ) -> Union["Dataset", "IterableDataset"]:
+    
     template = get_template_and_fix_tokenizer(data_args.template, tokenizer)
 
-    print('====================== PROMPT TEMPLATE ', template)
+    print('🔵 PROMPT TEMPLATE: ', template)
 
     if data_args.cache_path is not None and os.path.exists(data_args.cache_path):
         return dataset # already preprocessed
@@ -82,13 +84,13 @@ def preprocess_dataset(
         # for multiturn examples, we only mask the prompt part in each prompt-response pair.
         model_inputs = {"input_ids": [], "attention_mask": [], "labels": []}
 
-        for query, response, history, system in construct_example(examples):
+        for query, response, history, system, context in construct_example(examples):
             if not (isinstance(query, str) and isinstance(response, str) and query != "" and response != ""):
                 continue
 
             input_ids, labels = [], []
             for turn_idx, (source_ids, target_ids) in enumerate(template.encode_multiturn(
-                tokenizer, query, response, history, system
+                tokenizer, query, response, history, system, context
             )):
                 source_len, target_len = len(source_ids), len(target_ids)
                 max_source_len, max_target_len = infer_max_len(source_len, target_len, data_args)
