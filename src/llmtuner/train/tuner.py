@@ -4,11 +4,7 @@ from typing import TYPE_CHECKING, Any, Dict, List, Optional
 from llmtuner.extras.callbacks import LogCallback
 from llmtuner.extras.logging import get_logger
 from llmtuner.model import get_train_args, get_infer_args, load_model_and_tokenizer
-from llmtuner.train.pt import run_pt
 from llmtuner.train.sft import run_sft
-from llmtuner.train.rm import run_rm
-from llmtuner.train.ppo import run_ppo
-from llmtuner.train.dpo import run_dpo
 
 if TYPE_CHECKING:
     from transformers import TrainerCallback
@@ -21,16 +17,8 @@ def run_exp(args: Optional[Dict[str, Any]] = None, callbacks: Optional[List["Tra
     model_args, data_args, training_args, finetuning_args, generating_args = get_train_args(args)
     callbacks = [LogCallback()] if callbacks is None else callbacks
 
-    if finetuning_args.stage == "pt":
-        run_pt(model_args, data_args, training_args, finetuning_args, callbacks)
-    elif finetuning_args.stage == "sft":
+    if finetuning_args.stage == "sft":
         run_sft(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
-    elif finetuning_args.stage == "rm":
-        run_rm(model_args, data_args, training_args, finetuning_args, callbacks)
-    elif finetuning_args.stage == "ppo":
-        run_ppo(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
-    elif finetuning_args.stage == "dpo":
-        run_dpo(model_args, data_args, training_args, finetuning_args, callbacks)
     else:
         raise ValueError("Unknown task.")
 

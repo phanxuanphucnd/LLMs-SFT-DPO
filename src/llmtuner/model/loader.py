@@ -62,6 +62,7 @@ def load_model_and_tokenizer(
     if is_trainable and model_args.use_unsloth:
         require_version("unsloth", "Follow the instructions at: https://github.com/unslothai/unsloth")
         from unsloth import FastLlamaModel, FastMistralModel # type: ignore
+
         unsloth_kwargs = {
             "model_name": model_args.model_name_or_path,
             "max_seq_length": model_args.model_max_length,
@@ -69,7 +70,8 @@ def load_model_and_tokenizer(
             "load_in_4bit": model_args.quantization_bit == 4,
             "token": model_args.hf_hub_token,
             "device_map": get_current_device(),
-            "rope_scaling": getattr(config, "rope_scaling", None)
+            "rope_scaling": getattr(config, "rope_scaling", None),
+
         }
         if getattr(config, "model_type", None) == "llama":
             model, _ = FastLlamaModel.from_pretrained(**unsloth_kwargs)
@@ -84,11 +86,13 @@ def load_model_and_tokenizer(
             logger.warning("Unsloth does not support loading adapters.")
 
     if model is None:
+        print(f"\n>>> config_kwargs: {config_kwargs}")
         model = AutoModelForCausalLM.from_pretrained(
             model_args.model_name_or_path,
             config=config,
             torch_dtype=model_args.compute_dtype,
             low_cpu_mem_usage=(not is_deepspeed_zero3_enabled()),
+            # load_in_4bit = True,
             **config_kwargs
         )
 
