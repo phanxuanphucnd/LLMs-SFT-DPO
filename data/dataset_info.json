@@ -1,0 +1,10 @@
+{
+    "misa_amiskt_labeled_vi": {
+      "file_name": "misa_amiskt_labeled_data_vi.json",
+      "file_sha1": "57faf8efbc0bc39c10803805a08cc52479cb1222"
+    },
+    "misa_amiskt_gpt4_vi": {
+        "file_name": "misa_amiskt_gpt4_data_vi.json",
+        "file_sha1": "43750e390b2da73f69ecd09fc4bce94f44be0bd2"
+    }
+}

@@ -33,11 +33,7 @@ SUBJECTS = ["Average", "STEM", "Social Sciences", "Humanities", "Other"]
 SUPPORTED_MODELS = OrderedDict()
 
 TRAINING_STAGES = {
-    "Supervised Fine-Tuning": "sft",
-    "Reward Modeling": "rm",
-    "PPO": "ppo",
-    "DPO": "dpo",
-    "Pre-Training": "pt"
+    "Supervised Fine-Tuning": "sft"
 }
 
 class DownloadSource(str, Enum):

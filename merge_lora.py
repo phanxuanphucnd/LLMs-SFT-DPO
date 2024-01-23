@@ -31,8 +31,8 @@ def apply_lora(base_model_path, target_model_path, lora_path):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--base", type=str, default="jan-hq/Vistral-7B-Chat-DPO")
-    parser.add_argument("--target", type=str, default="storages/mistral-7b-labeled-ck-4000")
-    parser.add_argument("--lora", type=str, default="models/misa_amiskt/v1.0/Vistral-7B/checkpoint-4000")
+    parser.add_argument("--target", type=str, default="storages/misal-7b-dpo-use_unsloth-lora-3ep-ck16000")
+    parser.add_argument("--lora", type=str, default="models/misa_amiskt/v1.1/misal-7b-dpo-use_unsloth-lora-3ep/checkpoint-16000")
 
     args = parser.parse_args()
 
