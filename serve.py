@@ -1,4 +1,4 @@
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 import torch
 from threading import Thread
 import time
@@ -11,23 +11,26 @@ from transformers import (
     TextIteratorStreamer,
     pipeline
 )
-from fastapi import FastAPI
+from fastapi import FastAPI, Header, Depends
 from fastapi.responses import StreamingResponse
+from fastapi.exceptions import HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-# bnb_config = BitsAndBytesConfig(
-#     load_in_4bit=True,
-#     bnb_4bit_use_double_quant=True,
-#     bnb_4bit_quant_type="nf4",
-#     bnb_4bit_compute_dtype=torch.float16
-# )
+bnb_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_use_double_quant=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.float16
+)
 
 device = torch.device("cuda:0")
 
-base_model_id = "/home/ec2-user/LLMEvaluator/abc/llms/storages/misa-vistral-7b-dpo-use_unsloth-lora-4ep-lr5e5-r32-alpha64"
+# /home/ec2-user/LLMEvaluator/abc/llms/storages/misa-vistral-7b-dpo-use_unsloth-lora-4ep-lr5e5-r32-alpha64
+base_model_id = "/home/ec2-user/LLMEvaluator/abc/llms/storages/misa-vistral-7b-dpo-use_unsloth-lora-4ep-lr5e5-r32-alpha16"
 base_model = AutoModelForCausalLM.from_pretrained(
     base_model_id,
-    # quantization_config=bnb_config,
+    quantization_config=bnb_config,
     device_map="auto"
 )
 eval_tokenizer = AutoTokenizer.from_pretrained(base_model_id, add_bos_token=True, trust_remote_code=True)
@@ -89,6 +92,14 @@ def answer_stream(
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
+
 @app.get("/healthz")
 def get_healthz():
     return {"status": "ok"}
@@ -102,27 +113,32 @@ class GetAnswerRequest(BaseModel):
     temperature: float = 0.1
     repetition_penalty: float = 1.05
     stream: bool = True
-    kwargs_add_more: Dict[Any] = {}
+    kwargs_add_more: Dict[str, Any] = {}
 
 def render_stream(response):
     for i, token in enumerate(response):
         yield json.dumps({"idx": i, "token": token})
 
-@app.post("get_answer")
+async def verify_key(api_key: Optional[str] = Header(None, description = "api-key")):
+    if (not bool(api_key)) or (not api_key in ["AI_team"]):
+        data = {"code": 401, "status": "error", "data": None, "message": "api-key is invalid!"}
+        raise HTTPException(status_code=401, detail=data)
+
+@app.post("/get_answer", dependencies = [Depends(verify_key)])
 def get_answer(request_body: GetAnswerRequest):
     payload = request_body.__dict__
     is_stream = payload.pop("stream")
     kwargs_add_more = payload.pop("kwargs_add_more")
     
     if is_stream:
-        return StreamingResponse(render_stream(answer_stream(**payload, **kwargs_add_more)))
+        payload.update(kwargs_add_more)
+        return StreamingResponse(render_stream(answer_stream(**payload)))
     else:
         return {
             "idx": 0,
             "token": answer(**payload, **kwargs_add_more)
         }
     
-
 # conversation = [{"role": "system", "content": "bạn là misa chatbot"}, {"role": "user", "content": "alo"}]
 
 if __name__ == "__main__":
