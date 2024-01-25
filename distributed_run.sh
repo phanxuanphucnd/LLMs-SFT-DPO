@@ -7,7 +7,7 @@ deepspeed --num_gpus 4 --master_port=9901 src/train_bash.py \
     --template 'llama2' \
     --finetuning_type lora \
     --lora_target all \
-    --output_dir models/output/misa-vistral-7b-chat-use_unsloth-3ep-lr5e5-lora \
+    --output_dir models/output/misa-vistral-7b-chat-lora-3ep-lr5e5-r32-alpha16 \
     --overwrite_cache \
     --overwrite_output_dir \
     --per_device_train_batch_size 2 \
@@ -17,10 +17,9 @@ deepspeed --num_gpus 4 --master_port=9901 src/train_bash.py \
     --logging_steps 20 \
     --save_steps 1000 \
     --learning_rate 5e-5 \
-    --num_train_epochs 4.0 \
+    --num_train_epochs 3 \
     --plot_loss \
-    --lora_rank 64 \
-    --lora_alpha 64 \
+    --lora_rank 32 \
+    --lora_alpha 16 \
     --fp16 \
-    --use_unsloth \
-    --push_to_hub
+    --use_unsloth
