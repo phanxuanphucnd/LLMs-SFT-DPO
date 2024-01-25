@@ -1,4 +1,4 @@
-deepspeed --num_gpus 1 --master_port=9901 src/train_bash.py \
+deepspeed --num_gpus 4 --master_port=9901 src/train_bash.py \
     --deepspeed configs/ds_config.json \
     --stage sft \
     --do_train \
@@ -19,7 +19,8 @@ deepspeed --num_gpus 1 --master_port=9901 src/train_bash.py \
     --learning_rate 5e-5 \
     --num_train_epochs 4.0 \
     --plot_loss \
-    --lora_rank 32 \
+    --lora_rank 64 \
     --lora_alpha 64 \
     --fp16 \
-    --use_unsloth
+    --use_unsloth \
+    --push_to_hub

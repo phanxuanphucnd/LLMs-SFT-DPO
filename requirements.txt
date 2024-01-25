@@ -17,3 +17,6 @@ fastapi
 sse-starlette
 matplotlib
 einops
+deepspeed
+wandb
+IPython
