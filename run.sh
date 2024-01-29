@@ -19,6 +19,6 @@ CUDA_VISIBLE_DEVICES=0 python src/train_bash.py \
     --num_train_epochs 1.0 \
     --plot_loss \
     --lora_rank 32 \
-    --lora_alpha 64 \
+    --lora_alpha 16 \
     --bf16 \
     --use_unsloth

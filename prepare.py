@@ -1,14 +1,11 @@
-import json
+from huggingface_hub import HfApi, login
 
-with open('data/alpaca_gpt4_data_en.json', 'r', encoding='utf-8') as f:
-    data = json.load(f)
+login(token = "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")
 
+api = HfApi()
 
-
-for item in data:
-    # item['system'] = "YOU ARE A MISA ASSISTANT."
-    item['context'] = "CONTEXT"
-
-
-with open('data/alpaca_gpt4_data_en.json', 'w', encoding='utf-8') as f:
-    json.dump(data, f, indent=4, ensure_ascii=False)
+api.upload_folder(
+    folder_path="/home/ec2-user/LLMEvaluator/abc/llms/storages/misa-vistral-7b-dpo-use_unsloth-lora-3ep-lr5e5-r32-alpha16slow",
+    repo_id="ShiniChien/misa-vistral-7b-dpo-use_unsloth-lora-3ep-lr5e5-r32-alpha16slow",
+    repo_type="model",
+)

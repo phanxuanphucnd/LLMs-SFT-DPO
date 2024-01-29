@@ -27,7 +27,7 @@ bnb_config = BitsAndBytesConfig(
 device = torch.device("cuda:0")
 
 # /home/ec2-user/LLMEvaluator/abc/llms/storages/misa-vistral-7b-dpo-use_unsloth-lora-4ep-lr5e5-r32-alpha64
-base_model_id = "/home/ec2-user/LLMEvaluator/abc/llms/storages/misa-vistral-7b-dpo-use_unsloth-lora-3ep-lr5e5-r32-alpha16slow"
+base_model_id = "Viet-Mistral/Vistral-7B-Chat"
 base_model = AutoModelForCausalLM.from_pretrained(
     base_model_id,
     quantization_config=bnb_config,
