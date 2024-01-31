@@ -44,8 +44,6 @@ def preprocess_dataset(
     
     template = get_template_and_fix_tokenizer(data_args.template, tokenizer)
 
-    print('🔵 PROMPT TEMPLATE: ', template)
-
     if data_args.cache_path is not None and os.path.exists(data_args.cache_path):
         return dataset # already preprocessed
 
@@ -187,7 +185,7 @@ def preprocess_dataset(
     def preprocess_pairwise_dataset(examples: Dict[str, List[Any]]) -> Dict[str, List[List[int]]]:
         # build input pairs with format `<bos> X`, `Y1 <eos>` and `Y2 <eos>`
         model_inputs = {"prompt_ids": [], "chosen_ids": [], "rejected_ids": []}
-        for query, response, history, system in construct_example(examples):
+        for query, response, history, system, context in construct_example(examples):
             if not (isinstance(query, str) and isinstance(response, list) and query != "" and len(response) > 1):
                 continue
 
