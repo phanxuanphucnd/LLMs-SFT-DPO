@@ -1,15 +1,19 @@
 {
-    "misa_amiskt_labeled_vi": {
-      "file_name": "misa_amiskt_labeled_data_vi.json",
+    "makt_labeled_5k3_vi": {
+      "file_name": "makt_labeled_5k3_vi.json",
       "file_sha1": "57faf8efbc0bc39c10803805a08cc52479cb1222"
     },
-    "misa_amiskt_gpt4_vi": {
-        "file_name": "misa_amiskt_gpt4_data_vi.json",
+    "makt_gpt4_vi": {
+        "file_name": "makt_gpt4_vi.json",
         "file_sha1": "43750e390b2da73f69ecd09fc4bce94f44be0bd2"
     },
-    "comparison_amiskt_vi": {
-        "file_name": "comparison_gpt4_data_en.json",
+    "comparision_makt_labeled_3k_vi": {
+        "file_name": "comparision_makt_labeled_3k_vi.json",
         "file_sha1": "96fa18313544e22444fe20eead7754b17da452ae",
         "ranking": true
+    },
+    "makt_labeled_7k7_vi": {
+        "file_name": "makt_labeled_7k7_vi.json",
+        "file_sha1": "57faf8efbc0bc39c10803805a08cc52479cb1222"
     }
 }
