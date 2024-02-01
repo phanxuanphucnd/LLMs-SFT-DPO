@@ -1,4 +1,5 @@
-deepspeed --num_gpus 4 --master_port=9901 src/train_bash.py \
+# deepspeed --num_gpus 4 --master_port=9901 src/train_bash.py \
+CUDA_VISIBLE_DEVICES=0 python src/train_bash.py \
     --deepspeed configs/ds_config.json \
     --stage dpo \
     --do_train \
@@ -10,8 +11,8 @@ deepspeed --num_gpus 4 --master_port=9901 src/train_bash.py \
     --finetuning_type lora \
     --lora_target all \
     --output_dir models/DPO/misa-vistral-7b-chat-use_unsloth-lora-3ep-lr5e5-r32-alpha16-DPO \
-    --per_device_train_batch_size 2 \
-    --gradient_accumulation_steps 2 \
+    --per_device_train_batch_size 1 \
+    --gradient_accumulation_steps 1 \
     --lr_scheduler_type cosine \
     --logging_steps 20 \
     --save_steps 1000 \

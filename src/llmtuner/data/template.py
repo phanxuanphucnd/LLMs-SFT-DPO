@@ -29,18 +29,22 @@ class Template:
         query: str,
         resp: str,
         history: Optional[List[Tuple[str, str]]] = None,
-        system: Optional[str] = None
+        system: Optional[str] = None,
+        context: Optional[str] = None
     ) -> Tuple[List[int], List[int]]:
         r"""
         Returns a single pair of token ids representing prompt and response respectively.
         """
-        system, history = self._format(query, resp, history, system)
+        system, history = self._format(query, resp, history, system, context)
         encoded_pairs = self._encode(tokenizer, system, history)
+
         prompt_ids = []
         for query_ids, resp_ids in encoded_pairs[:-1]:
             prompt_ids = prompt_ids + query_ids + resp_ids
+
         prompt_ids = prompt_ids + encoded_pairs[-1][0]
         answer_ids = encoded_pairs[-1][1]
+
         return prompt_ids, answer_ids
 
     def encode_multiturn(
@@ -58,6 +62,7 @@ class Template:
         """
         system, history = self._format(query, resp, history, system, context)
         encoded_pairs = self._encode(tokenizer, system, history)
+
         return encoded_pairs
 
     def _format(
@@ -73,7 +78,7 @@ class Template:
         """
         if not system:
             system = self.system.format(context=context)
-        # system = system or self.system
+
         history = history if (history and self.use_history) else []
         history = history + [(query, resp)]
 
@@ -266,15 +271,14 @@ register_template(
 )
 
 
-LLAMA2_SYSTEM_TEMPLATE = """
+SYSTEM_TEMPLATE = """
 hiểu biết của Em:
 {context}
 =================
 Hãy đưa ra phản hồi theo nguyên tắc sau:
-1. Nếu trong CÓ thông tin liên quan trong `hiểu biết của Em`, hãy trả lời ngắn gọn trong khoảng 3-5 câu theo kiểu hướng dẫn step by step. Mỗi câu 1 dòng.
-2. Không được phép trả lời quá dài, vì người dùng sẽ không đọc hết.
-3. Xưng hô với người dùng là 'Quý khách'. KHÔNG ĐƯỢC PHÉP gọi người dùng là 'bạn'. KHÔNG ĐƯỢC PHÉP tự xưng là 'tôi'.
-4. Nếu trong KHÔNG CÓ thông tin cho câu trả lời, hãy giải thích cho người dùng biết rằng chưa hiểu câu hỏi và bảo người dùng đặt lại câu hỏi.
+1. Nếu trong CÓ thông tin liên quan trong `hiểu biết của Em`, hãy trả lời ngắn gọn trong khoảng 3-5 câu theo kiểu hướng dẫn theo từng bước dễ hiểu. Mỗi câu 1 dòng.
+2. Xưng hô với người dùng là 'Quý khách'. KHÔNG ĐƯỢC PHÉP gọi người dùng là 'bạn'. KHÔNG ĐƯỢC PHÉP tự xưng là 'tôi'.
+3. Nếu trong KHÔNG CÓ thông tin cho câu trả lời, hãy giải thích cho người dùng biết rằng chưa hiểu câu hỏi và bảo người dùng đặt lại câu hỏi.
 """
 
 register_template(
@@ -285,7 +289,7 @@ register_template(
     prompt=[
         "[INST] {{query}} [/INST]"
     ],
-    system=LLAMA2_SYSTEM_TEMPLATE,
+    system=SYSTEM_TEMPLATE,
     sep=[]
 )
 
