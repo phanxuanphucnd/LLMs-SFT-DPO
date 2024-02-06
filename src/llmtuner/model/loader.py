@@ -53,6 +53,7 @@ def load_model_and_tokenizer(
         padding_side="right",
         **config_kwargs
     )
+    tokenizer.pad_token = tokenizer.eos_token
     patch_tokenizer(tokenizer)
 
     config = AutoConfig.from_pretrained(model_args.model_name_or_path, **config_kwargs)
@@ -86,7 +87,6 @@ def load_model_and_tokenizer(
             logger.warning("Unsloth does not support loading adapters.")
 
     if model is None:
-        print(f"\n>>> config_kwargs: {config_kwargs}")
         model = AutoModelForCausalLM.from_pretrained(
             model_args.model_name_or_path,
             config=config,

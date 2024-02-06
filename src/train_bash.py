@@ -1,5 +1,9 @@
 from llmtuner import run_exp
 
+from huggingface_hub import login
+
+login("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")
+
 
 def main():
     run_exp()
