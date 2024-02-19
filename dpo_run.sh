@@ -1,15 +1,13 @@
 deepspeed --num_gpus 4 --master_port=9902 src/train_bash.py \
-# python src/train_bash.py \
     --deepspeed configs/ds_dpo_config.json \
     --stage dpo \
     --do_train \
     --model_name_or_path Viet-Mistral/Vistral-7B-Chat \
-    --adapter_name_or_path phucpx247/misa-vistral-7b-chat-use_unsloth-lora-4ep-lr5e5-r32-alpha16-sft-5k3 \
-    --dataset comparision_makt_labeled_3k_vi \
+    --dataset comparision_public_data_vi \
     --template 'llama2' \
     --finetuning_type lora \
     --lora_target all \
-    --output_dir models/misa-vistral-7b-chat-use_unsloth-lora-add1ep-lr5e5-r32-alpha16-DPO \
+    --output_dir models/vistral-7b-chat-public-dataset-DPO \
     --per_device_train_batch_size 1 \
     --gradient_accumulation_steps 1 \
     --lr_scheduler_type cosine \
@@ -17,9 +15,12 @@ deepspeed --num_gpus 4 --master_port=9902 src/train_bash.py \
     --cutoff_len 4000 \
     --save_steps 1000 \
     --learning_rate 5e-5 \
+    --ddp_find_unused_parameters False \
+    --lora_rank 32 \
+    --lora_alpha 16 \
     --num_train_epochs 1 \
     --plot_loss \
-    --bf16 \
+    --fp16 \
     --overwrite_cache \
     --overwrite_output_dir \
     --quantization_bit 4 \

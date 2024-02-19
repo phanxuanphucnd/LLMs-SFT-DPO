@@ -22,7 +22,7 @@ bnb_config = BitsAndBytesConfig(
 #     bnb_4bit_quant_type="nf4",
 # )
 
-base_model_id = "storages/misa-vistral-7b-chat-use_unsloth-lora-add1ep-lr5e5-r32-alpha16-DPO"
+base_model_id = "storages/vistral-7b-chat-public-dataset-DPO"
 base_model = AutoModelForCausalLM.from_pretrained(
     base_model_id,
     quantization_config=bnb_config,

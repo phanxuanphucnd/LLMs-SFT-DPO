@@ -15,5 +15,14 @@
     "makt_labeled_7k7_vi": {
         "file_name": "makt_labeled_7k7_vi.json",
         "file_sha1": "57faf8efbc0bc39c10803805a08cc52479cb1222"
+    },
+    "comparision_public_data_vi": {
+        "file_name": "comparision_public_data_vi.json",
+        "file_sha1": "96fa18313544e22444fe20eead7754b17da452ae",
+        "ranking": true
+    },
+    "makt_labeled_12k8_vi": {
+        "file_name": "makt_labeled_12k8_vi.json",
+        "file_sha1": "57faf8efbc0bc39c10803805a08cc52479cb1222"
     }
 }
