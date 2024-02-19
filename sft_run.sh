@@ -1,4 +1,4 @@
-deepspeed --num_gpus  --master_port=9901 src/train_bash.py \
+deepspeed --num_gpus 4 --master_port=9901 src/train_bash.py \
     --deepspeed configs/ds_config.json \
     --stage sft \
     --do_train \
