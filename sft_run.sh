@@ -3,15 +3,15 @@ deepspeed --num_gpus  --master_port=9901 src/train_bash.py \
     --stage sft \
     --do_train \
     --model_name_or_path Viet-Mistral/Vistral-7B-Chat \
-    --dataset makt_labeled_7k7_vi \
+    --dataset makt_labeled_12k8_vi \
     --template 'llama2' \
     --finetuning_type lora \
     --lora_target all \
-    --output_dir models/AMIS/misa-vistral-7b-chat-lora-4ep-lr5e5-r32-alpha16-7k7 \
+    --output_dir models/AMIS/misa-vistral-7b-chat-lora-4ep-lr5e5-r32-alpha16-12k8 \
     --overwrite_cache \
     --overwrite_output_dir \
-    --per_device_train_batch_size 1 \
-    --gradient_accumulation_steps 1 \
+    --per_device_train_batch_size 2 \
+    --gradient_accumulation_steps 2 \
     --lr_scheduler_type cosine \
     --cutoff_len 4000 \
     --logging_steps 20 \

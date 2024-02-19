@@ -27,8 +27,6 @@ def run_dpo(
     finetuning_args: "FinetuningArguments",
     callbacks: Optional[List["TrainerCallback"]] = None
 ):
-    os.environ['CUDA_VISIBLE_DEVICES'] = '2,3'
-
     dataset = get_dataset(model_args, data_args)
     model, tokenizer = load_model_and_tokenizer(model_args, finetuning_args, training_args.do_train)
     dataset = preprocess_dataset(dataset, tokenizer, data_args, training_args, stage="rm")

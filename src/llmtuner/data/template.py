@@ -77,7 +77,10 @@ class Template:
         Aligns inputs to the standard format.
         """
         if not system:
-            system = self.system.format(context=context)
+            if context:
+                system = self.system.format(context=context)
+            else:
+                system = ""
 
         history = history if (history and self.use_history) else []
         history = history + [(query, resp)]
@@ -290,6 +293,18 @@ register_template(
         "[INST] {{query}} [/INST]"
     ],
     system=SYSTEM_TEMPLATE,
+    sep=[]
+)
+
+register_template(
+    name="vistral_public",
+    prefix=[
+        "<<SYS>>\n{{system}}\n<</SYS>>\n\n"
+    ],
+    prompt=[
+        "[INST] {{query}} [/INST]"
+    ],
+    system="",
     sep=[]
 )
 
