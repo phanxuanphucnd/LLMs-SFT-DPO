@@ -5,13 +5,13 @@ login("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")
 
 api = HfApi()
 
-repo_id = "phucpx247/misa-vistral-7b-chat-use_unsloth-lora-1ep-lr5e5-r32-alpha16-DPO-adapter"
+repo_id = "phucpx247/vnchatbot-vistral-7b-chat-use_unsloth-lora-5ep-lr5e5-r32-alpha16-sft"
 
 create_repo(repo_id, private=True)
 
 
 api.upload_folder(
-    folder_path="models/DPO/misa-vistral-7b-chat-use_unsloth-lora-1ep-lr5e5-r32-alpha16-DPO",
+    folder_path="models/AFIS/vnchatbot-vistral-7b-chat-lora-5ep-lr5e5-r32-alpha16",
     repo_id=repo_id,
     repo_type="model",
 )

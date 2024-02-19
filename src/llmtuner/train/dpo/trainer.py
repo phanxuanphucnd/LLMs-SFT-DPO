@@ -88,6 +88,9 @@ class CustomDPOTrainer(DPOTrainer):
         batch_size = batch["input_ids"].size(0) // 2
         chosen_logps, rejected_logps = all_logps.split(batch_size, dim=0)
         chosen_logits, rejected_logits = all_logits.split(batch_size, dim=0)
+
+        torch.cuda.empty_cache() 
+
         return chosen_logps, rejected_logps, chosen_logits, rejected_logits
 
     def get_batch_loss_metrics(
@@ -128,6 +131,9 @@ class CustomDPOTrainer(DPOTrainer):
             reference_chosen_logps,
             reference_rejected_logps,
         )
+
+        torch.cuda.empty_cache() 
+        
         if self.ftx_gamma > 1e-6:
             batch_size = batch["input_ids"].size(0) // 2
             chosen_labels, _ = batch["labels"].split(batch_size, dim=0)

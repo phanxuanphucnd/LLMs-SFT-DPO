@@ -12,7 +12,17 @@ bnb_config = BitsAndBytesConfig(
     bnb_4bit_compute_dtype=torch.bfloat16
 )
 
-base_model_id = "storages/vnchatbot-vistral-7b-chat-lora-5ep-lr5e5-r32-alpha16"
+# Load the base model.
+# bnb_config = BitsAndBytesConfig(
+#     load_in_4bit=True,
+#     # llm_int8_threshold=6.0,
+#     llm_int8_has_fp16_weight=False,
+#     bnb_4bit_compute_dtype=torch.bfl  oat16,
+#     bnb_4bit_use_double_quant=True,
+#     bnb_4bit_quant_type="nf4",
+# )
+
+base_model_id = "storages/vistral-7b-chat-public-dataset-DPO"
 base_model = AutoModelForCausalLM.from_pretrained(
     base_model_id,
     quantization_config=bnb_config,
@@ -31,9 +41,11 @@ Hãy đưa ra phản hồi theo nguyên tắc sau:
 2. Không được phép trả lời quá dài, vì người dùng sẽ không đọc hết.
 3. Xưng hô với người dùng là 'Quý khách'. KHÔNG ĐƯỢC PHÉP gọi người dùng là 'bạn'. KHÔNG ĐƯỢC PHÉP tự xưng là 'tôi'.
 4. Nếu trong KHÔNG CÓ thông tin cho câu trả lời, hãy giải thích cho người dùng biết rằng chưa hiểu câu hỏi và bảo người dùng đặt lại câu hỏi.
+5. Không được trùng lặp thông tin từ bước trước.
 """
 
 df = pd.read_excel('data/testset/recors4+vistral-eval.xlsx')
+
 # df = pd.read_csv('/home/ec2-user/namph/meinvoice.csv')
 
 questions = df['question'].values.tolist()
@@ -41,7 +53,9 @@ context = df['context'].values.tolist()
 answers = []
 inferrence_time = []
 
-for q, c in tqdm(zip(questions, context)):
+for i in tqdm(range(len(questions))):
+    q = questions[i]
+    c = context[i]
     start_time = time.time()
     conversation = [{"role": "system", "content": system_prompt.format(context="<knowledge>\n" + c +"\n<knowledge/>") }]
     conversation.append({"role": "user", "content": q })
@@ -67,4 +81,4 @@ for q, c in tqdm(zip(questions, context)):
     
 new_df = pd.DataFrame({'question': questions, 'context': context, 'answer': answers, "inferrence_time": inferrence_time})
 
-new_df.to_csv('phuc_px_test_answer.csv', index=False)
+new_df.to_csv('phuc_px_test_answer-dpo.csv', index=False)
