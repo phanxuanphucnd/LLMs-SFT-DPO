@@ -1,0 +1,1585 @@
+question,context,Groundtruth_answer
+Mình đã vào phần bánh răng nhưng ko tháy hiện ra mục cần thiết lập,"1. Vấn đề:
+Khi thêm kỳ tính giá, bạn tích vào nút lấy giữ liệu nhưng không lên đối tượng bạn đang cần tính giá thành. Ví dụ trong kỳ cần tính đối tượng THCP là Áo Sơ Mi, tuy nhiên nhấn nút Lấy dữ liệu không thấy đối tượng đó hiển thị.
+2. Nguyên nhân:
+Nguyên nhân 1: Do trong kỳ không có phát sinh chi phí trực tiếp liên quan tới đối tượng THCP/Công trình/Đơn hàng/Hợp đồng bạn cần tính giá thành
+Giải pháp:
+Vào phân hệ Giá Thành, chọn tab phương pháp tính giá thành tương ứng, nhấn Thêm Kỳ tính giá.
+Nhấn vào nút Lấy dữ liệu để phần mềm tự động lấy các đối tượng trong kỳ có phát sinh chi phí trực tiếp
+Tích vào ô Chọn đối tượng THCP/Công trình/Đơn hàng/Hợp đồng, tích chọn đối tượng cần tính giá thành và nhấn Đồng ý.Lưu ý: Nếu trên danh sách chọn đối tượng cần chọn có nhiều mã, để tìm nhanh được đối tượng cần chọn bạn có thể chọn nhanh bằng cách nhập từ khóa liên quan tới đối tượng đó cần tìm vào ô Nhập từ khóa tìm kiếm
+Nguyên nhân 2: Trong kỳ có phát sinh chi phí trực tiếp liên quan tới đối tượng THCP/Công trình/Đơn hàng/Hợp đồng, tuy nhiên trên chứng từ phát sinh liên quan không khai báo thông tin đối tượng THCP/Công trình/Đơn hàng/Hợp đồng.
+Giải pháp: Bạn thực hiện theo 4 bước sau:
+Tìm các chứng từ chi phí có phát sinh trực tiếp tới đối tượng THCP/Công trình/Đơn hàng/Hợp đồng.
+Mở chứng từ, nhấn Bỏ ghi và Sửa
+Tại tab hạch toán, bạn tìm tới cột đối tượng THCP/Công trình/Đơn hàng/Hợp đồng tương ứng và thực hiện nhập bổ sung.
+Nhấn Ghi sổ lại chứng từ và mở lại kỳ tính giá thành nhấn lại nút Lấy dữ liệu để cập nhật lại đối tượng THCP/Công trình/Đơn hàng/Hợp đồng.
+Nguyên nhân 3: Do khi tạo Đơn hàng/Hợp đồng bán, bạn không tích vào ô Tính giá thành.
+Giải pháp: Bạn thực hiện theo 4 bước sau:
+Vào phân hệ Bán hàng\chọn tab Đơn đặt hàng hoặc Hợp đồng bán tương ứng, mở Đơn đặt hàng/Hợp đồng bán lên, bấm Sửa,\tích vào ô Tính giá thành\Cất.
+Vào phân hệ Giá Thành, chọn tab Đơn hàng/Hợp đồng, nhấn Thêm Kỳ tính giá.
+Nhấn vào nút Lấy dữ liệu để phần mềm tự động lấy các Đơn hàng/Hợp đồng trong kỳ có phát sinh chi phí trực tiếp
+Tích vào ô Chọn Đơn hàng/Hợp đồng, tích chọn Đơn hàng/Hợp đồng cần tính giá thành và nhấn Đồng ý.
+Nguyên nhân 4: Do đối tượng THCP/Công trình/Đơn hàng/Hợp đồng bạn cần tính giá thành đã được chọn trong kỳ tính giá thành khác có thời gian giao nhau với kỳ tính giá thành hiện tại.
+Giải pháp: Bạn thực hiện theo 4 bước sau:
+Vào phân hệ Giá Thành, chọn tab phương pháp tính giá thành tương ứng, chọn thẻ Kỳ tính giá.
+Nhấn Lọc, chọn thời gian rộng hơn, và có chưa thời gian kỳ tính giá thành bạn đang tính\nhấn Lọc
+Phần mềm hiển thị tất cả các kỳ tính giá, bạn bấm Xem từng kỳ tính giá thành xem kỳ tính giá nào bị sai.
+Xóa kỳ tính giá thành bị sai đi, Thêm kỳ tính giá lại để tính giá thành.","Vui lòng cung cấp thêm thông tin về mục mà Quý khách cần thiết lập để Em có thể hỗ trợ một cách chính xác nhất.
+"
+Đã chịn lấy theo tên hàng hóa trên hóa đơn,"1. Nội dung
+Khi lập chứng từ mua hàng từ phần mềm xử lý hóa đơn đầu vào, chương trình cho phép người dùng lựa chọn cách lấy tên mặt hàng khi lập chứng từ theo tên hàng trên hóa đơn được lấy về hoặc theo tên hàng trên danh mục vật tư hàng hóa.
+2. Chi tiết thay đổi
+Sau khi kết nối thành công với phần mềm xử lý hóa đơn, người dùng có thể thực hiện lựa chọn cách lấy tên mặt hàng khi lập chứng từ bằng cách nhấn vào chức năng Tùy chọn lập chứng từ:
+Tại chức năng Tùy chọn lập chứng từ, người dùng có thể thực hiện lựa chọn cách lấy tên mặt hàng khi lập chứng từ mua hàng tùy thuộc theo nhu cầu của đơn vị:
+Trường hợp tích chọn Lấy theo tên hàng trên hóa đơn: Tên hàng trên chứng từ là tên trên hóa đơn được lấy về từ phần mềm xử lý hóa đơn đầu vào.
+Trường hợp tích chọn Lấy theo tên hàng trên danh mục hàng hóa: Tên hàng trên chứng từ là tên được khai báo trên danh mục vật tư hàng hóa của phần mềm AMIS Kế toán.",Vui lòng cung cấp thêm thông tin chi tiết về vấn đề liên quan đến tên hàng hóa trên hóa đơn mà Quý khách đang gặp phải để em có thể hỗ trợ một cách chính xác nhất.
+mình cần cài đặt phần mềm misa,"Hướng dẫn mua ứng dụng MISA AMIS Kế toán
+Thiết lập dữ liệu kế toán
+Khai báo thông tin ban đầu",Vui lòng cung cấp thêm thông tin về tên phần mềm MISA cần cài đặt để em có thể hỗ trợ một cách chính xác nhất.
+Xử lí lỗi nhập khẩu File Excel xuất kho vào phần mềm,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+Xem phim hướng dẫn
+Cho phép nhập dữ liệu kế toán từ tệp Excel vào phần mềm. Gồm các loại dữ liệu sau: Danh mục, Số dư, Chứng từ
+Cách thao tác
+1. Nhập danh mục từ Excel
+Xem phim hướng dẫn
+Vào Các tiện ích và thiết lập\Quản lý danh mục, chọn danh mục cần thực hiện khai báo:
+Chọn tiện ích Nhập từ excel:
+Chương trình sẽ hiển thị giao diện:
+Bước 1: Chọn tệp nguồn
+NSD chọn file nhập khẩu từ các file dữ liệu sẵn có trên máy tính hoặc có thể tải file mẫu về để tạo file dữ liệu nhập khẩu.
+Chọn sheet có chứa dữ liệu cần nhập và lựa chọn dòng bắt đầu lấy dữ liệu.
+Có 3 lựa chọn nhập khẩu thông tin:
+Thêm mới: NSD sẽ tạo mới các mã trong danh mục VTHH, NCC, khách hàng …
+Cập nhật: NSD sẽ cập nhật, bổ sung thêm các thông tin của các mã đã được tạo từ trước trên danh mục.
+Ghi đè: Cập nhật dữ liệu theo thông tin mới của các mã đã được tạo từ trước trên danh mục.
+Sau khi đã lựa chọn xong, nhấn Tiếp tục để chuyển qua bước 2.
+Bước 2: Ghép dữ liệu
+Trường hợp lấy từ file mẫu thì chương trình sẽ tự động ghép các cột trên file dữ liệu và các cột thông tin trên chương trình:
+Trường hợp là file do người dùng tự tạo không theo mẫu chương trình thì người dùng có thể thực hiện ghép cột thủ công:
+Trường hợp người dùng mong muốn lấy thêm hoặc bỏ bớt các thông tin trên các mã danh mục cần nhập khẩu thì có thể tích Ẩn/hiện thông tin:
+Bước 3: Kiểm tra dữ liệu
+Chương trình sẽ kiểm tra toàn bộ dữ liệu trong các cột với dữ liệu đã tồn tại trên chương trình và hiển thị thông báo cho người dùng nắm được:
+Khi đó người dùng có thể lựa chọn:
+Nhấn Nhập dữ liệu: chương trình sẽ bỏ qua các mã không hợp lệ và chỉ nhập lên hệ thống các mã có tình trạng hợp lệ.
+Kiểm tra thông tin chi tiết lỗi trên giao diện hoặc tải file kết quả để kiểm tra lại. Sau đó NSD có thể quay lại bước 1 để cập nhật lại file nhập khẩu.
+Bước 4: Kết quả nhập khẩu dữ liệu
+Chương trình sẽ trả về kết quả các mã đã nhập thành công hoặc không thành công dựa theo kết quả kiểm tra ở bước 3:
+Nhấn Đóng hoặc nhấn biểu tượng dấu X để hoàn thành nhập khẩu danh mục.
+2. Nhập số dư từ file Excel
+Xem phim hướng dẫn
+Vào Các tiện ích và thiết lập\Nhập số dư ban đầu:
+Chương trình sẽ hiển thị danh sách các loại số dư để người dùng thực hiện nhập:
+Ví dụ: Nhập số dư tài khoản từ file excel:
+Trên chức năng Nhập số dư, chọn tiện ích Nhập số dư ban đầu từ Excel:
+Bước 1: Chọn tệp nguồn: Tương tự như nhập khẩu danh mục.
+Bước 2: Ghép dữ liệu: Tương tự như khi nhập khẩu danh mục , người dùng cần ghép được các cột dữ liệu trên file nhập khẩu và trên chương trình.
+Bước 3: Kiểm tra dữ liệu: Chương trình sẽ trả về kết quả dữ liệu hợp lệ hoặc không hợp lệ trên file dữ liệu để người dùng có thể điều chỉnh hoặc tiến hành nhập dữ liệu luôn.
+Bước 4: Thông báo kết quả nhập liệu
+3. Nhập chứng từ từ file Excel
+Xem phim hướng dẫn
+Chọn phân hệ cần thực hiện nhập khẩu chứng từ:
+Trên chức năng Thêm chọn tiện ích Nhập từ excel:
+Chương trình hiển thị giao diện tương tự như nhập khẩu danh mục:
+Bước 1: Chọn tệp nguồn:
+Chọn đúng loại chứng từ trước khi chọn file dữ liệu hoặc tải file mẫu để tránh phát sinh lỗi ở các bước sau do sai định dang, thông tin dữ liệu cần nhập khẩu của mỗi loại chứng từ.
+Chỉ nhập khẩu thêm mới chứng từ.
+Bước 2: Ghép dữ liệu: Tương tự như khi nhập khẩu danh mục người dùng cần ghép được các cột dữ liệu trên file nhập khẩu và trên chương trình
+Bước 3: Kiểm tra dữ liệu: Chương trình sẽ trả về kết quả dữ liệu hợp lệ hoặc không hợp lệ trên file dữ liệu để người dùng có thể điều chỉnh hoặc tiến hành nhập dữ liệu luôn.
+Bước 4: Thông báo kết quả nhập liệu
+Lưu ý: Sau khi nhập khẩu thành công thì chứng từ sẽ ở trạng thái chưa ghi sổ. NSD cần thực hiện ghi sổ chứng từ để ghi nhận bút toán lên các báo cáo, sổ sách kế toán.
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng cung cấp thêm thông tin về lỗi mà Quý khách đang gặp phải khi nhập khẩu file excel xuất kho để em có thể hỗ trợ một cách chính xác nhất.
+như khi tính giá lại ra số tiền đô mà ko ra số tiền việt quy đổi,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+XEM PHIM CÁCH CHỌN PHƯƠNG PHÁP TÍNH GIÁ THÀNH PHÙ HỢP
+Tính giá thành theo PP giản đơn:
+Doanh nghiệp áp dụng TT133
+Doanh nghiệp áp dụng TT200
+Tính giá giành theo PP hệ số, tỷ lệ:
+Doanh nghiệp áp dụng TT133
+Doanh nghiệp áp dụng TT200
+Tính giá thành theo Công trình/Vụ việc:
+Doanh nghiệp áp dụng TT133
+Doanh nghiệp áp dụng TT200
+Tính giá thành đơn hàng:
+Doanh nghiệp áp dụng TT133
+Doanh nghiệp áp dụng TT200
+Tính giá thành hợp đồng:
+Doanh nghiệp áp dụng TT133
+Doanh nghiệp áp dụng TT200
+Tính giá thành sản xuất liên tục - phân bước
+Tiện ích khác:
+Thiết lập định mức phân bổ chi phí theo đối tượng THCP
+Thiết lập định mức giá thành thành phẩm
+Thiết lập định mức nguyên vật liệu công trình
+Thiết lập định mức phân bổ chi phí theo công trình
+Tập hợp chi phí trực tiếp
+Tập hợp khoản giảm giá thành
+Bảng tập hợp chi phí theo yếu tố chi phí
+Bảng tập hợp chi phí theo khoản mục
+Dự toán công trình
+Báo cáo giá thành
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây","Vui lòng cung cấp thêm thông tin về vấn đề mà Quý khách đang gặp phải khi tính giá hoặc mô tả chi tiết hơn quá trình tính giá đang làm để em có thể hỗ trợ một cách chính xác nhất,"
+tt lập chứng từ thể hiện chưa lập giờ giải quyết như thế nào,"1. Nội dung
+Cho phép người dùng lập bảng chấm công chi tiết hàng tháng theo buổi hoặc theo giờ.
+2. Cách thực hiện
+2.1. Lập bảng chấm công theo buổi
+Tại phân hệ Tiền lương\Quy trình, chọn chức năng Chấm công:
+Hoặc trên tab Chấm công chọn chức năng Thêm bảng chấm công.
+Chọn hình thức chấm công là Chấm công theo buổi.
+Thiết lập thời gian cần lập bảng chấm công.
+Tích chọn các phòng ban được chấm công.
+Nhấn Đồng ý, hệ thống tự động sinh ra bảng chấm công với ký hiệu chấm công ngầm định đã được thiết lập trên danh mục Ký hiệu chấm công.
+Cập nhật thông tin công thực tế của nhân viên. => Bỏ tích chọn ký hiệu chấm công mặc định và tích chọn vào ký hiệu chấm công tương ứng với tình hình thực tế làm việc của nhân viên.
+Sau khi chấm công cho nhân viên xong, nhấn Cất.
+Chọn chức năng In, sau đó chọn mẫu cần in. Kế toán có thể theo mẫu do phần mềm cung cấp hoặc theo mẫu đặc thù của doanh nghiệp (xem thêm chức năng Thiết kế mẫu chứng từ).
+2.2. Lập bảng chấm công theo giờ
+Tại phân hệ Tiền lương, chọn chức năng Chấm công:
+Hoặc trên tab Chấm công chọn chức năng Thêm:
+Chọn hình thức chấm công là Chấm công theo giờ:
+Thiết lập thời gian cần lập bảng chấm công.
+Tích chọn các phòng ban được chấm công.
+Nhấn Đồng ý, hệ thống tự động sinh ra bảng chấm công với ký hiệu chấm công ngầm định đã được thiết lập trên danh mục Ký hiệu chấm công.
+Cập nhật thông tin công thực tế của nhân viên. => Bỏ tích chọn ký hiệu chấm công mặc định và tích chọn vào ký hiệu chấm công tương ứng với tình hình thực tế làm việc của nhân viên. Đồng thời nhập thời gian làm việc tương ứng với từng ký hiệu chấm công.
+Sau khi chấm công cho nhân viên xong, nhấn Cất.
+Chọn chức năng In, sau đó chọn mẫu cần in. Kế toán có thể theo mẫu do phần mềm cung cấp hoặc theo mẫu đặc thù của doanh nghiệp (xem thêm chức năng Thiết kế mẫu chứng từ).
+Lưu ý:
+1. Trường hợp muốn chấm công cả ngày thứ 7, chủ nhật hoặc muốn ẩn ngày thứ 7, chủ nhật trên bảng chấm công, vào Các tiện ích và thiết lập\Tuỳ chọn\Tùy chọn chung\Tiền lương để thiết lập.
+2. Để thêm mới thông tin nhân viên trên bảng chấm công chi tiết, chọn chức năng Chọn thêm nhân viên hoặc nhấn vào biểu tượng thùng rác để xóa nhân viên khỏi bảng chấm công chi tiết.
+3. Để thực hiện sao chép dữ liệu chấm công cho các dòng bên dưới, chọn chức năng Sao chép dữ liệu cho các dòng phía dưới.
+4. Để thực hiện sao chép dữ liệu chấm công cho các ngày phía sau, chọn chức năng Sao chép cho các ngày công bên phải:
+5. Từ bảng chấm công, người dùng có thể lập luôn bảng tính lương căn cứ vào bảng chấm công chi tiết bằng cách chọn chức năng Sinh bảng lương.","Vui lòng cung cấp thêm thông tin về phân hệ, loại chứng từ hiển thị trạng thái chưa lập chứng từ để em có thể hỗ trợ một cách chính xác nhất."
+bên mình không nhận được hóa đơn đầu vào,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+1. Mục đích
+Cho phép người dùng kết nối với dịch vụ Hóa đơn đầu vào meInvoice để tự động nhận hóa đơn đầu vào, kiểm tra tính hợp lý, hợp lệ của hóa đơn; tự động đồng bộ về phần mềm kế toán và sinh chứng từ nhanh chóng từ hóa đơn đồng bộ về.
+2. Cách thực hiện
+Lưu ý: Để sử dụng tính năng này, trước hết người dùng cần thực hiện mua Dịch vụ xử lý hóa đơn đầu vào tại đây.
+Vào phân hệ Mua hàng, tab Xử lý hóa đơn đầu vào. Nhấn Kết nối ngay:
+Điền thông tin tài khoản kết nối:
+Lưu ý:
+Mã số thuế để thực hiện kết nối phải trùng khớp với mã số thuế trên thông tin công ty/chi nhánh đang làm việc:
+Trường hợp người dùng chưa có tài khoản kết nối thì nhấn Tạo ngay tại đây. Xem hướng dẫn tạo tài khoản tại đây.
+Trường hợp tài khoản kết nối meInvoice của người dùng được phân quyền nhận hóa đơn đầu vào vào duy nhất một đơn vị và mã số thuế của đơn vị đó khớp với mã số thuế trên thông tin công ty, hoặc nhiều đơn vị nhưng chỉ có duy nhất một đơn vị khớp với mã số thuế trên thông tin công ty thì chương trình sẽ ngầm định kết nối hóa đơn đầu vào với đơn vị khớp mã số thuế đó.
+Nếu tài khoản kết nối với meInvoice được phân quyền nhận hóa đơn nhiều đơn vị khớp với mã số thuế trên thông tin công ty thì chương trình sẽ hiển thị giao diện chọn đơn vị nhận hóa đơn:
+Sau khi kết nối thành công, chương trình sẽ tự động lấy về danh sách hóa đơn đầu vào từ MISA meInvoice. Tại đây người dùng có thể thực hiện lập được các chức năng sau:
+Lập chứng từ mua dịch vụ
+Lập phiếu chi tiền mặt
+Lập ủy nhiệm chi
+Lập chứng từ nghiệp vụ khác
+Lập chứng từ trả lại hàng bán
+Lập chứng từ quyết toán tạm ứng
+Nhận hóa đơn
+Đánh dấu đã hạch toán
+Ví dụ lập phiếu chi tiền mặt:
+Trường hợp thực hiện hàng loạt:
+Tích chọn các giao dịch mua hàng cần lập chứng từ:
+Lần lượt khai báo các thông tin của chứng từ chi tiền mặt cho từng giao dịch mua hàng sau đó nhấn Cất.
+Lưu ý:
+1. Người dùng có thể thực hiện lọc các giao dịch mua hàng tại giao diện Lọc chứng từ theo các tiêu chí:
+2. Các chức năng thực hiện trên meInvoice:
+Tại chức năng Tùy chọn lập chứng từ, người dùng thực hiện tích chọn các tùy chọn sao cho phù hợp với nhu cầu của đơn vị mình:
+Lưu ý: Giao diện Tùy chọn lập chứng từ sẽ tự động hiển thị mỗi khi người dùng thực hiện lập chứng từ từ giao dịch mua hàng. Nếu người dùng không muốn hiển thị giao diện này khi lập chứng từ thì bỏ tích chọn Hỏi lại mỗi khi lập chứng từ hạch toán.
+3. Người dùng có thể nắm được số lượng hóa đơn còn được phép sử dụng:
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng cung cấp mô tả chi tiết hơn về vấn đề không nhận được hóa đơn đầu vào mà Quý khách đang gặp phải để em có thể hỗ trợ một cách chính xác nhất.
+hạch toán hóa đơn điều chỉnh giảm giá đầu vào,"Tải phim hướng dẫn tại đây
+1. Định khoản
+Nợ TK 111, 112, 331... Số tiền giảm giá hàng mua
+Có TK 156
+Có TK 133 Thuế GTGT được khấu trừ (nếu có)
+2. Mô tả nghiệp vụ
+Khi hàng mua về nhập kho, phát hiện không đúng quy cách, phẩm chất như đã thỏa thuận ban đầu, thông thường sẽ có các hoạt động sau:
+Công ty và nhà cung cấp sẽ thỏa thuận với nhau và lập biên bản về việc giảm giá hàng mua.
+Nhân viên mua hàng nhận lại hóa đơn giảm giá hàng mua từ nhà cung cấp và chuyển cho kế toán mua hàng
+Kế toán mua hàng hạch toán khoản giảm giá hàng mua và ghi sổ kế toán
+3. Các bước thực hiện
+Nghiệp vụ ""Giảm giá hàng đã mua về nhập kho"" được thực hiện trên phần mềm như sau:
+Trên phân hệ Mua hàng\Quy trình, chọn Giảm giá hàng mua.
+Tích chọn Giảm giá trị hàng nhập kho
+Nhấn biểu tượng kính lúp.
+Thiết lập điều kiện tìm kiếm chứng từ mua hàng, sau đó nhấn Lấy dữ liệu.
+Tích chọn các mặt hàng được giảm giá và nhập giá trị được giảm.
+Nhấn Đồng ý, hệ thống sẽ tự động lấy thông tin của nhà cung cấp và hàng hóa từ chứng từ mua hàng sang.
+Lựa chọn phương thức giảm trừ cho chứng từ giảm giá là Giảm trừ công nợ hoặc Thu tiền mặt.
+Sau khi khai báo xong chứng từ, nhấn Cất.
+Chọn chức năng In trên thanh công cụ, sau đó chọn mẫu chứng từ cần in.
+Lưu ý: Trường hợp chọn phương thức giảm trừ là Thu tiền mặt, sau khi chứng từ được lập, Thủ quỹ sẽ đăng nhập vào phần mềm để thực hiện Ghi sổ cho các phiếu thu trong trường hợp giảm giá hàng mua.",Vui lòng cung cấp thêm thông tin liên quan đến hóa đơn điều chỉnh giảm đầu vào của Quý khách để em có thể đưa ra hướng dẫn chính xác nhất.
+mình xuất hhóadodwn,"1. Nội dung
+Doanh nghiệp vẫn được sử dụng hóa đơn cũ bình thường cho đến khi chuyển sang HĐĐT và có thông báo cơ quan thuế chấp nhận tờ khai đăng ký sử dụng hóa đơn theo Nghị định 123/2020/NĐ-CP và Thông tư 78/2021/TT-BTC.
+Khi đó, doanh nghiệp cần thực hiện hủy các hóa đơn điện tử chưa sử dụng đã thông báo phát hành theo quy định cũ trước khi phát hành hóa đơn theo nghị định 123/2020/NĐ-CP
+2. Mô tả nghiệp vụ
+Khi phát sinh nhu cầu hủy hóa đơn, tại doanh nghiệp thông thường sẽ phát sinh các hoạt động sau:
+Thành lập hội đồng hủy hóa đơn gồm đại diện lãnh đạo và đại diện bộ phận kế toán
+Kế toán lập hồ sơ hủy hóa đơn (bao gồm: Quyết định thành lập hội đồng hủy, Biên bản hủy hóa đơn, Thông báo kết quả hủy hóa đơn, Bảng kê chi tiết hóa đơn hủy), sau đó chuyển Đại diện lãnh đạo ký duyệt, và các thành viên chịu trách nhiệm trước pháp luật nếu có sai sót
+Căn cứ vào hồ sơ hủy hóa đơn được phê duyệt, kế toán thực hiện hủy hóa đơn
+Kế toán nộp thông báo kết quả hủy hóa đơn cho cơ quan thuế trực tiếp quản lý.
+3. Cách thực hiện
+Người dùng cần thực hiện hủy hóa đơn điện tử trực tiếp trên MISA MeInvoice theo hướng dẫn tại đây.",Vui lòng cung cấp thông tin cụ thể hơn về vấn đề mà Quý khách đang gặp phải để Em có thể hỗ trợ tốt nhất.
+ai vào utr cai giup cbooj cài,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+1. Nội dung
+Trong một doanh nghiệp phòng kế toán thường được phân công thành nhiều vai trò và đảm nhận công việc khác nhau. Ví dụ: vai trò kế toán thuế thường đảm nhận công việc liên quan đến công tác báo cáo thuế, không quản lý các chứng từ sổ sách liên quan đến phần hành kế toán khác. Vì vậy, việc phân quyền cho các vai trò là điều rất cần thiết, đảm bảo các vai trò có thể thực hiện được các chức năng trong quyền hạn của mình và không thực hiện được các chức năng khác ngoài quyền hạn, ngăn chặn sai sót trong quá trình hoạt động.
+2. Các bước thực hiện
+Xem phim hướng dẫn thực hiện
+Bước 1: Thêm người dùng từ ứng dụng AMIS Platform
+Truy cập web https://amisapp.misa.vn/login và đăng nhập vào chương trình:
+Nhấn vào biểu tượng ở góc trái phía trên màn hình\Nhấn vào AMIS Hệ thống:
+Chọn phân hệ Thành viên sau đó nhấn Thêm thành viên:
+Nhập đầy đủ các thông tin cần thiết của người dùng sau đó nhấn Lưu:
+Khi đó người dùng cần kiểm tra email mà hệ thống tự động gửi về để kích hoạt tài khoản AMIS và bắt đầu sử dụng phần mềm AMIS Kế toán.
+Xem thông tin chi tiết về người dùng vừa được thêm vào hệ thống:
+Nhấn vào biểu tượng , chọn app Kế toán để vào hệ thống AMIS Kế toán.
+Bước 2: Thực hiện lấy người dùng từ AMIS Platform và chọn vai trò cho người dùng
+Lưu ý: Chương trình chỉ cho phép lấy được các người dùng có trạng thái Đang hoạt động từ AMIS Platform về AMIS Kế toán.
+Nhấn vào biểu tượng chọn Quản lý người dùng.
+Trên giao diện Quản lý người dùng, nhấn Thêm người dùng:
+Thực hiện Chọn người dùng từ ứng dụng kế toán:
+Chương trình sẽ tự động lấy lên các thông tin như Email, số điện thoại của người dùng đã được khai báo trên AMIS Platform ở bước 1. Sau khi chọn người dùng xong, tích chọn vai trò kế toán cho người dùng và nhấn Cất để lưu lại thông tin:
+Lưu ý:
+Trường hợp muốn chọn lại vai trò cho người dùng, nhấn Sửa và chọn vai trò.
+Đối với người dùng tạm thời không có nhu cầu sử dụng phần mềm (trường hợp người dùng nghỉ phép/nghỉ không lương trong thời gian dài hoặc người dùng nghỉ thai sản,...), tích chọn chức năng Ngừng hoạt động. Khi người dùng đó có nhu cầu tiếp tục sử dụng phần mềm thì thực hiện Kích hoạt lại để người dùng được phép đăng nhập và làm việc bình thường.
+Đối với những người dùng không có nhu cầu sử dụng nữa (trường hợp nhân viên nghỉ việc) thì tích chọn Xóa để loại bỏ người dùng đó khỏi hệ thống kế toán.
+Bước 3: Thiết lập vai trò và phân quyền cho người dùng
+Trong trường hợp chưa chọn vai trò khi thêm người dùng ở bước 2 hoặc muốn thiết lập vai trò quyền hạn theo nhu cầu quản lý riêng của đơn vị thì người dùng thực hiện Bước 3: Thiết lập vai trò và phân quyền cho người dùng.
+Nhấn vào biểu tượng trên thanh công cụ, chọn Vai trò quyền hạn:
+Chọn Thêm vai trò:
+Lưu ý: Tại giao diện Vai trò và quyền hạn, người dùng có thể thực hiện các chức năng như: Sửa và chọn người dùng, Phân quyền, Nhân bản hoặc Xóa vai trò.
+Thực hiện thêm vai trò kế toán và tích chọn người dùng trong danh sách cho vai trò cần thêm:
+Sau khi khai báo xong, nhấn Cất. Trường hợp vai trò vừa được thêm mới chưa được thiết lập quyền thì chương trình sẽ hiển thị cảnh báo:
+Nhấn Có để thực hiện phân quyền cho vai trò. Chương trình sẽ hiển thị tất cả các chức năng, nghiệp vụ trên phần mềm, mỗi vai trò có thể có quyền sử dụng một hay nhiều trong các hoạt động: sử dụng, thêm, sửa, xóa, in hoặc kết hợp nhiều chức năng hay tất cả các chức năng. Tùy thuộc vào từng vai trò kế toán và nhu cầu quản lý để tích chọn phân quyền cho người dùng trên hệ thống Danh mục, Nghiệp vụ, Báo cáo, Hệ thống, Tiện ích.
+Ví dụ: Thực hiện thiết lập quyền cho vai trò Kế toán bán hàng trên hệ thống Danh mục, nếu muốn để người dùng có toàn quyền sử dụng Danh mục thì nhấn bật chức năng Có toàn quyền trên tất cả danh mục:
+Thực hiện thiết lập quyền tương tự đối với các mục Nghiệp vụ, Báo cáo, Hệ thống, Tiện ích.
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây","Vui lòng cung cấp thêm thông tin về phần mềm, ứng dụng mà Quý khách đang cần cài để em có thể hỗ trợ một cách chính xác nhất."
+"hỗ trợ mình với, pm đang lỗi đã thực hiện kc các đầu tk doanh thu và chi phí nhưng ko kết chuyển dc","1. Nội dung
+Cho phép lập chứng từ kết chuyển cuối kỳ để xác định kết quả hoạt động sản xuất kinh doanh như: kết chuyển doanh thu, kết chuyển chi phí và kết chuyển lãi lỗ.
+2. Định khoản
+1. Kết chuyển lãi chênh lệch tỷ giá hối đoái:
+Nợ TK 413 Chênh lệch tỷ giá hối đoái
+Có TK 515 Doanh thu hoạt động tài chính
+2. Kết chuyển lỗ chênh lệch tỷ giá hối đoái:
+Nợ TK 635 Chi phí tài chính
+Có TK 413 Chênh lệch tỷ giá hối đoái
+3. Kết chuyển các khoản giảm trừ doanh thu (TT200):
+Nợ TK 511 Doanh thu bán hàng và cung cấp dịch vụ
+Có TK 521 Các khoản giảm trừ doanh thu
+4. Cuối kỳ kết chuyển doanh thu bán hàng, doanh thu hoạt động tài chính và các khoản thu nhập khác:
+Nợ TK 511 Doanh thu bán hàng và cung cấp dịch vụ
+Nợ TK 515 Doanh thu hoạt động tài chính
+Nợ TK 711 Thu nhập khác
+Có TK 911 Xác định kết quả kinh doanh
+5. Cuối kỳ kết chuyển giá vốn hàng hóa, chi phí tài chính, chi phí khác, chi phí bán hàng, chi phí quản lý doanh nghiệp:
+Nợ TK 911 Xác định kết quả kinh doanh
+Có TK 632 Giá vốn hàng bán
+Có TK 635 Chi phí tài chính
+Có TK 811 Chi phí khác
+Có TK 641 Chi phí bán hàng
+Có TK 642 Chi phí quản lý doanh nghiệp
+Có TK 6421, 6422 (Chi phí bán hàng, chi phí quản lý doanh nghiệp TT133)
+6. Cuối kỳ kết chuyển chi phí thuế thu nhập doanh nghiệp:
+Nợ TK 911 Xác định kết quả kinh doanh
+Có TK 821 Chi phí thuế thu nhập doanh nghiệp
+7. Kết chuyển kết quả hoạt động kinh doanh trong kỳ
+Nếu lãi:
+Nợ TK 911 Xác định kết quả kinh doanh
+Có TK 421 Lợi nhuận chưa phân phối
+Nếu lỗ:
+Nợ 421 Lợi nhuận chưa phân phối
+Có TK 911 Xác định kết quả kinh doanh
+3. Hướng dẫn trên phần mềm
+Bước 1: Khai báo các cặp tài khoản kết chuyển cuối kỳ
+Vào Các tiện ích và thiết lập\Quản lý danh mục:
+Chọn Tài khoản kết chuyển:
+Chọn nút Thêm để thêm tài khoản kết chuyển:
+Khai báo cặp tài khoản kết chuyển, sau đó nhấn Cất.
+Lưu ý:
+Hệ thống đã xây dựng sẵn hệ thống các cặp tài khoản kết chuyển, kế toán
+có thể khai báo bổ sung hoặc sửa đổi các cặp tài khoản kết chuyển đã có phù hợp với yêu cầu quản lý của doanh nghiệp.
+Khi thực hiện thêm các kết chuyển, người dùng cần lưu ý đến thứ tự kết chuyển.
+Bước 2: Thực hiện kết chuyển lãi lỗ kinh doanh cuối kỳ
+Vào phân hệ Tổng hợp\tab Quy trình, chọn chức năng Kết chuyển lãi lỗ.
+Hệ thống tự động tổng hợp số tiền tương ứng với từng cặp tài khoản cần kết chuyển.
+Nhấn Cất để lưu thông tin chứng từ kết chuyển.",Vui lòng cung cấp thêm thông tin về lỗi mà Quý khách đang gặp phải khi kết chuyển doanh thu và chi phí để em có thể hỗ trợ một cách chính xác nhất.
+Mình đã đăn ký thành công nhưng sao mình chưa sử dụng được,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+1. Vấn đề
+Khi ký phát hành hóa đơn thì phần mềm báo ký không thành công, mặc dù máy tính đã có cài MISA KYSO.
+2. Cách thực hiện
+Bước 1: Gỡ MISA Kyso bản hiện tại ra
++ Với hệ điều hành Windows 10: Nhấn nút Windows\ gõ Control Panlel \nhấn vào app Control Panel:
++ Với hệ điều hành Windows 7: Nhấn nút Windows / vào Control Panel:
+Sau khi mở Control Panel, chọn Uninstall a program
+​Tìm đến dòng biểu tượng MISA Kyso, tích chuột phải chọn Uninstall
++ Với Windows 10: Màn hình sẽ hiển thị câu thông báo nhấn OK
+Sau đó tiếp tục nhấn OK
++ Với Windows 7: sẽ hiển thị câu thông báo nhấn Yes
+Sau khi gỡ xong thì chuyển sang Bước 2.
+Bước 2: Cài lại MISA Kyso
+1. Tải bộ cài MISA Kyso
+Cách 1: Thực hiện theo hướng dẫn tại đây
+Cách 2: Nhấn vào link bộ cài này: https://product.misa.vn/misasoftware/MISAKyso/MISA.KySo_Setup_latest.exe
+2. Nhấn đúp chuột vào tệp cài đặt vừa tải về.
+3. Nhấn Tiếp tục
+4. Nhấn Tiếp tục.
+Lưu ý: Nhấn Thay đổi nếu muốn thay đổi lại thư mục cài đặt mặc định:
+5. Nhấn Cài đặt
+6. Nhấn Hoàn thành.
+Ngay sau khi hoàn thành cài đặt và sau mỗi lần khởi động máy tính, công cụ MISA Kyso sẽ tự động chạy và thực hiện thao tác phát hành lại hóa đơn.
+Bước 3: Rút USB Chữ ký số ra và cắm lại
+Sau khi cài lại MISA Kyso xong, bạn cần rút Chữ ký số ra và cắm lại vào máy tính, rồi ký phát hành lại hóa đơn đó.
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng mô tả chi tiết hơn về phần mà Quý khách đã đăng ký những chưa sử dụng được để em có thể hỗ trợ một cách chính xác nhất.
+tư vấn về tài khoản misa amis,"Cho phép khai báo một tài khoản mới trên danh sách hệ thống tài khoản.
+Cách thao tác
+Vào Các tiện ích và thiết lập\Quản lý danh mục\Hệ thống tài khoản:
+Tại màn hình danh sách hệ thống tài khoản, chọn chức năng Thêm:
+Khai báo thông tin chi tiết tài khoản:
+Khai báo thông tin về tài khoản cần khai báo => với các thông tin có ký hiệu (*) kế toán sẽ bắt buộc phải khai báo.
+Với các tài khoản có liên quan đến ngoại tệ (1112, 1122, 1132, 131...) nếu muốn theo dõi theo ngoại tệ, khi khai báo kế toán sẽ tích chọn vào phần thông tin Có hạch toán ngoại tệ:
+Trường hợp TK không được tích chọn Có hạch toán ngoại tệ, khi hạch toán trên chứng từ nếu chọn loại tiền khác đồng tiền hạch toán thì sẽ không ghi sổ được chứng từ.
+Với những tài khoản có nhu cầu theo dõi chi tiết (112, 131, 141, 331...) khi khai báo kế toán sẽ tích chọn thông tin cần theo dõi tại phần Theo dõi chi tiết theo:
+Ví dụ: TK 131 được tích chọn chi tiết theo Đối tượng - Khách hàng => mỗi khi hạch toán chứng từ có liên quan đến TK 131, hệ thống sẽ yêu cầu phải chọn thông tin đối tượng thì mới có thể cất giữ được chứng từ.
+Với các thông tin chi tiết cần theo dõi như: Đối tượng THCP, Công trình, Đơn đặt hàng, Hợp đồng bán, Khoản mục CP, Đơn vị và Mã thống kê, kế toán có thể lựa chọn một trong hai giá trị sau:
+Chỉ cảnh báo => nếu hạch toán chứng từ mà không chọn giá trị, khi ghi sổ chứng từ hệ thống sẽ đưa ra cảnh báo nhưng vẫn cho ghi sổ.
+Bắt buộc nhập => nếu hạch toán chứng từ mà không chọn giá trị, khi ghi sổ chứng từ hệ thống sẽ đưa ra cảnh báo và không cho ghi sổ.
+Sau khi khai báo xong, nhấn Cất.
+Lưu ý:
+1. Phần mềm không cho phép hạch toán vào TK tổng hợp, vì vậy khi thêm TK chi tiết cho 1 TK đã có phát sinh trên các danh mục/số dư/chứng từ, chương trình sẽ hiển thị cảnh báo như sau:
+Nhấn Có nếu muốn thêm TK chi tiết cho TK đã có phát sinh, khi đó phần mềm sẽ chuyển toàn bộ phát sinh từ TK tổng hợp sang TK chi tiết vừa thêm.
+Nhấn Không nếu không muốn thêm TK chi tiết cho TK đã có phát sinh.
+2. Để sửa lại thông tin tài khoản đã khai báo, sử dụng chức năng Sửa
+3. Đối với các tài khoản không có nhu cầu theo dõi nữa, có thể sử dụng chức năng Sửa trên thanh công cụ, sau đó tích chọn thông tin Ngừng sử dụng.",Vui lòng cung cấp thêm thông tin chi tiết về vấn đề cần tư vấn để em có thể hỗ trợ một cách chính xác nhất.
+cho e hỏi tài khoản kho e đổi tk,"Cho phép khai báo một tài khoản mới trên danh sách hệ thống tài khoản.
+Cách thao tác
+Vào Các tiện ích và thiết lập\Quản lý danh mục\Hệ thống tài khoản:
+Tại màn hình danh sách hệ thống tài khoản, chọn chức năng Thêm:
+Khai báo thông tin chi tiết tài khoản:
+Khai báo thông tin về tài khoản cần khai báo => với các thông tin có ký hiệu (*) kế toán sẽ bắt buộc phải khai báo.
+Với các tài khoản có liên quan đến ngoại tệ (1112, 1122, 1132, 131...) nếu muốn theo dõi theo ngoại tệ, khi khai báo kế toán sẽ tích chọn vào phần thông tin Có hạch toán ngoại tệ:
+Trường hợp TK không được tích chọn Có hạch toán ngoại tệ, khi hạch toán trên chứng từ nếu chọn loại tiền khác đồng tiền hạch toán thì sẽ không ghi sổ được chứng từ.
+Với những tài khoản có nhu cầu theo dõi chi tiết (112, 131, 141, 331...) khi khai báo kế toán sẽ tích chọn thông tin cần theo dõi tại phần Theo dõi chi tiết theo:
+Ví dụ: TK 131 được tích chọn chi tiết theo Đối tượng - Khách hàng => mỗi khi hạch toán chứng từ có liên quan đến TK 131, hệ thống sẽ yêu cầu phải chọn thông tin đối tượng thì mới có thể cất giữ được chứng từ.
+Với các thông tin chi tiết cần theo dõi như: Đối tượng THCP, Công trình, Đơn đặt hàng, Hợp đồng bán, Khoản mục CP, Đơn vị và Mã thống kê, kế toán có thể lựa chọn một trong hai giá trị sau:
+Chỉ cảnh báo => nếu hạch toán chứng từ mà không chọn giá trị, khi ghi sổ chứng từ hệ thống sẽ đưa ra cảnh báo nhưng vẫn cho ghi sổ.
+Bắt buộc nhập => nếu hạch toán chứng từ mà không chọn giá trị, khi ghi sổ chứng từ hệ thống sẽ đưa ra cảnh báo và không cho ghi sổ.
+Sau khi khai báo xong, nhấn Cất.
+Lưu ý:
+1. Phần mềm không cho phép hạch toán vào TK tổng hợp, vì vậy khi thêm TK chi tiết cho 1 TK đã có phát sinh trên các danh mục/số dư/chứng từ, chương trình sẽ hiển thị cảnh báo như sau:
+Nhấn Có nếu muốn thêm TK chi tiết cho TK đã có phát sinh, khi đó phần mềm sẽ chuyển toàn bộ phát sinh từ TK tổng hợp sang TK chi tiết vừa thêm.
+Nhấn Không nếu không muốn thêm TK chi tiết cho TK đã có phát sinh.
+2. Để sửa lại thông tin tài khoản đã khai báo, sử dụng chức năng Sửa
+3. Đối với các tài khoản không có nhu cầu theo dõi nữa, có thể sử dụng chức năng Sửa trên thanh công cụ, sau đó tích chọn thông tin Ngừng sử dụng.",Vui lòng cung cấp thêm thông tin cụ thể về việc đổi tài khoản kho mà Quý khách muốn thực hiện để Em có thể hỗ trợ một cách chính xác nhất.
+Chị đã tải được hóa đơn từ meinvoice về phần mềm ròi,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+Xem phim hướng dẫn
+Vào phân hệ Bán hàng, tab Bán hàng, chọn Tiện ích\Lấy hóa đơn từ meInvoice:
+Chọn loại hóa đơn là Hóa đơn NĐ123 (Có mã)
+Khai báo khoảng thời gian cho các hóa đơn lấy về từ meInvoice, nhấn Lấy dữ liệu. Chương trình sẽ hiển thị danh sách các hóa đơn được lấy về thỏa mãn tham số khoảng thời gian mà người dùng đã thiết lập.
+Thực hiện lập chứng từ bán hàng cho các hóa đơn được lấy về từ meInvoice:
+Trường hợp lập chứng từ bán hàng từ 1 hóa đơn:
+Lựa chọn hóa đơn cần lập chứng từ bán hàng, nhấn Lập chứng từ bán hàng:
+Khai báo các thông tin của chứng từ bán hàng sau đó nhấn Cất:
+Trường hợp lập chứng từ bán hàng hàng loạt từ nhiều hóa đơn:
+Trên giao diện danh sách các hóa đơn được lấy về từ meInvoice, tích chọn các hóa đơn cần lập chứng từ bán hàng, sau đó thực hiện chức năng Lập chứng từ bán hàng hàng loạt:
+Lần lượt khai báo các thông tin của từng chứng từ bán hàng:
+Lưu ý:
+Do người dùng đang lựa chọn tùy chọn Quản lý và phát hành hóa đơn theo Nghị định 123/2020/NĐ-CP nên hệ thống sẽ chỉ lấy các hóa đơn phát hành theo Nghị định 123.
+Nếu người dùng muốn lấy các hóa đơn đã phát hành theo Nghị định 51 thì cần thực hiện chuyển tùy chọn Quản lý và phát hành hóa đơn theo Nghị định 51/2010/NĐ-CP ở phân hệ Quản lý hóa đơn.
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng cung cấp thông tin cụ thể hơn về vấn đề mà Quý khách đang gặp phải để Em có thể hỗ trợ tốt nhất.
+Mình muốn hỏi bây giờ mục hạch toán muốn sửa nội dung: Chứng từ gốc kèm theo như ở phiếu này thì vào mục nào ạ,"Xem phim hướng dẫn
+1.Mục đích
+Cải tiến sửa mẫu chứng từ để đáp ứng nhu cầu mẫu chứng từ của doanh nghiệp.
+2.Cách thực hiện trên chương trình
+2.1. Hướng dẫn sửa mẫu: Thêm logo công ty trên chứng từ và căn chỉnh độ rộng của thông tin công ty
+Thêm logo công ty
+Thêm thông tin công ty (Ví du: MST, Số điện thoại, email,...)
+Sửa thông tin người ký
+2.2. Hướng dẫn chỉnh sửa các thông tin chi tiết trên chứng từ
+Sửa mẫu chứng từ theo Nội dung
+Thay đổi tiêu đề thông tin hiển thị trên chứng từ
+Lưu ý: Để chọn cùng lúc nhiều thông tin và thực hiện căn chỉnh, nhấn phím Cltr+chuột trái.
+Thay đổi vị trí thông tin hiển thị trên chứng từ
+Xóa dòng thông tin hiển thị trên chứng từ
+Để thêm các nội dung thông tin trên chứng từ thực hiện như sau:
+Trường hợp 1: Thêm trường dữ liệu có sẵn trên hệ thống
+Trường hợp 2: Thêm dòng diễn giải
+Trường hợp 3: Thêm trường mở rộng
+Trường hợp 4: Thêm trường dữ liệu cần tính toán công thức
+Ví dụ thiết lập công thức: Số còn phải trả = Tổng tiền thanh toán đã quy đổi + Công nợ cũ - Số tiền đã trả thì thực hiện sửa mẫu như sau:
+Thêm cột nội dung chi tiết
+Xóa cột nội dung chi tiết
+Thêm ô tổng cộng cho cột thông tin
+Sửa mẫu chứng từ theo Thiết kế
+Chọn hình nền có sẵn hoặc tải hình từ máy tính của anh/chị:
+Căn chỉnh vị trí và độ nét của chứng từ theo mong muốn:
+Chọn màu chữ cho chứng từ theo mong muốn:
+Chọn font chữ được in lên chứng từ:
+Tùy chỉnh căn lề cho chứng từ:
+Sau khi chỉnh sửa xong, nhấn Cất để lưu lại thông tin cho chứng từ.",Vui lòng cung cấp thông tin cụ thể hơn về vấn đề mà Quý khách đang cần chỉnh sửa để Em có thể hỗ trợ tốt nhất.
+phiếu bán hàng,"Xem video đào tạo cho người mới sử dụng: Tại đây
+I. LẬP CHỨNG TỪ BÁN HÀNG
+Bán hàng theo báo giá
+Bán hàng theo đơn đặt hàng
+Bán hàng theo hợp đồng
+Bán hàng hóa, dịch vụ trong nước
+Bán hàng xuất khẩu
+Bán hàng có chiết khấu thương mại
+Bán hàng khuyến mại (không kèm điều kiện)
+Bán hàng theo Combo
+II. CÔNG NỢ PHẢI THU
+Bán hàng khuyến mại (có kèm điều kiện)
+Bán hàng thông qua các đại lý
+Giảm giá hàng bán
+Trả lại hàng bán
+Bán hàng tại đại lý bán đúng giá hưởng hoa hồng
+Bán hàng tại đơn vị giao ủy thác xuất khẩu
+Bán hàng tại đơn vị nhận ủy thác xuất khẩu
+III. TIỆN ÍCH KHÁC
+Giao diện thu nợ tổng quan
+Lập kế hoạch thu nợ
+Đối trừ chứng từ công nợ của khách hàng
+Bù trừ công nợ
+IV. BÁO CÁO BÁN HÀNG
+Lập hợp đồng bán
+Xuất hóa đơn cho khách hàng
+Thiết lập chính sách giá
+Tính giá bán
+Lập nhanh các chứng từ bán hàng
+Lập nhanh các hóa đơn GTGT
+Lập nhanh các đơn đặt hàng
+Thiết lập gửi email tự động nhắc nợ khách hàng
+Phân bổ doanh thu nhận trước
+Lập chứng từ trả lại hàng bán từ hóa đơn điện tử
+Hạch toán hóa đơn đầu ra lấy về từ MISA meInvoice - Xử lý hóa đơn",Vui lòng cung cấp thêm thông tin về vấn đề liên quan đến phiếu bán hàng mà Quý khách đang gặp phải để em có thể hỗ trợ một cách chính xác nhất.
+nếu copy lại file và nhập sửa dữ liêu trên file copy dc kg,"1. Nội dung:
+Cho phép người dùng xóa cache trực tiếp trên phần mềm để đảm bảo không làm mất mật khẩu đã lưu trên trình duyệt.
+2. Chi tiết thay đổi:
+Từ trước phiên bản R22:
+Người dùng phải thực hiện dùng tổ hợp phím Ctrl+Shift+Delete để xóa bộ nhớ đệm (xóa cache) trên chương trình.
+Việc làm như vậy sẽ dẫn đến mất mật khẩu mà người dùng đã lưu trước đó. Trường hợp người dùng không nhớ mật khẩu đăng nhập thì sẽ phải mất thời gian để cài đặt, thiết lập lại mật khẩu mới.
+Từ phiên bản R22 trở đi: Chương trình bổ sung tính năng xóa bộ nhớ đệm (xóa cache) trục tiếp trên phần mềm để giúp người dùng khắc phục được vấn đề kể trên.
+Trên giao diện hướng dẫn sử dụng bổ sung thêm chức năng Xóa bộ nhớ đệm chương trình. Người dùng chỉ cần nhấn trực tiếp vào chức năng này hoặc nhấn phim F5 là có thể xóa bộ nhớ đệm trên chương trình.",Vui lòng cung cấp thêm thông tin về loại file và phần mềm mà Quý khách đang sử dụng để Em có thể hỗ trợ một cách chính xác nhất.
+"phần nghiệp vụ khác mình nhập bút toán rồi, nhưng k hiển thị ra, xem chi tiết tài khoản thì lại có","Vào Các tiện ích và thiết lập, chọn chức năng Kiểm tra, đối chiếu chứng từ, sổ sách.
+Thiết lập tham số, kiểm tra đối chiếu số liệu:
+Tại mục 10. Kiểm tra bảng cân đối phát sinh, nhấn Kiểm tra, đối chiếu chứng từ:
+10.1. Kiểm tra các tài khoản bậc 1 đã phù hợp với quy định tại thông tư 133/200 chưa
+10.2. Kiểm tra các chứng từ hạch toán trên tài khoản tổng hợp dẫn đến chênh lệch giữa tài khoản tổng hợp và tài khoản chi tiết",Vui lòng mô tả chi tiết hơn về vấn đề liên quan đến nghiệp vụ khác mà Quý khách đang gặp phải để em có thể hỗ trợ một cách chính xác nhất.
+giá xuất kho thì chị chạy được rồi,"Khảo sát: Sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+Cho phép thực hiện tính giá xuất kho VTHH, cập nhật giá xuất kho vào các phiếu xuất kho trong kỳ.
+Cách thao tác
+Tại phân hệ Kho\Quy trình, chọn chức năng Tính giá xuất kho.
+Phương pháp Bình quân cuối kỳ
+Đối với phương pháp bình quân cuối kỳ, cần lựa chọn Tính giá theo kho hay không theo kho. Nếu tính giá theo kho thì giá của từng vật tư sẽ được tính bình quân trên từng kho, nếu tính giá không theo kho thì giá của từng vật tư sẽ được tính bình quân trên tất cả các kho.
+Đối với dữ liệu đa chi nhánh, giá của từng vật tư sẽ được tính chung cho tất cả các chi nhánh phụ thuộc.
+Phương pháp Bình quân tức thời
+Đối với phương pháp bình quân tức thời, khi ghi sổ từng chứng từ xuất kho, chương trình luôn cập nhật giá xuất cho phiếu xuất đó. Tuy nhiên, trong quá trình làm việc, có thể phát sinh sửa hoặc chèn thêm chứng từ ở trước các phiếu xuất đã được tính giá, khi đó cần phải thực hiện tính giá xuất kho để tính lại giá cho các phiếu xuất phía sau.
+Tùy chọn Tính theo kho hoặc Tính giá không theo kho sẽ được tích tự động theo thiết lập ở biểu tượng Các tiện ích và thiết lập\Tùy chọn\Vật tư hàng hóa.
+Đối với dữ liệu đa chi nhánh, giá của từng vật tư sẽ được tính độc lập theo từng chi nhánh.
+Phương pháp Nhập trước xuất trước
+Đối với phương pháp nhập trước xuất trước, khi ghi sổ từng chứng từ xuất kho, chương trình luôn cập nhật giá xuất cho phiếu xuất đó. Tuy nhiên, trong quá trình làm việc, có thể phát sinh sửa hoặc chèn thêm chứng từ ở trước các phiếu xuất đã được tính giá, khi đó cần phải thực hiện tính giá xuất kho để tính lại giá cho các phiếu xuất phía sau.
+Đối với dữ liệu đa chi nhánh: Giá của từng vật tư sẽ được tính độc lập theo từng kho và từng chi nhánh.
+Phương pháp Đích danh
+Đối với phương pháp đích danh, khi ghi sổ từng chứng từ xuất kho, chương trình luôn cập nhật giá xuất cho phiếu xuất đó. Tuy nhiên, trong quá trình làm việc có thể phát sinh lỗi nên cần thực hiện tính giá xuất kho để đảm bảo tính đúng đắn của giá xuất.
+Lưu ý: Với phương pháp tính giá bình quân tức thời, nhập trước xuất trước:
+Khi tính lại giá xuất kho, chương trình sẽ tự động chỉ ra các chứng từ thay đổi so với lần tính giá trước có khả năng ảnh hưởng đến giá xuất kho cần phải thực hiện tính lại giá để đảm bảo đúng đắn.
+Khi tính lại giá xuất kho, chương trình sẽ cập nhật lại đơn giá nhập kho cho các phiếu nhập kho hàng bán trả lại (trường hợp đơn giá nhập kho chọn Lấy từ giá xuất kho).
+Khi tính lại giá cho các chứng từ nhập kho lắp ráp, tháo dỡ (trường hợp lắp ráp nhiều vòng), nếu có thay đổi giá thì chỉ phải tính lại giá xuất kho 1 lần. Còn với trường hợp chứng từ xuất kho linh kiện và chứng từ lắp ráp thành phẩm phát sinh vào 2 tháng khác nhau thì phải tính lại giá cho cả 2 tháng này.
+Thay đổi cách tính giá cho vật tư hàng hoá có nhiều đơn vị tính => Giá vốn = Số lượng x Đơn giá vốn.
+Thay đổi cách tính giá trong trường hợp đổi tính giá từ theo kho sang không theo kho (hoặc ngược lại): Nếu trước đó không phát sinh chứng từ nhập kho, thì Đơn giá xuất = Giá trị tồn/Số lượng tồn.
+Khảo sát: Sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng cung cấp thêm thông tin về yêu cầu cần hỗ trợ để em có thể hỗ trợ một cách chính xác nhất.
+mình muốn in 2 chứng từ trên 1 trang giấy,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+1. Nội dung:
+Hướng dẫn người dùng cách in theo lô nhiều chứng từ trên các giao diện chứng từ trên phần mềm AMIS Kế toán.
+2. Cách thực hiện:
+Ví dụ: Thực hiện trên chứng từ mua hàng:
+Trên giao diện chứng từ mua hàng, chọn chức năng In\In theo lô nhiều chứng từ:
+Chọn mẫu in và thiết lập khoảng thời gian in, sau đó nhấn Lấy dữ liệu:
+Tích chọn các chứng từ cần in sau đó nhấn Đồng ý để thực hiện in theo lô nhiều chứng từ.
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng cung cấp thêm thông tin về mẫu chứng từ cần in và vấn đề gặp phải khi in để em có thể hỗ trợ một cách chính xác nhất.
+làm thế nào lập phếu ch có hóa đơn đầu vào,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+1. Mục đích
+Cho phép người dùng kết nối với dịch vụ Hóa đơn đầu vào meInvoice để tự động nhận hóa đơn đầu vào, kiểm tra tính hợp lý, hợp lệ của hóa đơn; tự động đồng bộ về phần mềm kế toán và sinh chứng từ nhanh chóng từ hóa đơn đồng bộ về.
+2. Cách thực hiện
+Lưu ý: Để sử dụng tính năng này, trước hết người dùng cần thực hiện mua Dịch vụ xử lý hóa đơn đầu vào tại đây.
+Vào phân hệ Mua hàng, tab Xử lý hóa đơn đầu vào. Nhấn Kết nối ngay:
+Điền thông tin tài khoản kết nối:
+Lưu ý:
+Mã số thuế để thực hiện kết nối phải trùng khớp với mã số thuế trên thông tin công ty/chi nhánh đang làm việc:
+Trường hợp người dùng chưa có tài khoản kết nối thì nhấn Tạo ngay tại đây. Xem hướng dẫn tạo tài khoản tại đây.
+Trường hợp tài khoản kết nối meInvoice của người dùng được phân quyền nhận hóa đơn đầu vào vào duy nhất một đơn vị và mã số thuế của đơn vị đó khớp với mã số thuế trên thông tin công ty, hoặc nhiều đơn vị nhưng chỉ có duy nhất một đơn vị khớp với mã số thuế trên thông tin công ty thì chương trình sẽ ngầm định kết nối hóa đơn đầu vào với đơn vị khớp mã số thuế đó.
+Nếu tài khoản kết nối với meInvoice được phân quyền nhận hóa đơn nhiều đơn vị khớp với mã số thuế trên thông tin công ty thì chương trình sẽ hiển thị giao diện chọn đơn vị nhận hóa đơn:
+Sau khi kết nối thành công, chương trình sẽ tự động lấy về danh sách hóa đơn đầu vào từ MISA meInvoice. Tại đây người dùng có thể thực hiện lập được các chức năng sau:
+Lập chứng từ mua dịch vụ
+Lập phiếu chi tiền mặt
+Lập ủy nhiệm chi
+Lập chứng từ nghiệp vụ khác
+Lập chứng từ trả lại hàng bán
+Lập chứng từ quyết toán tạm ứng
+Nhận hóa đơn
+Đánh dấu đã hạch toán
+Ví dụ lập phiếu chi tiền mặt:
+Trường hợp thực hiện hàng loạt:
+Tích chọn các giao dịch mua hàng cần lập chứng từ:
+Lần lượt khai báo các thông tin của chứng từ chi tiền mặt cho từng giao dịch mua hàng sau đó nhấn Cất.
+Lưu ý:
+1. Người dùng có thể thực hiện lọc các giao dịch mua hàng tại giao diện Lọc chứng từ theo các tiêu chí:
+2. Các chức năng thực hiện trên meInvoice:
+Tại chức năng Tùy chọn lập chứng từ, người dùng thực hiện tích chọn các tùy chọn sao cho phù hợp với nhu cầu của đơn vị mình:
+Lưu ý: Giao diện Tùy chọn lập chứng từ sẽ tự động hiển thị mỗi khi người dùng thực hiện lập chứng từ từ giao dịch mua hàng. Nếu người dùng không muốn hiển thị giao diện này khi lập chứng từ thì bỏ tích chọn Hỏi lại mỗi khi lập chứng từ hạch toán.
+3. Người dùng có thể nắm được số lượng hóa đơn còn được phép sử dụng:
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng cung cấp thêm thông tin về loại phiếu cần lập để em có thể hướng dẫn một cách chính xác nhất.
+phần mềm của e k gõ đk số,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+Xem phim hướng dẫn
+Vấn đề
+Kế toán muốn thiết lập được định dạng chữ số làm tròn hoặc có số thập phân (sau dấu phẩy) cho số lượng, đơn giá,...
+Cách thực hiện
+Bước 1: Nhấn vào biểu tượng bánh răng cưaCác tiện ích và thiết lập\Tùy chọn\Định dạng số.
+Bước 2: Tại mục Số chữ số của phần thập phân, nhấn biểu tượng cây bút để chỉnh sửa. Bạn gõ số chữ số thập phân (sau dấu phẩy) cần thiết lập, sau đó nhấn Cất.
+Lưu ý: Việc thay đổi số chữ số thập phân từ nhiều số thành ít số có thể dẫn đến lệch dữ liệu:
+Lệch số liệu giữa báo cáo tổng hợp và báo cáo chi tiết.
+Tính sai giá xuất kho do làm tròn số.
+Để đảm bảo tính đúng đắn của số liệu, bạn cần sửa lại trực tiếp số tiền của từng chứng từ bị ảnh hưởng bởi định dạng số mới.
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng mô tả rõ hơn về vấn đề mà Quý khách đang gặp phải để em có thể hỗ trợ một cách chính xác nhất.
+tức là chị muốn vào xử lý hóa đơn đầu vào 2023,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+1. Mục đích
+Cho phép người dùng kết nối với dịch vụ Hóa đơn đầu vào meInvoice để tự động nhận hóa đơn đầu vào, kiểm tra tính hợp lý, hợp lệ của hóa đơn; tự động đồng bộ về phần mềm kế toán và sinh chứng từ nhanh chóng từ hóa đơn đồng bộ về.
+2. Cách thực hiện
+Lưu ý: Để sử dụng tính năng này, trước hết người dùng cần thực hiện mua Dịch vụ xử lý hóa đơn đầu vào tại đây.
+Vào phân hệ Mua hàng, tab Xử lý hóa đơn đầu vào. Nhấn Kết nối ngay:
+Điền thông tin tài khoản kết nối:
+Lưu ý:
+Mã số thuế để thực hiện kết nối phải trùng khớp với mã số thuế trên thông tin công ty/chi nhánh đang làm việc:
+Trường hợp người dùng chưa có tài khoản kết nối thì nhấn Tạo ngay tại đây. Xem hướng dẫn tạo tài khoản tại đây.
+Trường hợp tài khoản kết nối meInvoice của người dùng được phân quyền nhận hóa đơn đầu vào vào duy nhất một đơn vị và mã số thuế của đơn vị đó khớp với mã số thuế trên thông tin công ty, hoặc nhiều đơn vị nhưng chỉ có duy nhất một đơn vị khớp với mã số thuế trên thông tin công ty thì chương trình sẽ ngầm định kết nối hóa đơn đầu vào với đơn vị khớp mã số thuế đó.
+Nếu tài khoản kết nối với meInvoice được phân quyền nhận hóa đơn nhiều đơn vị khớp với mã số thuế trên thông tin công ty thì chương trình sẽ hiển thị giao diện chọn đơn vị nhận hóa đơn:
+Sau khi kết nối thành công, chương trình sẽ tự động lấy về danh sách hóa đơn đầu vào từ MISA meInvoice. Tại đây người dùng có thể thực hiện lập được các chức năng sau:
+Lập chứng từ mua dịch vụ
+Lập phiếu chi tiền mặt
+Lập ủy nhiệm chi
+Lập chứng từ nghiệp vụ khác
+Lập chứng từ trả lại hàng bán
+Lập chứng từ quyết toán tạm ứng
+Nhận hóa đơn
+Đánh dấu đã hạch toán
+Ví dụ lập phiếu chi tiền mặt:
+Trường hợp thực hiện hàng loạt:
+Tích chọn các giao dịch mua hàng cần lập chứng từ:
+Lần lượt khai báo các thông tin của chứng từ chi tiền mặt cho từng giao dịch mua hàng sau đó nhấn Cất.
+Lưu ý:
+1. Người dùng có thể thực hiện lọc các giao dịch mua hàng tại giao diện Lọc chứng từ theo các tiêu chí:
+2. Các chức năng thực hiện trên meInvoice:
+Tại chức năng Tùy chọn lập chứng từ, người dùng thực hiện tích chọn các tùy chọn sao cho phù hợp với nhu cầu của đơn vị mình:
+Lưu ý: Giao diện Tùy chọn lập chứng từ sẽ tự động hiển thị mỗi khi người dùng thực hiện lập chứng từ từ giao dịch mua hàng. Nếu người dùng không muốn hiển thị giao diện này khi lập chứng từ thì bỏ tích chọn Hỏi lại mỗi khi lập chứng từ hạch toán.
+3. Người dùng có thể nắm được số lượng hóa đơn còn được phép sử dụng:
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng mô tả chi tiết hơn vấn đề mà Quý khách đang gặp phải đối với phần xử lý hóa đơn đầu vào để em có thể hỗ trợ một cách chính xác nhất.
+kết chuyển khi bán hàng,"1. Nội dung
+Cho phép lập chứng từ kết chuyển cuối kỳ để xác định kết quả hoạt động sản xuất kinh doanh như: kết chuyển doanh thu, kết chuyển chi phí và kết chuyển lãi lỗ.
+2. Định khoản
+1. Kết chuyển lãi chênh lệch tỷ giá hối đoái:
+Nợ TK 413 Chênh lệch tỷ giá hối đoái
+Có TK 515 Doanh thu hoạt động tài chính
+2. Kết chuyển lỗ chênh lệch tỷ giá hối đoái:
+Nợ TK 635 Chi phí tài chính
+Có TK 413 Chênh lệch tỷ giá hối đoái
+3. Kết chuyển các khoản giảm trừ doanh thu (TT200):
+Nợ TK 511 Doanh thu bán hàng và cung cấp dịch vụ
+Có TK 521 Các khoản giảm trừ doanh thu
+4. Cuối kỳ kết chuyển doanh thu bán hàng, doanh thu hoạt động tài chính và các khoản thu nhập khác:
+Nợ TK 511 Doanh thu bán hàng và cung cấp dịch vụ
+Nợ TK 515 Doanh thu hoạt động tài chính
+Nợ TK 711 Thu nhập khác
+Có TK 911 Xác định kết quả kinh doanh
+5. Cuối kỳ kết chuyển giá vốn hàng hóa, chi phí tài chính, chi phí khác, chi phí bán hàng, chi phí quản lý doanh nghiệp:
+Nợ TK 911 Xác định kết quả kinh doanh
+Có TK 632 Giá vốn hàng bán
+Có TK 635 Chi phí tài chính
+Có TK 811 Chi phí khác
+Có TK 641 Chi phí bán hàng
+Có TK 642 Chi phí quản lý doanh nghiệp
+Có TK 6421, 6422 (Chi phí bán hàng, chi phí quản lý doanh nghiệp TT133)
+6. Cuối kỳ kết chuyển chi phí thuế thu nhập doanh nghiệp:
+Nợ TK 911 Xác định kết quả kinh doanh
+Có TK 821 Chi phí thuế thu nhập doanh nghiệp
+7. Kết chuyển kết quả hoạt động kinh doanh trong kỳ
+Nếu lãi:
+Nợ TK 911 Xác định kết quả kinh doanh
+Có TK 421 Lợi nhuận chưa phân phối
+Nếu lỗ:
+Nợ 421 Lợi nhuận chưa phân phối
+Có TK 911 Xác định kết quả kinh doanh
+3. Hướng dẫn trên phần mềm
+Bước 1: Khai báo các cặp tài khoản kết chuyển cuối kỳ
+Vào Các tiện ích và thiết lập\Quản lý danh mục:
+Chọn Tài khoản kết chuyển:
+Chọn nút Thêm để thêm tài khoản kết chuyển:
+Khai báo cặp tài khoản kết chuyển, sau đó nhấn Cất.
+Lưu ý:
+Hệ thống đã xây dựng sẵn hệ thống các cặp tài khoản kết chuyển, kế toán
+có thể khai báo bổ sung hoặc sửa đổi các cặp tài khoản kết chuyển đã có phù hợp với yêu cầu quản lý của doanh nghiệp.
+Khi thực hiện thêm các kết chuyển, người dùng cần lưu ý đến thứ tự kết chuyển.
+Bước 2: Thực hiện kết chuyển lãi lỗ kinh doanh cuối kỳ
+Vào phân hệ Tổng hợp\tab Quy trình, chọn chức năng Kết chuyển lãi lỗ.
+Hệ thống tự động tổng hợp số tiền tương ứng với từng cặp tài khoản cần kết chuyển.
+Nhấn Cất để lưu thông tin chứng từ kết chuyển.",Vui lòng cung cấp thêm thông tin về vấn đề kết chuyển khi bán hàng mà Quý khách đang gặp phải để em có thể hỗ trợ một cách chính xác nhất.
+vào bán hàng chọn bán hàng theo đơn đặt hàng,"Tải phim hướng dẫn tại đây
+1. Định khoản
+Nợ TK 111, 131... Tổng giá thanh toán
+Có TK 511 Doanh thu bán hàng
+Có TK 3331 Thuế GTGT phải nộp (nếu có)
+Đồng thời phát sinh bút toán:
+Nợ TK 632 Giá vốn hàng bán
+Có TK 155, 156...
+2. Mô tả nghiệp vụ
+Khi phát sinh nghiệp vụ bán hàng theo đơn đặt hàng, thông thường sẽ phát sinh các hoạt động sau:
+Nhân viên bán hàng nhận đơn đặt hàng của khách hàng.
+Căn cứ vào đơn đặt hàng, nhân viên bán hàng yêu cầu xuất kho hàng hóa được đặt mua.
+Kế toán kho lập Phiếu xuất kho, sau đó chuyển Kế toán trưởng và Giám đốc ký duyệt.
+Căn cứ vào Phiếu xuất kho, Thủ kho xuất kho hàng hoá và ghi Sổ kho.
+Nhân viên bán hàng nhận hàng và giao cho khách hàng.
+Kế toán bán hàng ghi nhận doanh số bán hàng.
+Nhân viên bán hàng yêu cầu kế toán bán hàng xuất hoá đơn cho khách hàng.
+Nhân viên bán hàng giao hóa đơn cho khách hàng và yêu cầu khách hàng thanh toán.
+3. Các bước thực hiện
+Bước 1: Nhập đơn đặt hàng theo đơn đặt hàng của khách hàng
+Vào phân hệ Bán hàng\Quy trình\Đơn đặt hàng (hoặc vào tab Đơn hàng\Thêm đơn đặt hàng).
+Nhập các thông tin chi tiết của đơn đặt hàng, sau đó nhấn Cất.
+Bước 2: Lập chứng từ ghi nhận doanh thu bán hàng từ đơn đặt hàng
+Trên phân hệ Bán hàng\tab Bán hàng, chọn chức năng Thêm\Chứng từ bán hàng.
+Lựa chọn loại chứng từ cần lập Bán hàng hóa, dịch vụ trong nước; Bán hàng xuất khẩu.
+Nhấn biểu tượng hình bánh răng, tích chọn Lập từ Đơn đặt hàng:
+Chọn Đơn đặt hàng cần lập chứng từ bán hàng bằng 1 trong 2 cách:
+Nhấn biểu tượng mũi tên, chọn đơn đặt hàng cần lập chứng từ bán hàng từ danh sách.
+Nhấn biểu tượng kính lúp:
+Thiết lập điều kiện tìm kiếm đơn đặt hàng, sau đó nhấn Lấy dữ liệu.
+Tích chọn các mặt hàng được bán theo đơn đặt hàng, điền số lượng thực tế giao cho khách hàng tại cột Số lượng bán.
+Nhấn Đồng ý.
+Hệ thống sẽ tự động lấy thông tin về khách hàng và các mặt hàng đã từ đơn đặt hàng đã chọn sang chứng từ bán hàng:
+Lựa chọn phương thức thanh toán cho chứng từ bán hàng là Chưa thu tiền hoặc Thu tiền ngay.
+Lưu ý: Với phương thức Chưa thu tiền, có thể thiết lập Điều khoản thanh toán và theo dõi tình hình thanh toán công nợ với Nhà cung cấp theo điều khoản thanh toán.
+Trong trường hợp muốn sinh đồng thời phiếu xuất kho, tích chọn mục Kiêm phiếu xuất kho.
+Kiểm tra thông tin khách hàng và hàng hóa được lấy từ đơn đặt hàng sang => kế toán có thể giữ nguyên thông tin như trên đơn đặt hàng hoặc thay đổi lại (nếu cần).
+Trường hợp bán hàng xuất luôn hóa đơn => Áp dụng đối với các chứng từ bán hàng khi lập có tích chọn thông tin Lập kèm hoá đơn:
+Tại tab Hóa đơn, người dùng thực hiện khai báo các thông tin của hóa đơn GTGT về mẫu số, ký hiệu hóa đơn và ngày hóa đơn:
+Chọn chức năng In trên thanh công cụ, sau đó chọn mẫu hóa đơn cần in.
+Nếu người dùng thực hiện phát hành hóa đơn điện tử: Xem hướng dẫn tại đây.
+Trường hợp bán hàng không xuất luôn hóa đơn: Áp dụng đối với các chứng từ bán hàng khi lập không tích chọn thông tin Lập kèm hoá đơn. Khi đó người dùng thực hiện lập hóa đơn cho chứng từ bán hàng như sau:
+Mở giao diện chi tiết chứng từ bán hàng cần lập hóa đơn, chọn chức năng Lập hóa đơn:
+Hoặc lựa chọn chứng từ bán hàng cần lập hóa đơn trên danh sách chứng từ bán hàng, sau đó chọn chức năng Lập hóa đơn:
+Khai báo thông tin về mẫu số, ký hiệu hóa đơn và ngày hóa đơn:
+Chọn chức năng In trên thanh công cụ, sau đó chọn mẫu hóa đơn cần in.
+Lưu ý: Phần mềm sẽ căn cứ vào hình thức thanh toán là tiền mặt hoặc chuyển khoản mà tự động sinh ra các chứng từ thu tiền tương ứng trên phân hệ Tiền mặt hoặc Tiền gửi. Trường hợp chọn phương thức Chưa thanh toán thì phần mềm mới hiển thị thông tin về điều khoản thanh toán, số ngày được nợ, hạn thanh toán.
+Nếu người dùng thực hiện phát hành hóa đơn điện tử: Xem hướng dẫn tại đây.
+Bước 3: Lập phiếu xuất kho
+Sau khi cất xong chứng từ bán hàng, nhấn chọn chức năng Lập phiếu xuất:
+Kiểm tra và khai báo thông tin phiếu xuất kho, sau đó nhấn Cất, hệ thống sẽ tự động chuyển thông tin chứng từ xuất kho vừa lập sang tab Nhập, xuất kho của phân hệ Kho.
+Lưu ý:
+1. Nếu khi lập chứng từ bán hàng có tích chọn Kiêm phiếu xuất kho thì kế toán sẽ không phải thực hiện bước này. Khi đó hệ thống sẽ tự động sinh chứng từ xuất kho hàng bán ngay sau khi chứng từ bán hàng được cất giữ.
+2. Trường hợp Thủ kho có tham gia sử dụng phần mềm, sau khi lập phiếu xuất kho, chương trình sẽ tự động sinh ra phiếu xuất kho trên tab Đề nghị nhập, xuất kho của Thủ kho. Thủ kho sẽ thực hiện ghi sổ phiếu xuất kho vào sổ kho.",Vui lòng cung cấp thêm thông tin về yêu cầu cần hỗ trợ để em có thể hỗ trợ một cách chính xác nhất.
+mình đánh số chứng từ bị lỗi,"1. Nội dung
+Khi phát sinh việc sửa, xóa chứng từ hay thêm mới chứng từ vào trước ngày của chứng từ đã lập sẽ làm cho các số chứng từ cùng loại không được đánh theo quy tắc liên tục như đã thiết lập tại Thiết lập\Tùy chọn\Quy tắc đánh số CT, chương trình cho phép đánh lại số chứng từ liên tục đồng thời thiết lập lại các quy tắc đánh số chứng từ (nếu cần).
+2. Các bước thực hiện
+1. Vào Tính năng mở rộng, chọn Đánh lại số chứng từ:
+2. Chọn khoảng thời gian và loại chứng từ cần đánh lại số chứng từ.
+3. Tại mục Quy tắc đánh số chứng từ, chương trình hiển thị quy tắc đánh số chứng đã được thiết lập tại Tính năng mở rộng\Tùy chọn\Quy tắc đánh số CT.
+4. Nhấn Đánh lại số chứng từ, chương trình hiển thị thông báo hệ thông đang thực hiện đánh lại số chứng từ.
+5. Người dùng có thể thiết lập lại Quy tắc đánh số chứng từ (nếu cần) theo hướng dẫn dưới đây:
+Hướng dẫn thiết lập lại quy tắc đánh số chứng từ
+Số chứng từ bao gồm các bộ phận sau: Tiền tố + Số chứng từ + Hậu tố.Ví dụ: Số chứng từ PT00001/T01 có Tiền tố = PT; Số chứng từ: 00001; Hậu tố: /T01
+Trong đó:
+Tiền tố: Thể hiện các ký hiệu trước của số chứng từ. (Ví dụ: PT)
+Số chứng từ: được thiết lập dựa trên 2 tham số
+Giá trị bắt đầu phần số: Ví dụ: Muốn đánh số chứng từ bắt đầu là 00001, tiếp theo là 00002... thì Giá trị bắt đầu phần số là: 1)
+Tổng số ký tự phần số: Là số lượng ký tự phần số của chứng từ (Ví dụ: Số chứng từ: 00001 thì Tổng số ký tự phần số sẽ là: 5)
+Hậu tố: Phần ký hiệu sau của số chứng
+từ. (Ví dụ: /T01)
+Đánh số chứng từ theo tháng
+Ví dụ 1: Kế toán muốn đánh số Phiếu thu để phân biệt được Phiếu thu của từng tháng.
+Trong tháng 01, Kế toán muốn đánh số phiếu thu bắt đầu theo cấu trúc PT00001/T01 (Phiếu thu số 00001 của tháng 01); Số phiếu thu tiếp theo là PT00002/T01(Phiếu thu số 00002 của tháng 01)... thì Lọc chứng từ của tháng 01 sau đó thiết lập quy tắc đánh số chứng từ như sau:
+Sang tháng 02, Kế toán lọc chứng từ của tháng 02 và thiết lập quy tắc đánh số chứng từ tương tự như trên:
+Thực hiện tương tự với các tháng còn lại.
+Ví dụ 2: Kế toán muốn đánh số phiếu thu để phân biệt được phiếu thu của từng tháng và từng chi nhánh
+Trong tháng 01, Kế toán muốn đánh số phiếu thu bắt đầu theo cấu trúc PT-T01/00001_HP (Phiếu thu trong tháng 1, số chứng từ 00001 của chi
+nhánh Hải Phòng); Số phiếu thu tiếp theo làPT-T01/00002_HP (Phiếu thu trong tháng 1, số chứng từ 00002 của chi
+nhánh Hải Phòng)...thì Lọc chứng từ của tháng 01 và thiết lập quy tắc đánh số chứng từ như sau:
+Sang tháng 02, Kế toán lọc chứng từ của tháng 02 và thiết lập quy tắc đánh số chứng từ tương tự như trên:
+Thực hiện tương tự với các tháng còn lại.
+Ví dụ 3: Kế toán muốn đánh số phiếu thu để phân biệt được phiếu thu của từng tháng và từng chi nhánh
+Trong tháng 01, Kế toán muốn đánh số phiếu thu bắt đầu theo cấu trúc PT00001/T01-HP (Phiếu thu số 00001, trong tháng 01, của chi nhánh Hải Phòng);Số phiếu thu tiếp theo là PT00002/T01-HP (Phiếu thu số 00002, trong tháng 01, của chi nhánh Hải Phòng)...thì Lọc chứng từ của tháng 01 và thiết lập quy tắc đánh số chứng từ như sau:
+Sang tháng 02, Kế toán lọc chứng từ của tháng 02 và thiết lập quy tắc đánh số chứng từ tương tự như trên.
+Thực hiện tương tự với các tháng còn lại.
+Đánh số chứng từ theo năm
+Ví dụ: Kế toán muốn đánh số Phiếu thu theo cấu trúc PT00001, PT00002... liên tục trong 1 năm thì Lọc chứng từ của cả năm và thiết lập quy tắc đánh số chứng từ như sau:
+5. Nhấn Đánh lại số chứng từ, chương trình sẽ cập nhật toàn bộ số chứng từ mới vào số chứng từ hiện tại tương ứng trên chương trình.
+Lưu ý: Số chứng từ mới đầu tiên sẽ được lấy theo giá trị được nhập tại mục Giá trị bắt đầu phần số.",Vui lòng cung cấp thêm thông tin về lỗi khi đánh số chứng từ mà Quý khách đang gặp phải để em có thể hỗ trợ cụ thể hơn.
+trên phần chứng từ mua dịch vụ,"1. Mô tả nghiệp vụ
+Khi phát sinh nhu cầu sử dụng dịch vụ thì thông thường quy trình thực hiện như sau:
+Hộ kinh doanh tìm kiếm nhà cung cấp thích hợp và thoả thuận mức giá cung cấp dịch vụ.
+Nhà cung cấp hoàn thành việc cung ứng dịch vụ và xác nhận với chủ hộ kinh doanh.
+Nhà cung cấp xuất hoá đơn và chuyển cho hộ kinh doanh.
+Chủ hộ kinh doanh/kế toán của hộ kinh doanh ghi nhận chi phí mua dịch vụ
+Ví dụ: Cửa hàng thực phẩm Tâm An thuê Công ty Dịch Vụ Vệ Sinh Công Nghiệp Hải Hà để tiến hành lau dọn, tiệt trùng và khử khuẩn khu vực bếp ăn của cửa hàng ngày 13/01/2022 với mức phí là 3.000.000 VNĐ. Công ty Hải Hà xuất hoá đơn GTGT số 0002561 cho cửa hàng.
+2. Các bước thực hiện
+Chứng từ được áp dụng trong trường hợp Hộ kinh doanh thuê nhà cung cấp ngoài thực hiện 1 số dịch vụ theo mức giá đã được thoả thuận trước đó.
+Trường hợp dịch vụ phát sinh là chi phí mua hàng cần phân bổ vào giá trị hàng mua về
+(Trước khi lập chứng từ mua dịch vụ, người dùng cần phải khai báo một mã hàng có tính chất là Dịch vụ trên danh mục Vật tư hàng hoá.)
+Các bước thực hiện
+1.Vào phân hệ Mua hàng, tab Mua hàng, nhấn Thêm\Chứng từ mua dịch vụ).2. Khai báo các thông tin chi tiết của chứng từ mua dịch vụ.
+Chọn phương thức thanh toán.
+Lưu ý: Với phương thức Chưa thanh toán, có thể thiết lập Điều khoản thanh toán và theo dõi tình hình thanh toán công nợ với Nhà cung cấp theo điều khoản thanh toán.
+Chọn mua dịch vụ có nhận kèm hóa đơn hay không hoặc mua dịch vụ không có hóa đơn. Nếu chọn Nhận kèm hóa đơn, người dùng khai báo bổ sung các thông tin hóa đơn và thông tin thuế GTGT trên tab Thuế.
+Tích chọn Là chi phí mua hàng.
+Mục NV mua hàng: Chọn nhân viên tương ứng, nếu có nhu cầu theo dõi tình hình mua dịch vụ theo nhân viên mua hàng phụ trách.
+3. Nhấn Cất.
+Lưu ý: Nếu chứng từ mua dịch vụ lựa chọn phương thức Thanh toán ngay, chương trình sẽ căn cứ vào hình thức thanh toán là tiền mặt, uỷ nhiệm chi, séc chuyển khoản hay séc tiền mặt mà tự động sinh ra các chứng từ chi tiền mặt hoặc chi tiền gửi ngân hàng trên phân hệ Tiền mặt hoặc Tiền gửi.
+Sau đó, người dùng thực hiện việc phân bổ chi phí mua hàng cho từng mặt hàng được mua về. Tham khảo hướng dẫn tại đây.
+Trường hợp dịch vụ phát sinh không phải là chi phí mua hàng
+Nếu hộ kinh doanh có nhu cầu quản lý dịch vụ như một mã hàng để xem được các báo cáo liên quan đến việc mua dịch vụ, người dùng cần thực hiện nghiệp vụ này trên phân hệ Mua hàng tương tự như hướng dẫn ở trường hợp trên, nhưng không tích chọn Là chi phí mua hàng.
+Lưu ý: Có thể xem được các báo cáo thống kê liên quan đến dịch vụ trên tab Báo cáo của phân hệ Mua hàng.
+Nếu hộ kinh doanh không có nhu cầu quản lý dịch vụ như một mã hàng, người dùng sẽ thực hiện nghiệp vụ này trên phân hệ Tiền mặt, Tiền gửi hoặc Tổng hợp tùy thuộc vào phương thức thanh toán dịch vụ. Ví dụ trên phân hệ Tiền mặt.
+1. Vào phân hệ Tiền mặt\tab Thu, chi tiền, chọn Thêm chi tiền).
+2. Khai báo các thông tin của chứng từ và nhấn Cất.",Vui lòng cung cấp thêm thông tin về yêu cầu cần hỗ trợ để em có thể hỗ trợ một cách chính xác nhất.
+"khi chị up lên 2023 thì ko vấn đề gì, nhưng 2022 thì báo lỗi số dòng chi tiết/chứng từ vượt quá 500 dòng","Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+Xem phim hướng dẫn
+Cho phép nhập dữ liệu kế toán từ tệp Excel vào phần mềm. Gồm các loại dữ liệu sau: Danh mục, Số dư, Chứng từ
+Cách thao tác
+1. Nhập danh mục từ Excel
+Xem phim hướng dẫn
+Vào Các tiện ích và thiết lập\Quản lý danh mục, chọn danh mục cần thực hiện khai báo:
+Chọn tiện ích Nhập từ excel:
+Chương trình sẽ hiển thị giao diện:
+Bước 1: Chọn tệp nguồn
+NSD chọn file nhập khẩu từ các file dữ liệu sẵn có trên máy tính hoặc có thể tải file mẫu về để tạo file dữ liệu nhập khẩu.
+Chọn sheet có chứa dữ liệu cần nhập và lựa chọn dòng bắt đầu lấy dữ liệu.
+Có 3 lựa chọn nhập khẩu thông tin:
+Thêm mới: NSD sẽ tạo mới các mã trong danh mục VTHH, NCC, khách hàng …
+Cập nhật: NSD sẽ cập nhật, bổ sung thêm các thông tin của các mã đã được tạo từ trước trên danh mục.
+Ghi đè: Cập nhật dữ liệu theo thông tin mới của các mã đã được tạo từ trước trên danh mục.
+Sau khi đã lựa chọn xong, nhấn Tiếp tục để chuyển qua bước 2.
+Bước 2: Ghép dữ liệu
+Trường hợp lấy từ file mẫu thì chương trình sẽ tự động ghép các cột trên file dữ liệu và các cột thông tin trên chương trình:
+Trường hợp là file do người dùng tự tạo không theo mẫu chương trình thì người dùng có thể thực hiện ghép cột thủ công:
+Trường hợp người dùng mong muốn lấy thêm hoặc bỏ bớt các thông tin trên các mã danh mục cần nhập khẩu thì có thể tích Ẩn/hiện thông tin:
+Bước 3: Kiểm tra dữ liệu
+Chương trình sẽ kiểm tra toàn bộ dữ liệu trong các cột với dữ liệu đã tồn tại trên chương trình và hiển thị thông báo cho người dùng nắm được:
+Khi đó người dùng có thể lựa chọn:
+Nhấn Nhập dữ liệu: chương trình sẽ bỏ qua các mã không hợp lệ và chỉ nhập lên hệ thống các mã có tình trạng hợp lệ.
+Kiểm tra thông tin chi tiết lỗi trên giao diện hoặc tải file kết quả để kiểm tra lại. Sau đó NSD có thể quay lại bước 1 để cập nhật lại file nhập khẩu.
+Bước 4: Kết quả nhập khẩu dữ liệu
+Chương trình sẽ trả về kết quả các mã đã nhập thành công hoặc không thành công dựa theo kết quả kiểm tra ở bước 3:
+Nhấn Đóng hoặc nhấn biểu tượng dấu X để hoàn thành nhập khẩu danh mục.
+2. Nhập số dư từ file Excel
+Xem phim hướng dẫn
+Vào Các tiện ích và thiết lập\Nhập số dư ban đầu:
+Chương trình sẽ hiển thị danh sách các loại số dư để người dùng thực hiện nhập:
+Ví dụ: Nhập số dư tài khoản từ file excel:
+Trên chức năng Nhập số dư, chọn tiện ích Nhập số dư ban đầu từ Excel:
+Bước 1: Chọn tệp nguồn: Tương tự như nhập khẩu danh mục.
+Bước 2: Ghép dữ liệu: Tương tự như khi nhập khẩu danh mục , người dùng cần ghép được các cột dữ liệu trên file nhập khẩu và trên chương trình.
+Bước 3: Kiểm tra dữ liệu: Chương trình sẽ trả về kết quả dữ liệu hợp lệ hoặc không hợp lệ trên file dữ liệu để người dùng có thể điều chỉnh hoặc tiến hành nhập dữ liệu luôn.
+Bước 4: Thông báo kết quả nhập liệu
+3. Nhập chứng từ từ file Excel
+Xem phim hướng dẫn
+Chọn phân hệ cần thực hiện nhập khẩu chứng từ:
+Trên chức năng Thêm chọn tiện ích Nhập từ excel:
+Chương trình hiển thị giao diện tương tự như nhập khẩu danh mục:
+Bước 1: Chọn tệp nguồn:
+Chọn đúng loại chứng từ trước khi chọn file dữ liệu hoặc tải file mẫu để tránh phát sinh lỗi ở các bước sau do sai định dang, thông tin dữ liệu cần nhập khẩu của mỗi loại chứng từ.
+Chỉ nhập khẩu thêm mới chứng từ.
+Bước 2: Ghép dữ liệu: Tương tự như khi nhập khẩu danh mục người dùng cần ghép được các cột dữ liệu trên file nhập khẩu và trên chương trình
+Bước 3: Kiểm tra dữ liệu: Chương trình sẽ trả về kết quả dữ liệu hợp lệ hoặc không hợp lệ trên file dữ liệu để người dùng có thể điều chỉnh hoặc tiến hành nhập dữ liệu luôn.
+Bước 4: Thông báo kết quả nhập liệu
+Lưu ý: Sau khi nhập khẩu thành công thì chứng từ sẽ ở trạng thái chưa ghi sổ. NSD cần thực hiện ghi sổ chứng từ để ghi nhận bút toán lên các báo cáo, sổ sách kế toán.
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng cung cấp thông tin chi tiết về vấn đề mà Quý khách đang gặp phải khi up 2022 lên phần mềm để em có thể hỗ trợ một cách chính xác nhất.
+Tại sao trong phiếu bán hàng phần tên hàng ghi thêm diễn giải nhưng xuất báo cáo chi tiết bán hàng lại bị mất phần diễn giải đó,"1.Vấn đề
+Khi nhập liệu chứng từ bán hàng tại tab Hàng tiền thêm mã hàng không chọn được tính chất "" Chỉ là diễn giải""
+​2. Cách xử lý
+Trên giao diện khi lập Chứng từ bán hàng, Tại tab Hàng tiền nhấn Thêm ghi chú rồi nhập thông tin cần diễn giải tại cột Tên hàng.",Vui lòng mô tả chi tiết hơn về vấn đề liên quan đến phần diễn giải trên báo cáo chi tiết bán hàng mà Quý khách đang gặp phải để em có thể hỗ trợ một cách chính xác hơn.
+kết chuyển số dư từ dữ liệu năm trước,"1. Mục đích
+Tính năng Tạo mới dữ liệu từ năm trước sẽ giúp người dùng thêm dữ liệu mới và tự động chuyển các danh mục, phát sinh, số dư cuối năm cũ thành số dư đầu kỳ sang dữ liệu mới, giúp người dùng tiết kiệm thời gian tổng hợp, nhập liệu thủ công mà vẫn đảm bảo tính chính xác.
+2. Cách thực hiện
+Lưu ý: Người dùng chỉ nên sử dụng tính năng này sau khi đã chốt số dư và lập báo cáo tài chính trên dữ liệu năm trước để đảm bảo số dư đầu kỳ chuyển sang dữ liệu mới được đúng đắn.
+Vào Thiết lập\Quản lý dữ liệu:
+Chọn chức năng Thêm dữ liệu từ năm trước:
+Khi đó chương trình hiển thị giao diện Thêm dữ liệu từ năm trước. Nhấn Thêm dữ liệu để khởi tạo dữ liệu kế toán mới:
+Chương trình hiển thị thông báo hệ thống đang thực hiện khởi tạo dữ liệu kế toán mới, và người dùng sẽ nhận được thông báo ngay khi hoàn thành việc tạo dữ liệu:","Vui lòng cung cấp thêm thông tin về thông tin dữ liệu cần chuyển số dư để Em có thể hỗ trợ một cách chính xác nhất,"
+ko vào đc tab xử lý hđ đầu vào,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+1. Mục đích
+Cho phép người dùng kết nối với dịch vụ Hóa đơn đầu vào meInvoice để tự động nhận hóa đơn đầu vào, kiểm tra tính hợp lý, hợp lệ của hóa đơn; tự động đồng bộ về phần mềm kế toán và sinh chứng từ nhanh chóng từ hóa đơn đồng bộ về.
+2. Cách thực hiện
+Lưu ý: Để sử dụng tính năng này, trước hết người dùng cần thực hiện mua Dịch vụ xử lý hóa đơn đầu vào tại đây.
+Vào phân hệ Mua hàng, tab Xử lý hóa đơn đầu vào. Nhấn Kết nối ngay:
+Điền thông tin tài khoản kết nối:
+Lưu ý:
+Mã số thuế để thực hiện kết nối phải trùng khớp với mã số thuế trên thông tin công ty/chi nhánh đang làm việc:
+Trường hợp người dùng chưa có tài khoản kết nối thì nhấn Tạo ngay tại đây. Xem hướng dẫn tạo tài khoản tại đây.
+Trường hợp tài khoản kết nối meInvoice của người dùng được phân quyền nhận hóa đơn đầu vào vào duy nhất một đơn vị và mã số thuế của đơn vị đó khớp với mã số thuế trên thông tin công ty, hoặc nhiều đơn vị nhưng chỉ có duy nhất một đơn vị khớp với mã số thuế trên thông tin công ty thì chương trình sẽ ngầm định kết nối hóa đơn đầu vào với đơn vị khớp mã số thuế đó.
+Nếu tài khoản kết nối với meInvoice được phân quyền nhận hóa đơn nhiều đơn vị khớp với mã số thuế trên thông tin công ty thì chương trình sẽ hiển thị giao diện chọn đơn vị nhận hóa đơn:
+Sau khi kết nối thành công, chương trình sẽ tự động lấy về danh sách hóa đơn đầu vào từ MISA meInvoice. Tại đây người dùng có thể thực hiện lập được các chức năng sau:
+Lập chứng từ mua dịch vụ
+Lập phiếu chi tiền mặt
+Lập ủy nhiệm chi
+Lập chứng từ nghiệp vụ khác
+Lập chứng từ trả lại hàng bán
+Lập chứng từ quyết toán tạm ứng
+Nhận hóa đơn
+Đánh dấu đã hạch toán
+Ví dụ lập phiếu chi tiền mặt:
+Trường hợp thực hiện hàng loạt:
+Tích chọn các giao dịch mua hàng cần lập chứng từ:
+Lần lượt khai báo các thông tin của chứng từ chi tiền mặt cho từng giao dịch mua hàng sau đó nhấn Cất.
+Lưu ý:
+1. Người dùng có thể thực hiện lọc các giao dịch mua hàng tại giao diện Lọc chứng từ theo các tiêu chí:
+2. Các chức năng thực hiện trên meInvoice:
+Tại chức năng Tùy chọn lập chứng từ, người dùng thực hiện tích chọn các tùy chọn sao cho phù hợp với nhu cầu của đơn vị mình:
+Lưu ý: Giao diện Tùy chọn lập chứng từ sẽ tự động hiển thị mỗi khi người dùng thực hiện lập chứng từ từ giao dịch mua hàng. Nếu người dùng không muốn hiển thị giao diện này khi lập chứng từ thì bỏ tích chọn Hỏi lại mỗi khi lập chứng từ hạch toán.
+3. Người dùng có thể nắm được số lượng hóa đơn còn được phép sử dụng:
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng mô tả chi tiết hơn về vấn đề mà Quý khách đang gặp phải khi vào tab xử lý hóa đơn đầu vào để em có thể hỗ trợ một cách chính xác hơn.
+chị cần hỗ trợ sửa lỗi khi đưa file excel vào pm,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+Xem phim hướng dẫn
+Cho phép nhập dữ liệu kế toán từ tệp Excel vào phần mềm. Gồm các loại dữ liệu sau: Danh mục, Số dư, Chứng từ
+Cách thao tác
+1. Nhập danh mục từ Excel
+Xem phim hướng dẫn
+Vào Các tiện ích và thiết lập\Quản lý danh mục, chọn danh mục cần thực hiện khai báo:
+Chọn tiện ích Nhập từ excel:
+Chương trình sẽ hiển thị giao diện:
+Bước 1: Chọn tệp nguồn
+NSD chọn file nhập khẩu từ các file dữ liệu sẵn có trên máy tính hoặc có thể tải file mẫu về để tạo file dữ liệu nhập khẩu.
+Chọn sheet có chứa dữ liệu cần nhập và lựa chọn dòng bắt đầu lấy dữ liệu.
+Có 3 lựa chọn nhập khẩu thông tin:
+Thêm mới: NSD sẽ tạo mới các mã trong danh mục VTHH, NCC, khách hàng …
+Cập nhật: NSD sẽ cập nhật, bổ sung thêm các thông tin của các mã đã được tạo từ trước trên danh mục.
+Ghi đè: Cập nhật dữ liệu theo thông tin mới của các mã đã được tạo từ trước trên danh mục.
+Sau khi đã lựa chọn xong, nhấn Tiếp tục để chuyển qua bước 2.
+Bước 2: Ghép dữ liệu
+Trường hợp lấy từ file mẫu thì chương trình sẽ tự động ghép các cột trên file dữ liệu và các cột thông tin trên chương trình:
+Trường hợp là file do người dùng tự tạo không theo mẫu chương trình thì người dùng có thể thực hiện ghép cột thủ công:
+Trường hợp người dùng mong muốn lấy thêm hoặc bỏ bớt các thông tin trên các mã danh mục cần nhập khẩu thì có thể tích Ẩn/hiện thông tin:
+Bước 3: Kiểm tra dữ liệu
+Chương trình sẽ kiểm tra toàn bộ dữ liệu trong các cột với dữ liệu đã tồn tại trên chương trình và hiển thị thông báo cho người dùng nắm được:
+Khi đó người dùng có thể lựa chọn:
+Nhấn Nhập dữ liệu: chương trình sẽ bỏ qua các mã không hợp lệ và chỉ nhập lên hệ thống các mã có tình trạng hợp lệ.
+Kiểm tra thông tin chi tiết lỗi trên giao diện hoặc tải file kết quả để kiểm tra lại. Sau đó NSD có thể quay lại bước 1 để cập nhật lại file nhập khẩu.
+Bước 4: Kết quả nhập khẩu dữ liệu
+Chương trình sẽ trả về kết quả các mã đã nhập thành công hoặc không thành công dựa theo kết quả kiểm tra ở bước 3:
+Nhấn Đóng hoặc nhấn biểu tượng dấu X để hoàn thành nhập khẩu danh mục.
+2. Nhập số dư từ file Excel
+Xem phim hướng dẫn
+Vào Các tiện ích và thiết lập\Nhập số dư ban đầu:
+Chương trình sẽ hiển thị danh sách các loại số dư để người dùng thực hiện nhập:
+Ví dụ: Nhập số dư tài khoản từ file excel:
+Trên chức năng Nhập số dư, chọn tiện ích Nhập số dư ban đầu từ Excel:
+Bước 1: Chọn tệp nguồn: Tương tự như nhập khẩu danh mục.
+Bước 2: Ghép dữ liệu: Tương tự như khi nhập khẩu danh mục , người dùng cần ghép được các cột dữ liệu trên file nhập khẩu và trên chương trình.
+Bước 3: Kiểm tra dữ liệu: Chương trình sẽ trả về kết quả dữ liệu hợp lệ hoặc không hợp lệ trên file dữ liệu để người dùng có thể điều chỉnh hoặc tiến hành nhập dữ liệu luôn.
+Bước 4: Thông báo kết quả nhập liệu
+3. Nhập chứng từ từ file Excel
+Xem phim hướng dẫn
+Chọn phân hệ cần thực hiện nhập khẩu chứng từ:
+Trên chức năng Thêm chọn tiện ích Nhập từ excel:
+Chương trình hiển thị giao diện tương tự như nhập khẩu danh mục:
+Bước 1: Chọn tệp nguồn:
+Chọn đúng loại chứng từ trước khi chọn file dữ liệu hoặc tải file mẫu để tránh phát sinh lỗi ở các bước sau do sai định dang, thông tin dữ liệu cần nhập khẩu của mỗi loại chứng từ.
+Chỉ nhập khẩu thêm mới chứng từ.
+Bước 2: Ghép dữ liệu: Tương tự như khi nhập khẩu danh mục người dùng cần ghép được các cột dữ liệu trên file nhập khẩu và trên chương trình
+Bước 3: Kiểm tra dữ liệu: Chương trình sẽ trả về kết quả dữ liệu hợp lệ hoặc không hợp lệ trên file dữ liệu để người dùng có thể điều chỉnh hoặc tiến hành nhập dữ liệu luôn.
+Bước 4: Thông báo kết quả nhập liệu
+Lưu ý: Sau khi nhập khẩu thành công thì chứng từ sẽ ở trạng thái chưa ghi sổ. NSD cần thực hiện ghi sổ chứng từ để ghi nhận bút toán lên các báo cáo, sổ sách kế toán.
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng cung cấp thông tin chi tiết về lỗi mà Quý khách gặp phải khi đưa file Excel vào phần mềm để Em có thể hỗ trợ một cách chính xác nhất.
+Khi thay đổi phải đăng ký với cơ quan thuế ?,"1. Nội dung
+Hướng dẫn người dùng cách thực hiện gia hạn sử dụng phần mềm, đồng thời có thể nâng gói/hạ gói sản phẩm sử dụng sao cho phù hợp với doanh nghiệp mình khi có nhu cầu.
+2. Cách thực hiện
+Trường hợp người dùng cần gia hạn phần mềm AMIS Kế toán thì nhấn vào biểu tượng mũi tên ở phía dưới góc trái màn hình, sau đó chọn Gia hạn ngay. Phần mềm sẽ tự động điều hướng sang giao diện gia hạn phần mềm trên MISA Store. Tại đây để gia hạn tiếp gói sản phẩm đang sử dụng, người dùng thực hiện các bước thanh toán tương tự như khi đặt mua sản phẩm AMIS Kế toán:
+Người dùng cũng có thể nâng gói hoặc hạ gói sản phẩm phù hợp với doanh nghiệp mình nếu có nhu cầu:
+Trường hợp muốn nâng lên gói sản phẩm cao hơn: Chọn gói sản phẩm muốn nâng lên sau đó nhấn Nâng gói và thực hiện các bước thanh toán như bình thường:
+Trường hợp muốn hạ xuống gói sản phẩm thấp hơn: Chọn gói sản phẩm cần hạ sau đó nhấn Hạ gói và thực hiện các bước thanh toán như bình thường:",Vui lòng cung cấp thông tin mà Quý khách cần thay đổi để em có thể hỗ trợ một cách chính xác nhất.
+nhưng khi thêm đơn đặt hàng,"1. Vào phân hệ Bán hàng\tab Quy trình, chọn Đơn đặt hàng (hoặc vào tab Đơn hàng, nhấn Thêm đơn đặt hàng).
+2. Khai báo đơn đặt hàng:
+Có thể lập nhanh đơn đặt hàng từ các báo giá.
+Xem mô tả các chức năng khác trên đơn đặt hàng tại đây.
+4. Sau khi thực hiện đơn hàng, cần cập nhật tình trạng của Đơn đặt hàng theo đúng thực tế để quản lý được tình trạng thực hiện của đơn hàng (nếu đơn đặt hàng được chọn để lập chứng từ bán hàng, phần mềm sẽ tự động chuyển trạng thái của đơn hàng sang Đang thực hiện).
+Lưu ý:
+Có thể khai báo thêm thông tin mô tả chi tiết về hàng hóa trên đơn đặt hàng bằng cách:
+Nhấn Thêm ghi chú.
+Có thể in đơn đặt hàng theo mẫu do phần mềm cung cấp hoặc theo mẫu đặc thù của doanh nghiệp (xem thêm chức năng Thiết kế mẫu chứng từ).",Vui lòng cung cấp thêm thông tin về yêu cầu cần hỗ trợ để em có thể hỗ trợ một cách chính xác nhất.
+Hôm nay bên misa bảo trì phải ko ạ,"1. Mục đích
+Bảo trì dữ liệu: Chức năng này sẽ tiến hành bỏ ghi sổ các chứng từ đang ghi sổ và ghi sổ lại chứng từ để đảm bảo tính đúng đắn của dữ liệu.
+Bảo trì số chứng từ: Chức năng này sẽ thực hiện rà soát lại các số chứng từ đã lập, tìm kiếm và liệt kê các chứng từ đang trùng số trong dữ liệu.
+2. Cách thao tác
+2.1. Bảo trì dữ liệu
+Nhấn vào biếu tượng chọn chức năng Bảo trì dữ liệu:
+Chương trình hiển thị giao diện Bảo trì dữ liệu, tại đây người dùng tích chọn chức năng Bảo trì dữ liệu:
+Chọn khoảng thời gian thực hiện bảo trì tại mục Kỳ báo cáo
+Tích chọn mục Ghi sổ các chứng từ chưa ghi sổ để thực hiện bảo trì dữ liệu cho cả những chứng từ chưa được ghi sổ. Trường hợp người dùng có nhu cầu tính lại giá xuất kho sau khi thực hiện bảo trì dữ liệu thì tích chọn chức năng Tính lại giá xuất kho:
+Nhấn Thực hiện. Quá trình bảo trì dữ liệu sẽ phụ thuộc vào độ lớn của dữ liệu kế toán. Chương trình sẽ hiển thị thông báo cho người dùng khi bắt đầu thực hiện việc bảo trì:
+Chương trình sẽ hiển thị thông báo cho người dùng khi bắt đầu thực hiện việc bảo trì và khi quá trình bảo trì dữ liệu hoàn tất để người dùng nắm được. Trong trường hợp có phát sinh những chứng từ ghi sổ không thành công, để xem danh sách những chứng từ đó người dùng nhấn vào Xem chi tiết.
+Chương trình hiển thị giao diện danh sách các chứng từ không thực hiện ghi sổ được:
+2.2. Bảo trì số chứng từ
+Nhấn vào biếu tượng chọn chức năng Bảo trì dữ liệu:
+Chương trình hiển thị giao diện Bảo trì dữ liệu, tại đây người dùng tích chọn chức năng Bảo trì số chứng từ:
+Chọn Loại chứng từ sau đó nhấn Thực hiện:
+Chương trình sẽ hiển thị thông báo bắt đầu quá trình bảo trì số chứng từ. Tùy vào độ lớn của dữ liệu kế toán mà quá trình bảo trì có thể kéo dài:
+Khi hoàn tất việc bảo trì số chứng từ, chương trình cũng sẽ hiển thị thông báo để người dùng nắm được. Trong trường hợp có phát sinh những chứng từ bị trùng số, muốn xem danh sách những chứng từ đó nhấn Xem chi tiết:
+Chương trình hiển thị danh sách chi tiết các chứng từ bị trùng số:",Vui lòng cung cấp thêm thông tin về vấn đề mà Quý khách đang gặp phải để em có thể hỗ trợ một cách chính xác nhất.
+"Hi e, xem giúp c sao c hok xuất hóa đơn dc?","1. Nội dung
+Cho phép khách hàng lập hóa đơn điện tử theo đúng nội dung Nghị định 123/2020/NĐ-CP và Thông tư 78/2021/TT-BTC trên AMIS Kế toán, bao gồm:
+Hóa đơn bán hàng, chứng từ bán hàng kèm hóa đơn
+Trả lại hàng mua
+Giảm giá hàng bán
+2. Hướng dẫn
+Lưu ý: Trước khi lập hóa đơn điện tử theo nghị định 123/2020/NĐ-CP, người dùng cần hoàn thiện bước Kết nối và bắt đầu sử dụng hóa đơn điện tử; kiểm tra thiết lập Quản lý và sử dụng hóa đơn theo nghị định 123/2020/NĐ-CP trên Quản lý hóa đơn\Kết nối meInvoice.
+2.1. Lập hóa đơn bán hàng, chứng từ bán hàng kèm hóa đơn
+Vào phân hệ Bán hàng, chọn tab Bán hàng và nhấn Thêm\Chứng từ bán hàng:
+Khai báo chứng từ bán hàng. => Tích chọn Lập kèm hoá đơn.
+Nhấn Cất.
+Có thể thực hiện phát hành hóa đơn điện tử theo 1 trong 3 cách:
+Cách 1: Phát hành hóa đơn điện tử ngay sau khi lập xong hóa đơn trên phân hệ Bán hàng
+Ví dụ: Sau khi lập chứng từ bán hàng kèm hóa đơn (loại hóa đơn điện tử), Kế toán có thể thực hiện phát hành hóa đơn điện tử bằng cách:
+Nhấn Phát hành hóa đơn:
+Tích chọn Gửi hóa đơn cho khách hàng: nếu muốn chương trình tự động gửi thông tin về hóa đơn điện tử cho khách hàng ngay sau khi thực hiện chức năng phát hành hóa đơn điện tử:
+Có thể xem trước nội dung hóa đơn trước khi phát hành bằng cách nhấn Xem hóa đơn.
+Nhấn Phát hành.
+Sau khi phát hành hóa đơn thành công, chương trình sẽ tự động gửi thông báo đến cơ quan thuế. Cơ quan Thuế sau khi nhận được thông tin sẽ thực hiện cấp mã cho hóa đơn điện tử vừa phát hành. Khi đó, giao diện chứng từ bán hàng sẽ hiển thị thông tin mã mà cơ quan Thuế đã cấp:
+Người dùng có thể xem trạng thái phát hành hóa đơn trên danh sách hóa đơn:
+Lưu ý: Tại mục Tên người nhận và Email:
+Nếu hóa đơn được xuất từ đề nghị xuất hóa đơn thì lấy tên người nhận hóa đơn và email người nhận trên đề nghị xuất hóa đơn.
+Nếu hóa đơn không được xuất từ đề nghị xuất hóa đơn thì lấy theo Thông tin người nhận hóa đơn nếu Khách hàng/Nhà cung cấp là Tổ chức và lấy thông tin của đối tượng nếu là Cá nhân (được khai báo tại Danh mục\Đối tượng\Khách hàng hoặc Danh mục\Đối tượng\Nhà cung cấp), tuy nhiên vẫn có thể thay đổi lại các thông tin này (nếu cần).
+Trường hợp muốn gửi thông tin hóa đơn điện tử cho cùng lúc nhiều địa chỉ email thì nhập các địa chỉ email này và mục Email và cách nhau bởi dấu “;”
+Để có thông tin về người bán in lên hóa đơn như: Tên đơn vị bán hàng, Địa chỉ, Mã số thuế…, cần khai báo trực tiếp trên phần mềm hóa đơn điện tử meInvoice. Xem hướng dẫn chi tiết tại đây.
+Để thực hiện phát hành hóa đơn thì ngày hóa đơn phải lớn hơn ngày bắt đầu sử dụng (Theo quy định, sau 2 ngày kể từ khi thông báo phát hành hóa đơn, nếu không có phản hồi của Cơ quan Thuế thì doanh nghiệp được phép sử dụng hóa đơn theo thông báo phát hành).
+Cách 2: Phát hành hóa đơn điện tử trên phân hệ Bán hàng
+Vào phân hệ Bán hàng, chọn tab Bán hàng.
+Thiết lập điều kiện tìm kiếm chứng từ bán hàng cần phát hành sau đó nhấn Lọc:
+Chương trình hiển thị danh sách chứng từ thỏa mãn điều kiện lọc, chọn hóa đơn cần phát hành sau đó nhấn Phát hành hóa đơn.
+Cách 3: Phát hành hóa đơn điện tử trên danh sách hóa đơn
+Vào phân hệ Bán hàng, chọn tab Bán hàng\Hóa đơn
+Thiết lập điều kiện tìm kiếm hóa đơn điện tử cần phát hành sau đó nhấn Lọc: (hình 8)
+Chương trình hiển thị danh sách chứng từ thỏa mãn điều kiện lọc, tích chọn hóa đơn cần phát hành sau đó nhấn Phát hành hóa đơn.
+Thực hiện các bước tiếp theo tương tự như cách 1.
+2.2. Lập hóa đơn chứng từ trả lại hàng mua
+Vào phân hệ Mua hàng\Quy trình, chọn chức năng Trả lại hàng mua
+Tích chọn Trả lại hàng trong kho.
+Nhấn biểu tượng kính lúp.
+Thiết lập điều kiện tìm kiếm chứng từ mua hàng, sau đó nhấn Lấy dữ liệu.
+Tích chọn các mặt hàng bị trả lại và nhập số lượng hàng bị trả lại.
+Nhấn Đồng ý, hệ thống sẽ tự động lấy thông tin của hàng bị trả lại vừa chọn sang chứng từ mua hàng.
+Lựa chọn phương thức giảm trừ cho chứng từ trả lại hàng là Giảm trừ công nợ hoặc Thu tiền mặt.
+Sau khi khai báo xong chứng từ, nhấn Cất => Khi đó hệ thống sẽ đồng thời sinh một bản ghi trên tab Hóa đơn của phân hệ Bán hàng:
+2.3. Lập hóa đơn chứng từ giảm giá hàng bán
+Vào phân hệ Bán hàng\Quy trình, chọn Giảm giá hàng bán.
+Chọn loại chứng từ bán hàng cần giảm giá.
+Lựa chọn phương thức giảm trừ cho chứng từ giảm giá.
+Chọn chứng từ bán hàng có mặt hàng được giảm giá theo một trong hai cách sau:
+Cách 1: Nhấn vào biểu tượng mũi tên để chọn chứng từ bán hàng từ trong danh sách.
+Cách 2: Nhấn vào biểu tượng kính lúp để tìm kiếm và chọn chứng từ bán hàng:
+Thiết lập điều kiện để tìm kiếm chứng từ bán hàng, nhấn Lấy dữ liệu.
+Tích chọn mặt hàng được giảm giá và nhấn Đồng ý.
+Khai báo thêm các thông tin trên chứng từ giảm giá hàng bán như: số lượng hàng được giảm, giá trị giảm,...",Vui lòng mô tả chi tiết về vấn đề mà Quý khách đang gặp phải khi xuất hóa đơn không được để Em có thể hỗ trợ một cách chính xác nhất.
+c lên báo cáo bán hàng,"1. Nội dung
+Xem và in các báo cáo thống kê, sổ sách liên quan đến hoạt động bán hàng tại doanh nghiệp.
+2. Các bước thực hiện
+1. Vào phân hệ Bán hàng\tab Báo cáo, chọn báo cáo cần xem. Ví dụ: Xem báo cáo Chi tiết công nợ phải thu khách hàng:
+2. Chọn báo cáo cần thống kê, sau đó thiết lập tham số báo cáo.
+3. Nhấn Xem báo cáo.
+Lưu ý: Có thể chọn xem các báo cáo bán hàng bằng cách chọn mục Báo cáo\nhóm báo cáo Bán hàng, sau đó chọn báo cáo cần xem.",Vui lòng cung cấp thông tin cụ thể về vấn đề liên quan đến báo cáo bán hàng mà Quý khách đang gặp phải để Em có thể hỗ trợ một cách chính xác nhất.
+"lỗi phần mềm, mở không được","Khi gặp vấn đề bất thường như in báo lỗi tiếng Anh, Cất chứng từ báo lỗi tiếng Anh,... mà tình trạng này chỉ xảy ra với 1, 2 máy Anh/chị thực hiện các thao tác sau:
+Xóa Cache của trình duyệt:
+Mở tab mới, để con chuột tại dòng địa chỉ và nhấn Ctrl + Shift + Delete
+Tích chọn dòng có chứa Cache
+Nhấn nút Clear ...
+Sau đó Refresh lại dữ liệu (F5 lại trình duyệt) rồi sửa lại chứng từ
+Nếu xóa Cache không khắc phục được tình trạng lỗi thì thực hiện Reset trình duyệt theo hướng dẫn bên dưới :
+Trình duyệt Firefox
+Bước 1: Vào link sau: https://support.mozilla.org/en-US/kb/refresh-firefox-reset-add-ons-and-settings
+Bước 2: Nhấn Refresh Firefox
+Trình duyệt Chrome thì vào Settings --> Show advanced settings... --> Nhấn Reset settings (kéo thanh cuộn xuống cuối sẽ thấy nút này)
+Trình duyệt IE thì vào Internet Options\ tab Advanced --> Nhấn Reset
+Lưu ý: Sau khi thực hiện Reset trình duyệt thì RESTART lại máy tính sau đó đăng nhập lại vào dữ liệu và in lại.",Vui lòng cung cấp thông tin chi tiết về lỗi mà Quý khách gặp phải khi mở phần mềm để em có thể hỗ trợ một cách chính xác nhất.
+Phần mềm của mình hiện không xem được hóa đơn nháp. Mình cần hỗ trợ.,"1. Nội dung
+Cho phép người dùng thực hiện gửi hóa đơn nháp cho khách hàng trong trường hợp người dùng quản lý và phát hành hóa đơn theo Nghị định 123/2020/NĐ-CP.
+2. Cách thực hiện
+Mở giao diện chi tiết hóa đơn, nhấn Xem hóa đơn:
+Chương trình hiển thị giao diện hóa đơn (Bản nháp). Nhấn chọn chức năng Gửi cho khách hàng:
+Kiểm tra hoặc nhập bổ sung các thông tin Tên người nhận, Email nhận hóa đơn sau đó nhấn Gửi để gửi hóa đơn nháp cho khách hàng:",Vui lòng cung cấp thêm thông tin về vấn đề mà Quý khách đang gặp phải khi xem hóa đơn nháp để em có thể hỗ trợ một cách chính xác nhất.
+em đổ dữ liệu vào amis bị lỗi,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+Xem phim hướng dẫn
+Cho phép nhập dữ liệu kế toán từ tệp Excel vào phần mềm. Gồm các loại dữ liệu sau: Danh mục, Số dư, Chứng từ
+Cách thao tác
+1. Nhập danh mục từ Excel
+Xem phim hướng dẫn
+Vào Các tiện ích và thiết lập\Quản lý danh mục, chọn danh mục cần thực hiện khai báo:
+Chọn tiện ích Nhập từ excel:
+Chương trình sẽ hiển thị giao diện:
+Bước 1: Chọn tệp nguồn
+NSD chọn file nhập khẩu từ các file dữ liệu sẵn có trên máy tính hoặc có thể tải file mẫu về để tạo file dữ liệu nhập khẩu.
+Chọn sheet có chứa dữ liệu cần nhập và lựa chọn dòng bắt đầu lấy dữ liệu.
+Có 3 lựa chọn nhập khẩu thông tin:
+Thêm mới: NSD sẽ tạo mới các mã trong danh mục VTHH, NCC, khách hàng …
+Cập nhật: NSD sẽ cập nhật, bổ sung thêm các thông tin của các mã đã được tạo từ trước trên danh mục.
+Ghi đè: Cập nhật dữ liệu theo thông tin mới của các mã đã được tạo từ trước trên danh mục.
+Sau khi đã lựa chọn xong, nhấn Tiếp tục để chuyển qua bước 2.
+Bước 2: Ghép dữ liệu
+Trường hợp lấy từ file mẫu thì chương trình sẽ tự động ghép các cột trên file dữ liệu và các cột thông tin trên chương trình:
+Trường hợp là file do người dùng tự tạo không theo mẫu chương trình thì người dùng có thể thực hiện ghép cột thủ công:
+Trường hợp người dùng mong muốn lấy thêm hoặc bỏ bớt các thông tin trên các mã danh mục cần nhập khẩu thì có thể tích Ẩn/hiện thông tin:
+Bước 3: Kiểm tra dữ liệu
+Chương trình sẽ kiểm tra toàn bộ dữ liệu trong các cột với dữ liệu đã tồn tại trên chương trình và hiển thị thông báo cho người dùng nắm được:
+Khi đó người dùng có thể lựa chọn:
+Nhấn Nhập dữ liệu: chương trình sẽ bỏ qua các mã không hợp lệ và chỉ nhập lên hệ thống các mã có tình trạng hợp lệ.
+Kiểm tra thông tin chi tiết lỗi trên giao diện hoặc tải file kết quả để kiểm tra lại. Sau đó NSD có thể quay lại bước 1 để cập nhật lại file nhập khẩu.
+Bước 4: Kết quả nhập khẩu dữ liệu
+Chương trình sẽ trả về kết quả các mã đã nhập thành công hoặc không thành công dựa theo kết quả kiểm tra ở bước 3:
+Nhấn Đóng hoặc nhấn biểu tượng dấu X để hoàn thành nhập khẩu danh mục.
+2. Nhập số dư từ file Excel
+Xem phim hướng dẫn
+Vào Các tiện ích và thiết lập\Nhập số dư ban đầu:
+Chương trình sẽ hiển thị danh sách các loại số dư để người dùng thực hiện nhập:
+Ví dụ: Nhập số dư tài khoản từ file excel:
+Trên chức năng Nhập số dư, chọn tiện ích Nhập số dư ban đầu từ Excel:
+Bước 1: Chọn tệp nguồn: Tương tự như nhập khẩu danh mục.
+Bước 2: Ghép dữ liệu: Tương tự như khi nhập khẩu danh mục , người dùng cần ghép được các cột dữ liệu trên file nhập khẩu và trên chương trình.
+Bước 3: Kiểm tra dữ liệu: Chương trình sẽ trả về kết quả dữ liệu hợp lệ hoặc không hợp lệ trên file dữ liệu để người dùng có thể điều chỉnh hoặc tiến hành nhập dữ liệu luôn.
+Bước 4: Thông báo kết quả nhập liệu
+3. Nhập chứng từ từ file Excel
+Xem phim hướng dẫn
+Chọn phân hệ cần thực hiện nhập khẩu chứng từ:
+Trên chức năng Thêm chọn tiện ích Nhập từ excel:
+Chương trình hiển thị giao diện tương tự như nhập khẩu danh mục:
+Bước 1: Chọn tệp nguồn:
+Chọn đúng loại chứng từ trước khi chọn file dữ liệu hoặc tải file mẫu để tránh phát sinh lỗi ở các bước sau do sai định dang, thông tin dữ liệu cần nhập khẩu của mỗi loại chứng từ.
+Chỉ nhập khẩu thêm mới chứng từ.
+Bước 2: Ghép dữ liệu: Tương tự như khi nhập khẩu danh mục người dùng cần ghép được các cột dữ liệu trên file nhập khẩu và trên chương trình
+Bước 3: Kiểm tra dữ liệu: Chương trình sẽ trả về kết quả dữ liệu hợp lệ hoặc không hợp lệ trên file dữ liệu để người dùng có thể điều chỉnh hoặc tiến hành nhập dữ liệu luôn.
+Bước 4: Thông báo kết quả nhập liệu
+Lưu ý: Sau khi nhập khẩu thành công thì chứng từ sẽ ở trạng thái chưa ghi sổ. NSD cần thực hiện ghi sổ chứng từ để ghi nhận bút toán lên các báo cáo, sổ sách kế toán.
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng cung cấp thông tin về lỗi mà Quý khách đang gặp phải khi đổ dữ liệu vào AMIS để Em có thể hỗ trợ một cách chính xác nhất.
+doanh số bán hàng,"Xem phim hướng dẫn
+Danh sách báo cáo quản trị bán hàng
+STT
+Tên báo cáo
+Ý nghĩa
+Hướng dẫn lập báo cáo
+Tổng hợp bán hàng
+Tổng hợp doanh số bán hàng, hàng bán trả lại, giảm giá của khách hàng ở từng địa phương, đơn vị kinh doanh, khách hàng, mặt hàng, nhân viên,...
+1.1
+Tổng hợp bán hàng theo đơn vị kinh doanh
+Để biết được doanh thu bán hàng của các Cửa hàng/Phòng Ban/Chi nhánh, Cửa hàng/Phòng ban/Chi nhánh nào có doanh thu lớn nhất trong kỳ?
+1.2
+Tổng hợp bán hàng theo nhân viên
+Để biết được doanh số bán hàng của các nhân viên trong kỳ, Nhân viên nào có doanh số bán hàng cao nhất
+Xem tại đây
+1.3
+Tổng hợp bán hàng theo khách hàng
+Để biết được mỗi khách hàng mua hàng trong kỳ là bao nhiêu? Khách hàng nào mua nhiều nhất?
+1.4
+Tổng hợp bán hàng theo mặt hàng
+Để biết được mỗi mặt hàng bán được bao nhiêu trong kỳ? mặt hàng nào bán được nhiều nhất?
+1.5
+Tổng hợp bán hàng theo địa phương
+Để biết được các thị trường có phát sinh doanh thu trong kỳ? thị trường nào kinh doanh hiệu quả nhất?
+Tổng hợp công nợ phải thu khách hàng
+Tổng hợp tình hình phát sinh và thu hồi công nợ phải thu của tất cả các khách hàng theo từng tài khoản công nợ và loại tiền; theo nhân viên bán hàng; theo công trình; theo hợp đồng bán; theo đơn vị kinh doanh,...
+Xem tại đây
+Chi tiết công nợ phải thu khách hàng
+Phản ánh tình hình công nợ phải thu của một khách hàng theo từng tài khoản công nợ, chi tiết theo từng chứng từ phát sinh, nhân viên bán hàng, công trình, hợp đồng bán, đơn vị kinh doanh,...
+Chi tiết công nợ phải thu theo hóa đơn
+Phản ánh công nợ phải thu khách hàng của từng công trình chi tiết theo hóa đơn
+Chi tiết công nợ phải thu theo mặt hàng
+Phản ánh chi tiết công nợ phải thu khách hàng chi tiết theo mặt hàng nhóm được theo từng hóa đơn ghi nợ để biết tổng số tiền phải thu
+Phân tích công nợ phải thu quá hạn
+Phân tích công nợ phải thu theo quá hạn (theo nhóm quá hạn 0-30 ngày, 31-60 ngày....) giúp thống kê được số còn phải thu khách hàng theo từng nhóm tuổi nợ, đốc thúc khách hàng thanh toán
+Phân tích công nợ phải thu trước hạn
+Phân tích công nợ phải thu theo tuổi nợ chia ra làm không có hạn nợ, công nợ phải thu trước hạn (theo các nhóm trước hạn như 0-30 ngày, 31-60 ngày...) giúp thống kê được số còn phải thu khách hàng theo từng nhóm tuổi nợ, đốc thúc khách hàng thanh toán
+Phân tích công nợ phải thu theo tuổi nợ
+Phân tích công nợ phải thu theo tuổi nợ gồm: không có hạn nợ, công nợ phải thu trước hạn (theo các nhóm trước hạn như 0-30 ngày, 31-60 ngày...), công nợ phải thu quá hạn (theo nhóm quá hạn 0-30 ngày, 31-60 ngày....), giúp thống kê được số còn phải thu khách hàng theo từng nhóm tuổi nợ, làm căn cứ đốc thúc khách hàng thanh toán
+Chi tiết công nợ phải thu theo tuổi nợ
+Biết được số công nợ còn phải thu từng khách hàng, từng hạn nợ, từng chứng từ bán hàng, từng hóa đơn bán hàng.
+10
+Sổ chi tiết bán hàng (S35-DN)
+Ghi chép từng sản phẩm, hàng hóa, bất động sản đầu tư, dịch vụ đã bán hoặc đã cung cấp được khách hàng thanh toán tiền ngay hay chấp nhận thanh toán
+11
+Sổ chi tiết bán hàng
+Phản ánh tình hình bán hàng, trả lại hàng bán, giảm giá hàng bán chi tiết theo từng chứng từ hoặc chi tiết theo từng chứng từ phát sinh theo nhân viên
+12
+Sổ chi tiết bán hàng theo mã quy cách
+Ghi chép từng sản phẩm, hàng hóa, bất động sản đầu tư, dịch vụ đã bán hoặc đã cung cấp được khách hàng chi tiết theo mã quy cách
+13
+Sổ nhật ký bán hàng
+Ghi chép các nghiệp vụ bán hàng theo từng loại hàng tồn kho của đơn vị như nguyên liệu, vật liệu; công cụ, dụng cụ; hàng hóa,...
+14
+Biên bản đối chiếu và xác nhận công nợ
+Tổng hợp công nợ phát sinh trong kỳ và số dư cuối kỳ của từng khách hàng để làm căn cứ đối chiếu, xác nhận nợ với khách hàng
+15
+Tình hình thực hiện đơn đặt hàng
+Phản ánh tình hình thực hiện các đơn đặt hàng phát sinh trong kỳ: số lượng đã giao, số lượng còn lại, doanh số đã thực hiện, doanh số chưa thực hiện của từng đơn đặt hàng
+Xem tại đây
+16
+Báo cáo tổng hợp lãi lỗ theo đơn hàng
+Phản ánh tổng quát tình hình doanh thu chi phí, lãi lỗ theo từng đơn hàng
+17
+Báo cáo chi tiết lãi lỗ theo đơn hàng
+Theo dõi được từng khoản doanh thu, chi phí theo từng chứng từ của từng đơn hàng
+18
+Thông báo công nợ
+Lập được thông báo công nợ bao gồm danh sách các chứng từ làm tăng giảm công nợ và số dư công nợ đầu kỳ, cuối kỳ của từng khách hàng để gửi cho khách hàng đối chiếu, xác nhận
+19
+Tổng hợp thanh toán công nợ khách hàng
+Theo dõi được tình hình thanh toán theo nhân viên và khách hàng
+20
+Báo cáo so sánh số lượng bán, doanh số theo thời gian
+So sánh số lượng bán, doanh số bán hàng và doanh thu thuần giữa các tháng, quý chi tiết theo từng khách hàng, từng mã hàng. Từ đó làm căn cứ đưa ra chính sách giá, chính sách chiết khấu, giảm giá cho khách hàng
+21
+Tổng hợp công nợ phải thu theo nhóm khách hàng
+Tổng hợp tình hình công nợ khách hàng theo từng tài khoản và theo từng nhóm khách hàng, cho biết từng nhóm khách hàng có những khách hàng khách hàng nào, cộng nợ đầu kỳ, công nợ phát sinh trong kỳ, công nợ đã thu, còn phải thu của mỗi khách hàng và nhóm khách hàng là bao nhiêu
+22
+Báo cáo ngày thanh toán theo khách hàng
+Theo dõi chi tiết tình hình thanh toán tiền của khách hàng theo hạn thanh toán chi tiết theo từng hóa đơn bán hàng và phiếu thu tương ứng
+23
+Thống kê số lượng tồn kho và số lượng đặt hàng chưa giao
+So sánh số lượng đặt hàng và số lượng tồn kho để có kế hoạch giao hàng và mua hàng kịp thời
+24
+Tổng hợp xuất kho bán hàng
+Tổng hợp các phiếu xuất kho bán hàng từ nhiều chứng từ bán hàng, làm căn cứ xuất hàng và chuyển cho nhân viên đi giao hàng cho khách hàng",Vui lòng cung cấp thông tin chi tiết về vấn đề liên quan đến doanh số bán hàng mà Quý khách đang gặp phải để em có thể hỗ trợ một cách chính xác nhất.
+"c có mặt hàng khuyến mại cho khách , c muốn treên hóa đơn thể hiện chữ khuyến mại ko thu tiền","1.Vấn đề
+Khi nhập liệu chứng từ bán hàng tại tab Hàng tiền thêm mã hàng không chọn được tính chất "" Chỉ là diễn giải""
+​2. Cách xử lý
+Trên giao diện khi lập Chứng từ bán hàng, Tại tab Hàng tiền nhấn Thêm ghi chú rồi nhập thông tin cần diễn giải tại cột Tên hàng.",Vui lòng cung cấp thêm thông tin về vấn đề Quý khách đang gặp phải để Em có thể hỗ trợ một cách chính xác nhất.
+mình muốn lấy lại mẫu cũ,"Cho phép tự thiết kế và đưa vào phần mềm AMIS Kế toán để sử dụng các mẫu chứng từ theo đặc thù của doanh nghiệp mình.
+Cách thao tác:
+Để tự thiết kế mẫu chứng từ đặc thù của đơn vị, thực hiện theo 2 bước sau:
+Thiết kế file mẫu chứng từ đặc thù
+Cập nhật file mẫu chứng từ đặc thù vào phần mềm để sử dụng và in ấn
+Bước 1: Thiết kế file mẫu chứng từ đặc thù
+Phần mềm AMIS Kế toán chỉ hỗ trợ thiết lập mẫu chứng từ từ các file mẫu có định dạng .doc; .docx; .xls; .xlsx
+Khi thiết kế các mẫu chứng từ, nếu trên mẫu không cần thiết lập công thức, chỉ cần lấy các trường có sẵn trong trường trộn thì thiết lập trên file word, còn nếu có chỉ tiêu nào đó cần thiết lập công thức từ các ô khác thì nên thiết kế mẫu trên file excel (MISA khuyến cáo đơn vị nên thiết lập chứng từ trên file excel). Để thiết kế file mẫu chứng từ đặc thù, làm theo 3 bước sau:
+Bước 1: Chuẩn bị mẫu ngoài file word, file excel
+Bước 2: Tải trường trộn từ phần mềm về
+Bước 3: Trộn các thông tin trường trộn vào mẫu
+Bước 1 - Chuẩn bị mẫu ngoài file word, file excel:
+Để có mẫu chứng từ đặc thù thì có 2 cách
+Cách 01: Xuất khẩu mẫu đã có sẵn trên phần mền MISA ra file word, hay excel để sửa lại thành mẫu đặc thù
+Cách 02: Nếu có sẵn một mẫu file đặc thù bằng file word, hay excel từ trước.
+Ví dụ: thiết kế mẫu Phiếu xuất bán hàng (2 liên) từ file word với nội dung như sau
+Lưu ý: Do mẫu Phiếu xuất hàng có 2 liên nên phải thiết kế sẵn 2 liên trên file word, excel để khi in sẽ in từng liên.
+Bước 2 - Tải trường trộn từ phần mềm về
+Bước này giúp tải các thông tin trường dữ liệu mà phần mềm AMIS Kế toán đã thiết lập sẵn làm căn cứ để thiết kế chứng từ đặc thù.
+Mở một chứng từ bán hàng trên chương trình:
+Chọn chức năng In\Tùy chọn in
+Trên giao diện Tùy chọn in chọn Thêm mẫu:
+Chọn chức năng Tải danh sách trường trộn để tải file trường trộn về máy tính của anh/chị:
+Phần mềm sẽ hiển thị file excel chứa thông tin về tên các trường dữ liệu có thể thiết lập trên phiếu xuất kho. File excel gồm 2 cột:
+Cột Mã trường dữ liệu là tên các trường sẽ copy vào mẫu trộn
+Cột Mô tả để giải thích trường bên cột Trường dữ liệu nếu copy mã trường đó thì sẽ lấy lên thông tin gì trên chứng từ. Ví dụ: Nếu copy Trường dữ liệu : ##AccountObjectName## thì sẽ lấy thông tin tên đối tượng lên chứng từ
+Bước 3 - Trộn các thông tin trường trộn vào mẫu:
+Trên mẫu hoá đơn này chia ra làm 2 nhóm thông tin:
+Nhóm 1: Là những thông tin cố định in trên phiếu xuất bán hàng (như: tên chỉ tiêu), bao gồm các chữ màu đen được khoanh khung xanh như hình minh hoạ .
+Nhóm 2: Là những thông tin thay đổi khi in từng phiếu xuất bán hàng cụ thể, bao gồm những thông tin tô màu vàng như hình minh hoạ, đây là những thông tin cần thiết lập các trường trộn trên mẫu.
+Các thông tin để trộn trên hoá đơn cũng chia làm 2 loại:
+Loại 1: những trường trộn sử dụng trên thông tin chung ( là thông tin chỉ hiện thị một lần trên chứng từ). VD: Số, Ngày, Người mua hàng, Công ty, Địa chỉ, thông tin người ký…Thông tin Số tiền bằng chữ
+Loại 2: Những trường trộn chi tiết (là các thông tin được hiển thị lặp đi lặp lại với số liệu khác nhau, thường là các thông tin chi tiết liên quan đến hàng hoá). Tên các trường trộn này thường có chữ “detail” ở đầu (như: Tên hàng: ##Detail_InventoryItemName##; ##Detail_Quantity##: số lượng…). VD: Mã hàng, Tên hàng, đơn vị tính, Số lượng, đơn giá, thành tiền….
+NSD thực hiện thiết kế mẫu như sau: mở file word/ excel mẫu lên, copy các trường trên file trường trộn mới tải về ở bước 2, dán vào thông tin tương ứng trên mẫu hoá đơn ở liên 1 ( như hình vẽ dưới đây)
+Lưu ý: Đối với những trường dữ liệu chi tiết, là những trường trộn có chữ detail thì bắt buộc phải hiển thị ở trong bảng dữ liệu. Nếu không đưa các trường này vào bảng dữ liệu thì khi in sẽ không lên số liệu
+Thông tin GPSD phần mềm tự hiển thị ngầm đinh bên góc trái bên trên của chứng từ, nên khi thiết kế mẫu phải để trống ở góc này.
+Trừ trường hợp loại chứng từ là hoá đơn bán hàng thì khi in phầm mềm không hiển thị thông tin GPSD bên góc trái mà cho phép tự thiết kế thông tin về đơn vị mình theo mẫu hoá đơn đã đăng ký với cơ quan thuế
+Tương tự trộn trường cho liên 2 ( hay copy thông tin đã trộn từ liên 1 ra để sửa lại)
+Sau khi thiết kế xong mẫu chứng từ đặc thù của doanh nghiệp, thực hiện lưu lại thông tin.
+Đóng file lại để hoàn thành việc thiết kế mẫu chứng từ đặc thù
+Bước 2: Cập nhật file mẫu chứng từ đặc thù vào phần mềm để sử dụng và in ấn
+Mở giao diện chi tiết của một chứng từ bán hàng đã có sẵn tại màn hình danh sách:
+Chọn chức năng In\Tùy chọn in:
+Chọn Thêm mẫu
+Chọn Chứng từ bán hàng
+Chọn đường dẫn tới file mẫu hoá đơn đã thiết kế
+Nhập Tên mẫu (VD: Chung_tu_ban_hang)
+Có thể lựa chọn In mẫu chứng từ theo định dạng PDF hoặc Excel
+Nhấn Tạo mẫu và đóng màn hình Thiết kế mẫu chứng từ lại.
+Lưu ý: Các mẫu đặc thù này chỉ thiết kế 1 lần và đưa vào phần mềm, mỗi khi in phần mềm đã có sẵn tên mẫu trong danh sách để chọn sử dụng
+Bước 3: Sử dụng mẫu
+Mở chi tiết chứng từ bán hàng, chọn In, lúc này mẫu trộn đã thực hiện trộn ở trên sẽ xuất hiện trong danh sách các chứng từ Tùy chọn in.
+Chọn In\Chứng từ bán hàng để thực hiện in chứng từ:",Vui lòng cung cấp thêm thông tin về mẫu mà Quý khách cần lấy lại để em có thể hỗ trợ một cách chính xác nhất.
+không có cách nào mà ko cần lầm bảng lương mà vẫn chi TM để trả lương à bạn t đg làm phần nội bộ,"1. Định khoản
+Nợ TK 334 Phải trả cho người lao động
+Có TK 111, 112
+2. Hướng dẫn trên phần mềm
+Để thực hiện nghiệp vụ trả lương cho nhân viên, vào phân hệ Tiền lương\Quy trình, chọn chức năng Trả lương, sau đó lựa chọn một trong hai cách thức trả lương sau:
+Trả lương cho nhân viên bằng tiền mặt
+Trả lương cho nhân viên thông qua chuyển khoản ngân hàng",Vui lòng cung cấp thêm thông tin liên quan đến việc chi trả lương mà Quý khách đang gặp phải để em có thể hỗ trợ một cách chính xác nhất.
+Tôi có thể tại hàng loạt hóa đơn đầu vào để lưu trữ được không.,"1. Nội dung
+Giúp Kế toán lập chứng từ (mua hàng, mua dịch vụ,...) một cách tự động khi nhận hóa đơn điện tử từ người bán.
+2. Các bước thực hiện
+Vào phân hệ Mua hàng, tab Mua hàng, chọn chứng từ cần lập tương ứng với nội dung hóa đơn nhận được (Ví dụ: Chứng từ mua hàng hóa, Chứng từ mua dịch vụ, Giảm giá hàng mua).
+Nhấn vào biểu tượng trên thanh công cụ, chọn Nhập khẩu từ hóa đơn điện tử.
+Chọn hình thức nhập khẩu (từ tệp hóa đơn điện tử hoặc từ mã tra cứu):
+Nếu chọn Từ tệp hóa đơn điện tử: Chọn đến tệp hóa đơn điện tử dạng xml nhận được từ người bán.
+Nếu chọn Từ mã số tra cứu: Nhập mã số tra cứu của hóa đơn vào ô Từ mã số tra cứu
+Có thể kiểm tra lại nội dung hóa đơn trước khi lập chứng từ bằng cách nhấn Xem chi tiết hóa đơn.
+Lưu ý: Hình thức nhập khẩu này chỉ thực hiện được với hóa đơn của Nhà cung cấp meInvoice.vn
+Nhấn Lập chứng từ. Chương trình sẽ tự động lấy thông tin trên hóa đơn để lập chứng từ mua hàng tương ứng:
+Có thể thay đổi lại các thông tin trên chứng từ theo nhu cầu (nếu cần).
+Nhấn Cất.
+Lưu ý:
+Nếu Nhà cung cấp, Hàng hóa trên hóa đơn chưa có trong danh mục nhà cung cấp, hàng hóa trên phần mềm thì thực hiện thêm mới bằng cách nhấn vào biểu tượng dấu cộng.
+Trường hợp Nhà cung cấp đã có trong danh mục nhà cung cấp trên phần mềm nhưng vẫn hiển thị thông báo ""Không tìm thấy Nhà cung cấp"" thì cần kiểm tra lại xem thông tin Mã số thuế và tên Nhà cung cấp khai báo trên danh mục đã chính xác chưa để chỉnh sửa lại cho đúng, sau đó chọn lại Nhà cung cấp trong danh mục.
+Trường hợp Hàng hóa đã có trong danh mục hàng hóa trên phần mềm nhưng vẫn hiển thị thông báo ""Không tìm thấy Hàng hóa"": là do cách đặt Mã Hàng hóa và Tên hàng hóa giữa người mua và người bán không trùng khớp nhau, trường hợp này Kế toán chọn lại Hàng hóa trong danh mục, các thông tin liên quan như: Số lượng, Đơn giá, Thuế suất... vẫn sẽ được giữ nguyên theo thông tin trên hóa đơn của người bán.",Vui lòng cung cấp thêm thông tin về vấn đề liên quan đến việc tải hàng loạt hóa đơn đầu vào mà Quý khách đang gặp ph để em có thể hỗ trợ một cách chính xác nhất.
+vui lòng hỗ trợ tôi nhập chứng từ ngân hàng,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+Xem phim hướng dẫn
+Cho phép nhập dữ liệu kế toán từ tệp Excel vào phần mềm. Gồm các loại dữ liệu sau: Danh mục, Số dư, Chứng từ
+Cách thao tác
+1. Nhập danh mục từ Excel
+Xem phim hướng dẫn
+Vào Các tiện ích và thiết lập\Quản lý danh mục, chọn danh mục cần thực hiện khai báo:
+Chọn tiện ích Nhập từ excel:
+Chương trình sẽ hiển thị giao diện:
+Bước 1: Chọn tệp nguồn
+NSD chọn file nhập khẩu từ các file dữ liệu sẵn có trên máy tính hoặc có thể tải file mẫu về để tạo file dữ liệu nhập khẩu.
+Chọn sheet có chứa dữ liệu cần nhập và lựa chọn dòng bắt đầu lấy dữ liệu.
+Có 3 lựa chọn nhập khẩu thông tin:
+Thêm mới: NSD sẽ tạo mới các mã trong danh mục VTHH, NCC, khách hàng …
+Cập nhật: NSD sẽ cập nhật, bổ sung thêm các thông tin của các mã đã được tạo từ trước trên danh mục.
+Ghi đè: Cập nhật dữ liệu theo thông tin mới của các mã đã được tạo từ trước trên danh mục.
+Sau khi đã lựa chọn xong, nhấn Tiếp tục để chuyển qua bước 2.
+Bước 2: Ghép dữ liệu
+Trường hợp lấy từ file mẫu thì chương trình sẽ tự động ghép các cột trên file dữ liệu và các cột thông tin trên chương trình:
+Trường hợp là file do người dùng tự tạo không theo mẫu chương trình thì người dùng có thể thực hiện ghép cột thủ công:
+Trường hợp người dùng mong muốn lấy thêm hoặc bỏ bớt các thông tin trên các mã danh mục cần nhập khẩu thì có thể tích Ẩn/hiện thông tin:
+Bước 3: Kiểm tra dữ liệu
+Chương trình sẽ kiểm tra toàn bộ dữ liệu trong các cột với dữ liệu đã tồn tại trên chương trình và hiển thị thông báo cho người dùng nắm được:
+Khi đó người dùng có thể lựa chọn:
+Nhấn Nhập dữ liệu: chương trình sẽ bỏ qua các mã không hợp lệ và chỉ nhập lên hệ thống các mã có tình trạng hợp lệ.
+Kiểm tra thông tin chi tiết lỗi trên giao diện hoặc tải file kết quả để kiểm tra lại. Sau đó NSD có thể quay lại bước 1 để cập nhật lại file nhập khẩu.
+Bước 4: Kết quả nhập khẩu dữ liệu
+Chương trình sẽ trả về kết quả các mã đã nhập thành công hoặc không thành công dựa theo kết quả kiểm tra ở bước 3:
+Nhấn Đóng hoặc nhấn biểu tượng dấu X để hoàn thành nhập khẩu danh mục.
+2. Nhập số dư từ file Excel
+Xem phim hướng dẫn
+Vào Các tiện ích và thiết lập\Nhập số dư ban đầu:
+Chương trình sẽ hiển thị danh sách các loại số dư để người dùng thực hiện nhập:
+Ví dụ: Nhập số dư tài khoản từ file excel:
+Trên chức năng Nhập số dư, chọn tiện ích Nhập số dư ban đầu từ Excel:
+Bước 1: Chọn tệp nguồn: Tương tự như nhập khẩu danh mục.
+Bước 2: Ghép dữ liệu: Tương tự như khi nhập khẩu danh mục , người dùng cần ghép được các cột dữ liệu trên file nhập khẩu và trên chương trình.
+Bước 3: Kiểm tra dữ liệu: Chương trình sẽ trả về kết quả dữ liệu hợp lệ hoặc không hợp lệ trên file dữ liệu để người dùng có thể điều chỉnh hoặc tiến hành nhập dữ liệu luôn.
+Bước 4: Thông báo kết quả nhập liệu
+3. Nhập chứng từ từ file Excel
+Xem phim hướng dẫn
+Chọn phân hệ cần thực hiện nhập khẩu chứng từ:
+Trên chức năng Thêm chọn tiện ích Nhập từ excel:
+Chương trình hiển thị giao diện tương tự như nhập khẩu danh mục:
+Bước 1: Chọn tệp nguồn:
+Chọn đúng loại chứng từ trước khi chọn file dữ liệu hoặc tải file mẫu để tránh phát sinh lỗi ở các bước sau do sai định dang, thông tin dữ liệu cần nhập khẩu của mỗi loại chứng từ.
+Chỉ nhập khẩu thêm mới chứng từ.
+Bước 2: Ghép dữ liệu: Tương tự như khi nhập khẩu danh mục người dùng cần ghép được các cột dữ liệu trên file nhập khẩu và trên chương trình
+Bước 3: Kiểm tra dữ liệu: Chương trình sẽ trả về kết quả dữ liệu hợp lệ hoặc không hợp lệ trên file dữ liệu để người dùng có thể điều chỉnh hoặc tiến hành nhập dữ liệu luôn.
+Bước 4: Thông báo kết quả nhập liệu
+Lưu ý: Sau khi nhập khẩu thành công thì chứng từ sẽ ở trạng thái chưa ghi sổ. NSD cần thực hiện ghi sổ chứng từ để ghi nhận bút toán lên các báo cáo, sổ sách kế toán.
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng cung cấp thêm thông tin về loại chứng từ ngân hàng mà Quý khách cần nhập để em có thể hỗ trợ một cách chính xác nhất.
+M xử lý hóa đơn đầu vào rồi,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+1. Mục đích
+Cho phép người dùng kết nối với dịch vụ Hóa đơn đầu vào meInvoice để tự động nhận hóa đơn đầu vào, kiểm tra tính hợp lý, hợp lệ của hóa đơn; tự động đồng bộ về phần mềm kế toán và sinh chứng từ nhanh chóng từ hóa đơn đồng bộ về.
+2. Cách thực hiện
+Lưu ý: Để sử dụng tính năng này, trước hết người dùng cần thực hiện mua Dịch vụ xử lý hóa đơn đầu vào tại đây.
+Vào phân hệ Mua hàng, tab Xử lý hóa đơn đầu vào. Nhấn Kết nối ngay:
+Điền thông tin tài khoản kết nối:
+Lưu ý:
+Mã số thuế để thực hiện kết nối phải trùng khớp với mã số thuế trên thông tin công ty/chi nhánh đang làm việc:
+Trường hợp người dùng chưa có tài khoản kết nối thì nhấn Tạo ngay tại đây. Xem hướng dẫn tạo tài khoản tại đây.
+Trường hợp tài khoản kết nối meInvoice của người dùng được phân quyền nhận hóa đơn đầu vào vào duy nhất một đơn vị và mã số thuế của đơn vị đó khớp với mã số thuế trên thông tin công ty, hoặc nhiều đơn vị nhưng chỉ có duy nhất một đơn vị khớp với mã số thuế trên thông tin công ty thì chương trình sẽ ngầm định kết nối hóa đơn đầu vào với đơn vị khớp mã số thuế đó.
+Nếu tài khoản kết nối với meInvoice được phân quyền nhận hóa đơn nhiều đơn vị khớp với mã số thuế trên thông tin công ty thì chương trình sẽ hiển thị giao diện chọn đơn vị nhận hóa đơn:
+Sau khi kết nối thành công, chương trình sẽ tự động lấy về danh sách hóa đơn đầu vào từ MISA meInvoice. Tại đây người dùng có thể thực hiện lập được các chức năng sau:
+Lập chứng từ mua dịch vụ
+Lập phiếu chi tiền mặt
+Lập ủy nhiệm chi
+Lập chứng từ nghiệp vụ khác
+Lập chứng từ trả lại hàng bán
+Lập chứng từ quyết toán tạm ứng
+Nhận hóa đơn
+Đánh dấu đã hạch toán
+Ví dụ lập phiếu chi tiền mặt:
+Trường hợp thực hiện hàng loạt:
+Tích chọn các giao dịch mua hàng cần lập chứng từ:
+Lần lượt khai báo các thông tin của chứng từ chi tiền mặt cho từng giao dịch mua hàng sau đó nhấn Cất.
+Lưu ý:
+1. Người dùng có thể thực hiện lọc các giao dịch mua hàng tại giao diện Lọc chứng từ theo các tiêu chí:
+2. Các chức năng thực hiện trên meInvoice:
+Tại chức năng Tùy chọn lập chứng từ, người dùng thực hiện tích chọn các tùy chọn sao cho phù hợp với nhu cầu của đơn vị mình:
+Lưu ý: Giao diện Tùy chọn lập chứng từ sẽ tự động hiển thị mỗi khi người dùng thực hiện lập chứng từ từ giao dịch mua hàng. Nếu người dùng không muốn hiển thị giao diện này khi lập chứng từ thì bỏ tích chọn Hỏi lại mỗi khi lập chứng từ hạch toán.
+3. Người dùng có thể nắm được số lượng hóa đơn còn được phép sử dụng:
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng cung cấp thêm thông tin về yêu cầu cần hỗ trợ để em có thể hỗ trợ một cách chính xác nhất.
+"mình hỏi về tỷ giá xuất quỹ, mình thấy MISA đang tính bị lệch 1 đồng tỷ giá xuất quỹ nên phần mềm tính số tiền chênh lệch tỷ giá khác so với số mình tự tính","1. Nội dung
+Cho phép tính tỷ giá xuất quỹ cho các chứng từ chi bằng ngoại tệ.
+2. Cách thao tác
+Việc tính tỷ giá xuất quỹ được thực hiện theo một trong hai trường hợp sau:
+Tính tỷ giá xuất quỹ theo phương pháp Bình quân tức thời
+Với phương pháp này mỗi lần thực hiện chi ngoại tệ bằng tiền mặt, tiền gửi, chương trình sẽ tự động xác định tỷ giá xuất quỹ trên chứng từ chi tiền. Khi nào có phát sinh sửa chữa, thêm, bớt hoặc xóa các khoản thu, chi ngoại tệ, kế toán sẽ thực hiện chức năng Tính tỷ giá xuất quỹ, để chương trình tự động tính lại tỷ giá xuất quỹ cho các chứng từ gốc.
+Vào phân hệ Tiền mặt hoặc Tiền gửi, chọn chức năng Tính tỷ giá xuất quỹ.
+Chọn Kỳ tính giá xuất quỹ.
+Tích chọn loại ngoại tệ cần tính tỷ giá xuất quỹ.
+Nhấn Đồng ý chương trình tự động cập nhật lại tỷ giá xuất quỹ vào các chứng từ gốc có liên quan.
+Lưu ý: Chương trình tự động tính tỷ giá xuất quỹ cho từng tài khoản ngân hàng.
+Tính tỷ giá xuất quỹ theo phương pháp Bình quân cuối kỳ
+Với phương pháp này mỗi lần thực hiện chi ngoại tệ bằng tiền mặt, tiền gửi, chương trình sẽ không tự động xác định tỷ giá xuất quỹ trên chứng từ chi tiền. Cuối tháng, kế toán sẽ thực hiện chức năng Tính tỷ giá xuất quỹ, để chương trình xử lý chênh lệch tỷ giá cho các chứng từ có liên quan.
+Vào phân hệ Tiền mặt hoặc Tiền gửi, chọn chức năng Tính tỷ giá xuất quỹ.
+Chọn Kỳ tính giá xuất quỹ.
+Tích chọn loại ngoại tệ cần tính tỷ giá xuất quỹ.
+Nhấn Đồng ý, chương trình tự động sinh chứng từ xử lý chênh lệch từ việc tính tỷ giá xuất quỹ.
+Kiểm tra lại chứng từ xử lý chênh lệch, sau đó nhấn Cất.
+Lưu ý: Chứng từ xử lý chênh lệch tỷ giá từ tính tỷ giá xuất quỹ sau khi cất giữ sẽ được lưu trên tab Chứng từ nghiệp vụ khác.
+Lưu ý: Đối với dữ liệu hạch toán đa chi nhánh, chức năng tính tỷ giá xuất quỹ được thực hiện tại chi nhánh nào sẽ chỉ lưu trên chi nhánh đó.",Vui lòng mô tả chi tiết hơn về vấn đề tính tỷ giá xuất quỹ lệch mà Quý khách đang gặp phải để em có thể hỗ trợ một cách chính xác nhất
+Xử lý hóa đơn không cập nhật,"1. Nội dung
+Hướng dẫn lập thông báo hóa đơn sai sót gửi cơ quan thuế trên AMIS Kế toán trong trường hợp người nộp thuế phát hiện hóa đơn có sai sót hoặc nhận được thông báo rà soát từ cơ quan thuế, cụ thể theo các trường hợp sau:
+Hóa đơn điện tử sai sót nhưng chưa gửi người mua.
+Hóa đơn điện tử đã gửi cho người mua, phát hiện sai sót tên, địa chỉ, không sai sót về mã số thuế, số tiền, quy cách, chất lượng hàng hóa.
+Hóa đơn điện tử đã gửi cho người mua, phát hiện sai sót về mã số thuế, số tiền, tiền thuế, quy cách, chất lượng hàng hóa.
+HĐĐT đã phát hành theo Nghị định 51, phát hiện sai sót khi đang sử dụng HĐĐT theo Nghị định 123
+2. Hướng dẫn
+2.1. Lập thông báo hủy hóa đơn sai sót
+Trường hợp phát hiện hóa đơn điện tử có sai sót cần lập thông báo hủy hóa đơn sai sót gửi Cơ quan thuế, người dùng:
+Vào Quản lý hóa đơn\Quy trình, nhấn Thông báo hóa đơn sai sót
+Thực hiện lập thông báo sai sót trên MISA meInvoice.
+Nhấn Lập thông báo
+Chọn loại hóa đơn sai sót: Hóa đơn theo NĐ123 (Có mã của CQT)\Hóa đơn theo NĐ123 (Không có mã của CQT)\Hóa đơn theo NĐ51
+Tìm kiếm thông tin và chọn hóa đơn sai sót.
+Trên giao diện lập thông báo:
+Chọn loại thông báo
+Chọn Hủy tại cột Hủy/Điều chỉnh/Thay thế/Giải trình và nhập lý do hủy.
+Ký số điện tử và nhấn Gửi tới CQT.
+2.2. Lập thông báo giải trình hóa đơn sai sót
+Trường hợp phát hiện hóa đơn điện tử, đã gửi cho người mua có sai sót tên, địa chỉ, không sai sót về mã số thuế, số tiền, quy cách, chất lượng hàng hóa, để lập thông báo hóa đơn sai sót gửi Cơ quan thuế, người dùng:
+Vào Quản lý hóa đơn\Quy trình, nhấn Thông báo hóa đơn sai sót
+Thực hiện lập thông báo sai sót trên MISA meInvoice.
+Nhấn Lập thông báo
+Chọn loại hóa đơn sai sót: Hóa đơn theo NĐ123 (Có mã của CQT)\Hóa đơn theo NĐ123 (Không có mã của CQT)\Hóa đơn theo NĐ51
+Tìm kiếm thông tin và chọn hóa đơn sai sót.
+Trên giao diện lập thông báo:
+Chọn loại thông báo
+Chọn Giải trình tại cột Hủy/Điều chỉnh/Thay thế/Giải trình và nhập lý do giải trình.
+Ký số điện tử và nhấn Gửi tới CQT.
+2.3. Lập thông báo điều chỉnh hóa đơn sai sót
+Trường hợp phát hiện hóa đơn điện tử đã gửi cho người mua, có sai sót về mã số thuế, số tiền, tiền thuế, quy cách, chất lượng hàng hóa, để lập thông báo điều chỉnh hóa đơn sai sót gửi Cơ quan thuế, người dùng:
+Vào Quản lý hóa đơn\Quy trình, nhấn Thông báo hóa đơn sai sót
+Thực hiện lập thông báo sai sót trên MISA meInvoice.
+Nhấn Lập thông báo
+Chọn loại hóa đơn sai sót: Hóa đơn theo NĐ123 (Có mã của CQT)\Hóa đơn theo NĐ123 (Không có mã của CQT)\Hóa đơn theo NĐ51
+Tìm kiếm thông tin và chọn hóa đơn sai sót.
+Trên giao diện lập thông báo:
+Chọn loại thông báo
+Chọn Điều chỉnh tại cột Hủy/Điều chỉnh/Thay thế/Giải trình và nhập lý do điều chỉnh
+Ký số điện tử và nhấn Gửi tới CQT.
+2.4. Lập thông báo thay thế hóa đơn sai sót
+Trường hợp phát hiện hóa đơn điện tử đã gửi cho người mua, có sai sót về mã số thuế, số tiền, tiền thuế, quy cách, chất lượng hàng hóa, để lập thông báo thay thế hóa đơn sai sót gửi Cơ quan thuế, người dùng:
+Vào Quản lý hóa đơn\Quy trình, nhấn Thông báo hóa đơn sai sót
+Thực hiện lập thông báo sai sót trên MISA meInvoice.
+Nhấn Lập thông báo
+Chọn loại hóa đơn sai sót: Hóa đơn theo NĐ123 (Có mã của CQT)\Hóa đơn theo NĐ123 (Không có mã của CQT)\Hóa đơn theo NĐ51
+Tìm kiếm thông tin và chọn hóa đơn sai sót.
+Trên giao diện lập thông báo:
+Chọn loại thông báo
+Chọn Thay thế tại cột Hủy/Điều chỉnh/Thay thế/Giải trình và nhập lý do thay thế.
+Ký số điện tử và nhấn Gửi tới CQT.
+Lưu ý:
+Với trường hợp thay thế hoặc điều chỉnh hóa đơn sai sót theo quy định tại Điều 19 Nghị định số 123/2020/NĐ-CP, NNT có thể gửi thông báo hóa đơn sai sót đến cơ quan thuế bất cứ thời gian nào nhưng chậm nhất là ngày cuối cùng của kỳ kê khai thuế giá trị gia tăng phát sinh hóa đơn điện tử điều chỉnh (điểm a, khoản 1, điều 7, Thông tư 78/2021/TT-BTC).
+Khi lập thông báo phản hồi cho thông báo rà soát HĐ mẫu số 01/TB-RSĐT của Cơ quan thuế, kế toán cần chọn đúng Loại thông báo",Vui lòng mô tả chi tiết hơn về vấn đề liên quan đến hóa đơn không cập nhật mà Quý khách đang gặp phải để Em có thể hỗ trợ một cách tốt nhất.
+lam 2theo hướng dẫn rồi cũng không duoc,"1. Biểu hiện
+Khi bạn đã Hủy hóa đơn điện tử trên MeInvoice, sau đó dưới AMIS bạn thực hiện xóa Chứng từ bán hàng nhưng phần mềm hiển thị thông báo ""Xóa không thành công."" , chi tiết như hình sau:
+2. Nguyên nhân
+Do bạn chưa thực hiện thao tác Hủy hóa đơn dưới AMIS, vì vậy Chứng từ bán hàng này vẫn đang trạng thái lập kèm Hóa đơn điện tử đã phát hành nên không xóa được.
+3. Giải pháp
+Trên AMIS Kế toán, bạn thực hiện Hủy hóa đơn theo hướng dẫn tại đây.
+Sau đó bạn thực hiện xóa Chứng từ bán hàng theo hướng dẫn tại đây.",Vui lòng mô tả rõ hơn về vấn đề mà Quý khách đang gặp phải để em có thể hỗ trợ một cách chính xác nhất.
+mình cần hỗ trợ hoá đơn ạ,"I. Nội dung
+Cho phép người dùng thực hiện kết nối và sử dụng hóa đơn điện tử theo nghị định 123/2020/NĐ-CP trên AMIS Kế toán.
+II. Hướng dẫn trên phần mềm
+1. Thiết lập kết nối với phần mềm MISA meInvoice
+Lưu ý: Phân hệ Quản lý hóa đơn chỉ hiển thị trên phần mềm khi người dùng tích chọn Có sử dụng dịch vụ hóa đơn điện tử Meinvoice.vn trên Các tiện ích và thiết lập\Tùy chọn\Tùy chọn chung.
+Vào phân hệ Quản lý hóa đơn, chọn tab Kết nối Meinvoice và nhập thông tin đăng nhập. Nhấn Kết nối.
+Lưu ý: Mã số thuế dùng để kết nối với phần mềm meInvoice phải trùng khớp với MST trên thông tin công ty tại Các tiện ích và thiết lập\Thông tin công ty:
+Chương trình hiển thị thông báo kết nối thành công với phần mềm Meinvoice.vn:
+3. Trường hợp người dùng không muốn tiếp tục sử dụng dịch vụ hóa đơn điện tử, nhấn Hủy kết nối.
+2. Lựa chọn Quản lý và phát hành hóa đơn theo Nghị định 123/2020/NĐ-CP
+Sau khi kết nối tài khoản meInvoice, tại phân hệ Quản lý hóa đơn, lựa chọn Quản lý và phát hành hóa đơn theo Nghị định 123/2020/NĐ-CP:
+Sau khi lựa chọn Quản lý và phát hành hóa đơn theo Nghị định 123/NĐ-CP thì người dùng có thể thực hiện phát hành hóa đơn điện tử theo Nghị định 123/NĐ-CP.
+3. Hướng dẫn chuyển đổi
+Đối với hóa đơn điện tử có mã của cơ quan Thuế:
+Chuyển đổi từ hóa đơn theo Nghị định 51/2010/NĐ-CP sang hóa đơn điện tử có mã theo Nghị định 123/2020/NĐ-CP
+Bắt đầu sử dụng hóa đơn điện tử có mã theo Nghị định 123/2020/NĐ-CP đối với doanh nghiệp mới thành lập
+Đối với hóa đơn điện tử không có mã của cơ quan Thuế:
+Chuyển đổi từ hóa đơn theo Nghị định 51/2010/NĐ-CP sang hóa đơn điện tử không có mã theo Nghị định 123/2020/NĐ-CP
+Bắt đầu sử dụng hóa đơn điện tử không có mã theo Nghị định 123/2020/NĐ-CP đối với doanh nghiệp mới thành lập
+4. Lưu ý
+Sau khi người dùng chuyển sang áp dụng theo Nghị định 123/NĐ-CP:
+Nếu tờ khai đăng ký sử dụng hóa đơn điện tử theo Nghị định 123/NĐ-CP của đơn vị chưa được cơ quan Thuế chấp nhận thì doanh nghiệp vẫn có thể tiếp tục phát hành hóa đơn theo Nghị định 51/NĐ-CP bằng cách đổi lại tùy chọn quản lý và phát hành hóa đơn sang áp dụng theo Nghị định 51/2010/NĐ-CP.
+Khi tờ khai đăng ký sử dụng hóa đơn điện tử theo Nghị định 123/NĐ-CP của đơn vị đã được cơ quan Thuế chấp nhận thì đơn vị không được phép phát hành hóa đơn theo Nghị định 51/2010/NĐ-CP nữa và phải chuyển đổi tùy chọn quản lý và phát hành hóa đơn sang áp dụng theo Nghị định 123/NĐ-CP để thực hiện phát hành hóa đơn.",Vui lòng cung cấp thông tin cụ thể về vấn đề cần hỗ trợ liên quan đến hóa đơn để Em có thể hướng dẫn chi tiết hơn.
+giờ thì làm quyết toán tạm ứng thế nào để hiện lên cả phần nhập kho?,"1. Định khoản
+Nợ TK 641, 642 (Thông tư 200)
+Nợ TK 6421, 6422 (Thông tư 133)
+Có TK 141 Tạm ứng
+2. Nội dung
+Cho phép lập các chứng từ quyết toán tạm ứng sau khi nhân viên hoàn thành các thủ tục quyết toán các khoản tạm ứng trước đó.
+3. Hướng dẫn trên phần mềm
+Nghiệp vụ ""Lập chứng từ quyết toán tạm ứng"" được thực hiện trên phần mềm thông qua các bước sau:
+Tại phân hệ Tổng hợp\Quy trình, chọn chức năng Chứng từ quyết toán tạm ứng (hoặc trên tab Chứng từ nghiệp vụ khác chọn chức năng Thêm\Chứng từ quyết toán tạm ứng)
+Khai báo thông tin chi tiết về chứng từ nghiệp vụ khác: Diễn giải, Ngày hạch toán, Số chứng từ,....
+Tab Hóa đơn:
+Nhấn Cất.
+4. Lưu ý
+Nếu kế toán muốn thực hiện quyết toán cho từng lần tạm ứng, thực hiện như sau:
+Bước 1: Lập chứng từ quyết toán tạm ứng
+1. Vào Nghiệp vụ\Tổng hợp, lập Chứng từ quyết toán tạm ứng. Sau đó tích chọn Quyết toán cho từng lần tạm ứng và chọn phiếu chi.
+2. Kế toán thực hiện chọn một hoặc nhiều các phiếu chi tạm ứng cần quyết toán
+3. Nhấn Đồng ý.
+4. Hạch toán số tiền chi của nhân viên, chương trình sẽ tự động tính toán số tiền thừa/thiếu
+Bước 2: Lập phiếu thu/chi số tiền thừa/thiếu (nếu có)
+1. Vào Lập phiếu thu tiền tạm ứng thừa\Lập phiếu chi tiền tạm ứng thiếu. Chương trình sẽ hiển thị phiếu chi (hoặc phiếu thu) để hạch toán số tiền tạm chi bổ sung tạm ứng (hoặc thu hoàn ứng) cho nhân viên
+2. Nhấn Cất",Vui lòng cung cấp thêm thông tin về yêu cầu cụ thể liên quan đến việc quyết toán tạm ứng và nhập kho để Em có thể hỗ trợ một cách chính xác hơn.
+c them nguoi dung roi,"1. Mục đích
+Cho phép người dùng mua thêm tài khoản để sử dụng và làm việc trên ứng dụng AMIS Kế toán.
+2. Các bước thực hiện:
+Nhấn vào biểu tượng mũi tên ở góc trái dưới cùng màn hình như ảnh bên dưới:
+Chương trình hiển thị câu thông báo về thông tin thuê bao. Nhấn vào câu thông báo để thực hiện mua thêm tài khoản:
+Nhấn Mua thêm người dùng: Phần mềm sẽ tự động điều hướng sang giao diện mua thêm người dùng trên MISA Store
+Thực hiện kiểm tra và điều chỉnh số lượng người dùng cần mua
+Nhấn Thanh toán và khai báo thông tin đơn vị theo các bước hướng dẫn
+Sau khi sinh đơn hàng thành công, người dùng cần thanh toán đơn hàng theo đúng cú pháp để được cấp tài nguyên nhanh chóng:
+Sau khi hoàn thành tất cả bước trên và thanh toán thành công đơn hàng, người dùng sẽ được cấp thêm tài nguyên số lượng người dùng đã mua. Nếu có phát sinh thêm vấn đề trong quá trình thực hiện, vui lòng liên hệ MISA để được hỗ trợ.",Vui lòng cung cấp thông tin chi tiết về yêu cầu mà Quý khách cần hỗ trợ để Em có thể hỗ trợ một cách chính xác nhất.
+nahf chọi có đăng ký dịch vụ xử lý hóa đơn đầu vào,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+1. Mục đích
+Cho phép người dùng kết nối với dịch vụ Hóa đơn đầu vào meInvoice để tự động nhận hóa đơn đầu vào, kiểm tra tính hợp lý, hợp lệ của hóa đơn; tự động đồng bộ về phần mềm kế toán và sinh chứng từ nhanh chóng từ hóa đơn đồng bộ về.
+2. Cách thực hiện
+Lưu ý: Để sử dụng tính năng này, trước hết người dùng cần thực hiện mua Dịch vụ xử lý hóa đơn đầu vào tại đây.
+Vào phân hệ Mua hàng, tab Xử lý hóa đơn đầu vào. Nhấn Kết nối ngay:
+Điền thông tin tài khoản kết nối:
+Lưu ý:
+Mã số thuế để thực hiện kết nối phải trùng khớp với mã số thuế trên thông tin công ty/chi nhánh đang làm việc:
+Trường hợp người dùng chưa có tài khoản kết nối thì nhấn Tạo ngay tại đây. Xem hướng dẫn tạo tài khoản tại đây.
+Trường hợp tài khoản kết nối meInvoice của người dùng được phân quyền nhận hóa đơn đầu vào vào duy nhất một đơn vị và mã số thuế của đơn vị đó khớp với mã số thuế trên thông tin công ty, hoặc nhiều đơn vị nhưng chỉ có duy nhất một đơn vị khớp với mã số thuế trên thông tin công ty thì chương trình sẽ ngầm định kết nối hóa đơn đầu vào với đơn vị khớp mã số thuế đó.
+Nếu tài khoản kết nối với meInvoice được phân quyền nhận hóa đơn nhiều đơn vị khớp với mã số thuế trên thông tin công ty thì chương trình sẽ hiển thị giao diện chọn đơn vị nhận hóa đơn:
+Sau khi kết nối thành công, chương trình sẽ tự động lấy về danh sách hóa đơn đầu vào từ MISA meInvoice. Tại đây người dùng có thể thực hiện lập được các chức năng sau:
+Lập chứng từ mua dịch vụ
+Lập phiếu chi tiền mặt
+Lập ủy nhiệm chi
+Lập chứng từ nghiệp vụ khác
+Lập chứng từ trả lại hàng bán
+Lập chứng từ quyết toán tạm ứng
+Nhận hóa đơn
+Đánh dấu đã hạch toán
+Ví dụ lập phiếu chi tiền mặt:
+Trường hợp thực hiện hàng loạt:
+Tích chọn các giao dịch mua hàng cần lập chứng từ:
+Lần lượt khai báo các thông tin của chứng từ chi tiền mặt cho từng giao dịch mua hàng sau đó nhấn Cất.
+Lưu ý:
+1. Người dùng có thể thực hiện lọc các giao dịch mua hàng tại giao diện Lọc chứng từ theo các tiêu chí:
+2. Các chức năng thực hiện trên meInvoice:
+Tại chức năng Tùy chọn lập chứng từ, người dùng thực hiện tích chọn các tùy chọn sao cho phù hợp với nhu cầu của đơn vị mình:
+Lưu ý: Giao diện Tùy chọn lập chứng từ sẽ tự động hiển thị mỗi khi người dùng thực hiện lập chứng từ từ giao dịch mua hàng. Nếu người dùng không muốn hiển thị giao diện này khi lập chứng từ thì bỏ tích chọn Hỏi lại mỗi khi lập chứng từ hạch toán.
+3. Người dùng có thể nắm được số lượng hóa đơn còn được phép sử dụng:
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng cung cấp thông tin chi tiết về yêu cầu mà Quý khách cần hỗ trợ để Em có thể hỗ trợ một cách chính xác nhất.
+Xử lý hóa đơn đầu vào trên Misa Amis không vào hết hóa đơn đầu vào bên Meinvoice,"Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây
+1. Mục đích
+Cho phép người dùng kết nối với dịch vụ Hóa đơn đầu vào meInvoice để tự động nhận hóa đơn đầu vào, kiểm tra tính hợp lý, hợp lệ của hóa đơn; tự động đồng bộ về phần mềm kế toán và sinh chứng từ nhanh chóng từ hóa đơn đồng bộ về.
+2. Cách thực hiện
+Lưu ý: Để sử dụng tính năng này, trước hết người dùng cần thực hiện mua Dịch vụ xử lý hóa đơn đầu vào tại đây.
+Vào phân hệ Mua hàng, tab Xử lý hóa đơn đầu vào. Nhấn Kết nối ngay:
+Điền thông tin tài khoản kết nối:
+Lưu ý:
+Mã số thuế để thực hiện kết nối phải trùng khớp với mã số thuế trên thông tin công ty/chi nhánh đang làm việc:
+Trường hợp người dùng chưa có tài khoản kết nối thì nhấn Tạo ngay tại đây. Xem hướng dẫn tạo tài khoản tại đây.
+Trường hợp tài khoản kết nối meInvoice của người dùng được phân quyền nhận hóa đơn đầu vào vào duy nhất một đơn vị và mã số thuế của đơn vị đó khớp với mã số thuế trên thông tin công ty, hoặc nhiều đơn vị nhưng chỉ có duy nhất một đơn vị khớp với mã số thuế trên thông tin công ty thì chương trình sẽ ngầm định kết nối hóa đơn đầu vào với đơn vị khớp mã số thuế đó.
+Nếu tài khoản kết nối với meInvoice được phân quyền nhận hóa đơn nhiều đơn vị khớp với mã số thuế trên thông tin công ty thì chương trình sẽ hiển thị giao diện chọn đơn vị nhận hóa đơn:
+Sau khi kết nối thành công, chương trình sẽ tự động lấy về danh sách hóa đơn đầu vào từ MISA meInvoice. Tại đây người dùng có thể thực hiện lập được các chức năng sau:
+Lập chứng từ mua dịch vụ
+Lập phiếu chi tiền mặt
+Lập ủy nhiệm chi
+Lập chứng từ nghiệp vụ khác
+Lập chứng từ trả lại hàng bán
+Lập chứng từ quyết toán tạm ứng
+Nhận hóa đơn
+Đánh dấu đã hạch toán
+Ví dụ lập phiếu chi tiền mặt:
+Trường hợp thực hiện hàng loạt:
+Tích chọn các giao dịch mua hàng cần lập chứng từ:
+Lần lượt khai báo các thông tin của chứng từ chi tiền mặt cho từng giao dịch mua hàng sau đó nhấn Cất.
+Lưu ý:
+1. Người dùng có thể thực hiện lọc các giao dịch mua hàng tại giao diện Lọc chứng từ theo các tiêu chí:
+2. Các chức năng thực hiện trên meInvoice:
+Tại chức năng Tùy chọn lập chứng từ, người dùng thực hiện tích chọn các tùy chọn sao cho phù hợp với nhu cầu của đơn vị mình:
+Lưu ý: Giao diện Tùy chọn lập chứng từ sẽ tự động hiển thị mỗi khi người dùng thực hiện lập chứng từ từ giao dịch mua hàng. Nếu người dùng không muốn hiển thị giao diện này khi lập chứng từ thì bỏ tích chọn Hỏi lại mỗi khi lập chứng từ hạch toán.
+3. Người dùng có thể nắm được số lượng hóa đơn còn được phép sử dụng:
+Khảo sát: sau khi đọc và thực hiện theo tài liệu, Anh/Chị vui lòng cho MISA biết có xử lý được vấn đề theo tài liệu này không, qua khảo sát nhanh Tại đây",Vui lòng mô tả chi tiết hơn về vấn đề liên quan đến Xử lý hóa đơn đầu vào trên MISA AMIS không vào hết hóa đơn đầu vào bên Meinvoice mà Quý khách đang gặp phải để Em có thể hỗ trợ một cách chính xác nhất.
+TẠO KHO,"Xem video đào tạo cho người mới sử dụng: Tại đây
+I. NHẬP KHO
+II. XUẤT KHO
+Nhập kho hàng mua đang đi đường
+Nhập kho thành phẩm sản xuất
+Nhập kho NVL dùng cho sản xuất không sử dụng hết
+Nhập kho hàng bán bị trả lại
+Nhập kho hàng từ chi nhánh phụ thuộc chuyển đến
+Hàng gửi đi gia công nhập lại kho
+Nhập kho hàng hóa nhận bán hộ, nhận ký gửi, ký cược
+Nhập kho hàng hóa nhận giữ hộ, nhận gia công
+Xuất kho NVL cho hoạt động sản xuất
+Xuất NVL cho hoạt động đầu tư XDCB hoặc sửa chữa lớn TSCĐ
+Xuất NVL, hàng hóa góp vốn, đầu tư vào công ty khác
+Xuất kho bán hàng
+Xuất hàng hóa mang đi biếu, tặng, sử dụng nội bộ
+Xuất hàng cho các đơn vị (chi nhánh) hạch toán phụ thuộc
+Xuất trả lại hàng mua
+III. CHUYỂN KHO
+Chuyển vật tư, hàng hóa giữa các kho nội bộ
+Chuyển hàng gửi bán đại lý
+IV. LẮP RÁP, THÁO DỠ
+Xuất kho vật tư để lắp ráp và nhập kho thành phẩm lắp ráp
+Xuất kho hàng hóa để tháo dỡ và nhập thành phẩm được tháo dỡ
+V. TIỆN ÍCH KHÁC
+Tính giá xuất kho
+Kiểm kê kho
+Sắp xếp thứ tự chứng từ nhập, xuất
+Cập nhật giá nhập kho thành phẩm (Áp dụng với đơn vị không sử dụng phần mềm để tính giá thành)
+Lập nhanh các phiếu xuất kho
+Lập nhanh các chứng từ chuyển kho
+Lập nhanh các lệnh sản xuất
+VI. BÁO CÁO KHO",Vui lòng cung cấp thêm thông tin hoặc đặt câu hỏi cụ thể liên quan đến việc tạo kho để Em có thể hỗ trợ một cách chính xác hơn.
+thanh toán hóa đơn xuất khẩu,"Tải phim hướng dẫn tại đây
+1. Định khoản
+1. Ghi nhận doanh thu bán hàng, thuế xuất khẩu
+Trường hợp 1: Trường hợp tách ngay được thuế xuất khẩu phải nộp tại thời điểm giao dịch phát sinh
+Nợ các TK 111, 112, 131 (tổng giá thanh toán)
+Có TK 511 Doanh thu bán hàng và cung cấp dịch vụ
+Có TK 3333 Thuế xuất nhập khẩu (chi tiết thuế XK)
+Trường hợp 2: Trường hợp không tách ngay được thuế xuất khẩu phải nộp tại thời điểm giao dịch phát sinh
+Hạch toán doanh thu
+Nợ TK 111, 112 131... Tổng giá thanh toán
+Có TK 511 Doanh thu bán hàng và cung cấp dịch vụ
+Xác định số thuế xuất khẩu phải nộp
+Nợ TK 511 Doanh thu bán hàng
+Có TK 3333 Thuế xuất, nhập khẩu
+2. Ghi nhận giá vốn
+Nợ TK 632 Giá vốn hàng bán
+Có TK 155, 156...
+3. Khi nộp thuế xuất khẩu vào ngân sách nhà nước
+Nợ TK 3333 Thuế xuất, nhập khẩu
+Có TK 111, 112...
+2. Mô tả nghiệp vụ
+Khi phát sinh nghiệp vụ bán hàng xuất khẩu, thông thường sẽ phát sinh các hoạt động sau:
+Nhân viên kinh doanh ký kết hợp đồng bán hàng xuất khẩu với khách hàng
+Đặt chỗ trên tàu để xếp và chuyển hàng
+Phát hành chứng từ xuất khẩu: Hợp đồng, Hóa đơn, Tờ khai, Vận đơn, Chứng nhận xuất xứ
+Khi hàng ra đến cảng, sẽ được làm thủ tục để thông quan
+Khi hàng bắt đầu rời cảng, bộ chứng từ cũng sẽ được gửi tới cho khách hàng.
+Nhân viên kinh doanh thông báo cho khách hàng để theo dõi và nhận hàng
+Yêu cầu khách hàng thanh toán sau khi đã nhận hàng
+3. Hướng dẫn thực hiện
+Vào phân hệ Bán hàng, tab Bán hàng, nhấn Thêm\Chứng từ bán hàng.
+Khai báo thông tin chi tiết về chứng từ bán hàng xuất khẩu:
+Chọn loại chứng từ bán hàng là Bán hàng xuất khẩu (1). => Chương trình sẽ mặc định luôn phương thức thanh toán là Chưa thu tiền (2).
+Tích chọn Kiêm phiếu xuất kho (3).
+Tích chọn Lập kèm hóa đơn (3).
+Mục Điều khoản TT (4) (áp dụng với phương thức Chưa thu tiền): Chọn điều khoản đã được thiết lập trên danh mục Điều khoản thanh toán, nếu có thỏa thuận về điều kiện thanh toán với khách hàng. => Trường hợp đã thiết lập điều khoản thanh toán cho từng khách hàng tại danh mục Khách hàng, thì chương trình sẽ tự động hiển thị sẵn thông tin này theo khách hàng được chọn. Khai báo thông tin chi tiết về chứng từ bán hàng xuất khẩu:
+Lưu ý: Có thể theo dõi tình hình thanh toán công nợ với Nhà cung cấp theo điều khoản thanh toán.
+Chọn Loại tiền và nhập Tỷ giá quy đổi. (5)
+Khai báo các mặt hàng được bán ra (6):
+Tại cột Đơn giá: nhập đơn giá bán đã bao gồm thuế xuất khẩu.
+Khai báo các thông tin về thuế và hóa đơn:
+Tại cột Giá tính thuế XK: tự nhập tay giá tính thuế xuất khẩu theo tờ khai hải quan.
+Nếu người dùng phát hành hóa đơn điện tử: Xem hướng dẫn thực hiện tại đây.
+Khai báo các thông tin xuất kho. => Giá vốn xuất kho sẽ được chương trình tự động tính căn cứ vào phương pháp tính giá xuất kho đã được thiết lập trên Các tiện ích và thiết lập\Tùy chọn\Vật tư hàng hóa.
+Nhấn Cất.
+Lập phiếu xuất kho (trường hợp không tích Kiêm phiếu xuất kho)
+Sau khi cất xong chứng từ bán hàng, nhấn chọn chức năng Lập phiếu xuất:
+Kiểm tra và khai báo thông tin phiếu xuất kho, sau đó nhấn Cất, hệ thống sẽ tự động chuyển thông tin chứng từ xuất kho vừa lập sang tab Nhập, xuất kho của phân hệ Kho.
+Lưu ý:
+Nếu khi lập chứng từ bán hàng có tích chọn Kiêm phiếu xuất kho thì kế toán sẽ không phải thực hiện bước này. Khi đó hệ thống sẽ tự động sinh chứng từ xuất kho hàng bán ngay sau khi chứng từ bán hàng được cất giữ.
+Trường hợp Thủ kho có tham gia sử dụng phần mềm, sau khi chứng từ bán hàng xuất khẩu được lập, chương trình sẽ tự động sinh ra phiếu xuất kho trên tab Đề nghị nhập, xuất kho của Thủ kho. Thủ kho sẽ thực hiện ghi sổ phiếu xuất kho vào sổ kho.
+Với dữ liệu kế toán (TT200), khi in chứng từ kế toán chương trình sẽ tách riêng để hạch toán doanh thu bán hàng và thuế xuất khẩu.
+Khi lập báo cáo Tổng hợp bán hàng, giá trị hàng xuất khẩu lấy lên cột Doanh số bán là giá đã bao gồm thuế xuất khẩu.",Vui lòng cung cấp thêm thông tin về vấn đề thanh toán hóa đơn xuất khẩu mà Quý khách đang gặp phải để em có thể hỗ trợ một cách chính xác nhất.
