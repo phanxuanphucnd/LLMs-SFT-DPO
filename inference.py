@@ -4,6 +4,9 @@ import torch
 from peft import PeftModel
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import time
+from huggingface_hub import login
+
+login("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")
 
 bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
@@ -12,8 +15,12 @@ bnb_config = BitsAndBytesConfig(
     bnb_4bit_compute_dtype=torch.bfloat16
 )
 
+<<<<<<< HEAD
 
 base_model_id = "storages/misa-vistral-7b-chat-lora-4ep-lr5e5-r32-alpha16-9k1"
+=======
+base_model_id = "phucpx247/misa-vistral-7b-chat-lora-4ep-lr5e5-r32-alpha16-9k1"
+>>>>>>> fe0776d76ccdfbcbe02e291b0ede130ddc828a58
 base_model = AutoModelForCausalLM.from_pretrained(
     base_model_id,
     quantization_config=bnb_config,
@@ -33,10 +40,7 @@ Hãy đưa ra phản hồi theo nguyên tắc sau:
 3. Nếu trong KHÔNG CÓ thông tin cho câu trả lời, hãy giải thích cho người dùng biết rằng chưa hiểu câu hỏi và bảo người dùng đặt lại câu hỏi.
 """
 
-
-# df = pd.read_excel('data/testset/recors4+vistral-eval.xlsx')
-
-df = pd.read_csv('data/testset/negative_test.csv')
+df = pd.read_excel('data/testset/negative_test.csv')
 
 questions = df['question'].values.tolist()
 context = df['context'].values.tolist()
