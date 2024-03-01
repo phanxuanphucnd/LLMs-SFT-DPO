@@ -28,5 +28,17 @@
     "makt_labeled_9k1_vi": {
         "file_name": "makt_labeled_9k1_vi.json",
         "file_sha1": "57faf8efbc0bc39c10803805a08cc52479cb1222"
+    },
+    "makt_labeled_11k_vi": {
+        "file_name": "makt_labeled_11k_vi.json",
+        "file_sha1": "57faf8efbc0bc39c10803805a08cc52479cb1222"
+    },
+    "makt_labeled_11k1_vi": {
+        "file_name": "makt_labeled_11k1_vi.json",
+        "file_sha1": "57faf8efbc0bc39c10803805a08cc52479cb1222"
+    },
+    "makt_labeled_13k_vi": {
+        "file_name": "makt_labeled_13k_vi.json",
+        "file_sha1": "57faf8efbc0bc39c10803805a08cc52479cb1222"
     }
 }
